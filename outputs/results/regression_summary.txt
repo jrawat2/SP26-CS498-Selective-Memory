@@ -1,0 +1,27 @@
+Logistic regression fitted successfully.
+Proposal-style retrieval setting: standardized queries per conversation.
+
+Total messages: 1601
+Total unique retrieved messages: 1027
+Total retrieval events: 625
+Retrieved label distribution: {1: 1027, 0: 574}
+
+=== Model 1: Style + Speaker ===
+Intercept: -0.019834
+Train accuracy: 0.5222
+Positive samples: 1027
+Negative samples: 574
+Categorical features used: ['speaker']
+Numeric features used: ['message_length_chars', 'message_length_words', 'has_question', 'has_exclamation', 'num_uppercase_chars', 'num_digits', 'num_hedges', 'num_politeness', 'num_first_person_pronouns']
+
+=== Model 2: Style Only ===
+Intercept: 0.001738
+Train accuracy: 0.5484
+Positive samples: 1027
+Negative samples: 574
+Categorical features used: []
+Numeric features used: ['message_length_chars', 'message_length_words', 'has_question', 'has_exclamation', 'num_uppercase_chars', 'num_digits', 'num_hedges', 'num_politeness', 'num_first_person_pronouns']
+
+Top coefficients saved in:
+- regression_coefficients.csv
+- regression_coefficients_style_only.csv

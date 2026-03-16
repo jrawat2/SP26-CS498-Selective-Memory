@@ -1,0 +1,626 @@
+conv_id,query_id,query_text,retrieved_msg_id,rank,score,retriever
+c1,0,What is the main topic of discussion?,60,1,0.0,tfidf
+c1,0,What is the main topic of discussion?,59,2,0.0,tfidf
+c1,0,What is the main topic of discussion?,28,3,0.0,tfidf
+c1,0,What is the main topic of discussion?,27,4,0.0,tfidf
+c1,0,What is the main topic of discussion?,26,5,0.0,tfidf
+c1,1,What are the key points being discussed?,60,1,0.0,tfidf
+c1,1,What are the key points being discussed?,59,2,0.0,tfidf
+c1,1,What are the key points being discussed?,28,3,0.0,tfidf
+c1,1,What are the key points being discussed?,27,4,0.0,tfidf
+c1,1,What are the key points being discussed?,26,5,0.0,tfidf
+c1,2,What decisions were made?,60,1,0.0,tfidf
+c1,2,What decisions were made?,59,2,0.0,tfidf
+c1,2,What decisions were made?,28,3,0.0,tfidf
+c1,2,What decisions were made?,27,4,0.0,tfidf
+c1,2,What decisions were made?,26,5,0.0,tfidf
+c1,3,What concerns were raised?,60,1,0.0,tfidf
+c1,3,What concerns were raised?,59,2,0.0,tfidf
+c1,3,What concerns were raised?,28,3,0.0,tfidf
+c1,3,What concerns were raised?,27,4,0.0,tfidf
+c1,3,What concerns were raised?,26,5,0.0,tfidf
+c1,4,What is the recommended approach?,60,1,0.0,tfidf
+c1,4,What is the recommended approach?,59,2,0.0,tfidf
+c1,4,What is the recommended approach?,28,3,0.0,tfidf
+c1,4,What is the recommended approach?,27,4,0.0,tfidf
+c1,4,What is the recommended approach?,26,5,0.0,tfidf
+c10,0,What is the main topic of discussion?,37,1,0.3541506419329061,tfidf
+c10,0,What is the main topic of discussion?,23,2,0.34108697209135674,tfidf
+c10,0,What is the main topic of discussion?,33,3,0.32277713990543,tfidf
+c10,0,What is the main topic of discussion?,26,4,0.0,tfidf
+c10,0,What is the main topic of discussion?,20,5,0.0,tfidf
+c10,1,What are the key points being discussed?,70,1,0.0,tfidf
+c10,1,What are the key points being discussed?,26,2,0.0,tfidf
+c10,1,What are the key points being discussed?,20,3,0.0,tfidf
+c10,1,What are the key points being discussed?,21,4,0.0,tfidf
+c10,1,What are the key points being discussed?,22,5,0.0,tfidf
+c10,2,What decisions were made?,70,1,0.0,tfidf
+c10,2,What decisions were made?,26,2,0.0,tfidf
+c10,2,What decisions were made?,20,3,0.0,tfidf
+c10,2,What decisions were made?,21,4,0.0,tfidf
+c10,2,What decisions were made?,22,5,0.0,tfidf
+c10,3,What concerns were raised?,70,1,0.0,tfidf
+c10,3,What concerns were raised?,26,2,0.0,tfidf
+c10,3,What concerns were raised?,20,3,0.0,tfidf
+c10,3,What concerns were raised?,21,4,0.0,tfidf
+c10,3,What concerns were raised?,22,5,0.0,tfidf
+c10,4,What is the recommended approach?,70,1,0.0,tfidf
+c10,4,What is the recommended approach?,26,2,0.0,tfidf
+c10,4,What is the recommended approach?,20,3,0.0,tfidf
+c10,4,What is the recommended approach?,21,4,0.0,tfidf
+c10,4,What is the recommended approach?,22,5,0.0,tfidf
+c11,0,What is the main topic of discussion?,33,1,0.3542458893432093,tfidf
+c11,0,What is the main topic of discussion?,14,2,0.34269652809562934,tfidf
+c11,0,What is the main topic of discussion?,15,3,0.33554278185256575,tfidf
+c11,0,What is the main topic of discussion?,24,4,0.33554278185256575,tfidf
+c11,0,What is the main topic of discussion?,6,5,0.2860942357239941,tfidf
+c11,1,What are the key points being discussed?,62,1,0.0,tfidf
+c11,1,What are the key points being discussed?,16,2,0.0,tfidf
+c11,1,What are the key points being discussed?,29,3,0.0,tfidf
+c11,1,What are the key points being discussed?,28,4,0.0,tfidf
+c11,1,What are the key points being discussed?,27,5,0.0,tfidf
+c11,2,What decisions were made?,62,1,0.0,tfidf
+c11,2,What decisions were made?,16,2,0.0,tfidf
+c11,2,What decisions were made?,29,3,0.0,tfidf
+c11,2,What decisions were made?,28,4,0.0,tfidf
+c11,2,What decisions were made?,27,5,0.0,tfidf
+c11,3,What concerns were raised?,62,1,0.0,tfidf
+c11,3,What concerns were raised?,16,2,0.0,tfidf
+c11,3,What concerns were raised?,29,3,0.0,tfidf
+c11,3,What concerns were raised?,28,4,0.0,tfidf
+c11,3,What concerns were raised?,27,5,0.0,tfidf
+c11,4,What is the recommended approach?,62,1,0.0,tfidf
+c11,4,What is the recommended approach?,16,2,0.0,tfidf
+c11,4,What is the recommended approach?,29,3,0.0,tfidf
+c11,4,What is the recommended approach?,28,4,0.0,tfidf
+c11,4,What is the recommended approach?,27,5,0.0,tfidf
+c12,0,What is the main topic of discussion?,1,1,0.35046877763286427,tfidf
+c12,0,What is the main topic of discussion?,26,2,0.0,tfidf
+c12,0,What is the main topic of discussion?,20,3,0.0,tfidf
+c12,0,What is the main topic of discussion?,21,4,0.0,tfidf
+c12,0,What is the main topic of discussion?,22,5,0.0,tfidf
+c12,1,What are the key points being discussed?,71,1,0.0,tfidf
+c12,1,What are the key points being discussed?,26,2,0.0,tfidf
+c12,1,What are the key points being discussed?,20,3,0.0,tfidf
+c12,1,What are the key points being discussed?,21,4,0.0,tfidf
+c12,1,What are the key points being discussed?,22,5,0.0,tfidf
+c12,2,What decisions were made?,71,1,0.0,tfidf
+c12,2,What decisions were made?,26,2,0.0,tfidf
+c12,2,What decisions were made?,20,3,0.0,tfidf
+c12,2,What decisions were made?,21,4,0.0,tfidf
+c12,2,What decisions were made?,22,5,0.0,tfidf
+c12,3,What concerns were raised?,71,1,0.0,tfidf
+c12,3,What concerns were raised?,26,2,0.0,tfidf
+c12,3,What concerns were raised?,20,3,0.0,tfidf
+c12,3,What concerns were raised?,21,4,0.0,tfidf
+c12,3,What concerns were raised?,22,5,0.0,tfidf
+c12,4,What is the recommended approach?,71,1,0.0,tfidf
+c12,4,What is the recommended approach?,26,2,0.0,tfidf
+c12,4,What is the recommended approach?,20,3,0.0,tfidf
+c12,4,What is the recommended approach?,21,4,0.0,tfidf
+c12,4,What is the recommended approach?,22,5,0.0,tfidf
+c13,0,What is the main topic of discussion?,31,1,0.3802557243828879,tfidf
+c13,0,What is the main topic of discussion?,20,2,0.3606668144385702,tfidf
+c13,0,What is the main topic of discussion?,4,3,0.34783751022362813,tfidf
+c13,0,What is the main topic of discussion?,37,4,0.34127967651677815,tfidf
+c13,0,What is the main topic of discussion?,59,5,0.3252174282843313,tfidf
+c13,1,What are the key points being discussed?,61,1,0.0,tfidf
+c13,1,What are the key points being discussed?,30,2,0.0,tfidf
+c13,1,What are the key points being discussed?,28,3,0.0,tfidf
+c13,1,What are the key points being discussed?,27,4,0.0,tfidf
+c13,1,What are the key points being discussed?,26,5,0.0,tfidf
+c13,2,What decisions were made?,61,1,0.0,tfidf
+c13,2,What decisions were made?,30,2,0.0,tfidf
+c13,2,What decisions were made?,28,3,0.0,tfidf
+c13,2,What decisions were made?,27,4,0.0,tfidf
+c13,2,What decisions were made?,26,5,0.0,tfidf
+c13,3,What concerns were raised?,61,1,0.0,tfidf
+c13,3,What concerns were raised?,30,2,0.0,tfidf
+c13,3,What concerns were raised?,28,3,0.0,tfidf
+c13,3,What concerns were raised?,27,4,0.0,tfidf
+c13,3,What concerns were raised?,26,5,0.0,tfidf
+c13,4,What is the recommended approach?,61,1,0.0,tfidf
+c13,4,What is the recommended approach?,30,2,0.0,tfidf
+c13,4,What is the recommended approach?,28,3,0.0,tfidf
+c13,4,What is the recommended approach?,27,4,0.0,tfidf
+c13,4,What is the recommended approach?,26,5,0.0,tfidf
+c14,0,What is the main topic of discussion?,17,1,0.39396676527437796,tfidf
+c14,0,What is the main topic of discussion?,39,2,0.3633653590508832,tfidf
+c14,0,What is the main topic of discussion?,61,3,0.35285493749706576,tfidf
+c14,0,What is the main topic of discussion?,24,4,0.2689986821707147,tfidf
+c14,0,What is the main topic of discussion?,16,5,0.0,tfidf
+c14,1,What are the key points being discussed?,61,1,0.0,tfidf
+c14,1,What are the key points being discussed?,30,2,0.0,tfidf
+c14,1,What are the key points being discussed?,28,3,0.0,tfidf
+c14,1,What are the key points being discussed?,27,4,0.0,tfidf
+c14,1,What are the key points being discussed?,26,5,0.0,tfidf
+c14,2,What decisions were made?,61,1,0.0,tfidf
+c14,2,What decisions were made?,30,2,0.0,tfidf
+c14,2,What decisions were made?,28,3,0.0,tfidf
+c14,2,What decisions were made?,27,4,0.0,tfidf
+c14,2,What decisions were made?,26,5,0.0,tfidf
+c14,3,What concerns were raised?,61,1,0.0,tfidf
+c14,3,What concerns were raised?,30,2,0.0,tfidf
+c14,3,What concerns were raised?,28,3,0.0,tfidf
+c14,3,What concerns were raised?,27,4,0.0,tfidf
+c14,3,What concerns were raised?,26,5,0.0,tfidf
+c14,4,What is the recommended approach?,61,1,0.0,tfidf
+c14,4,What is the recommended approach?,30,2,0.0,tfidf
+c14,4,What is the recommended approach?,28,3,0.0,tfidf
+c14,4,What is the recommended approach?,27,4,0.0,tfidf
+c14,4,What is the recommended approach?,26,5,0.0,tfidf
+c15,0,What is the main topic of discussion?,1,1,0.36901721070678484,tfidf
+c15,0,What is the main topic of discussion?,26,2,0.0,tfidf
+c15,0,What is the main topic of discussion?,20,3,0.0,tfidf
+c15,0,What is the main topic of discussion?,21,4,0.0,tfidf
+c15,0,What is the main topic of discussion?,22,5,0.0,tfidf
+c15,1,What are the key points being discussed?,71,1,0.0,tfidf
+c15,1,What are the key points being discussed?,26,2,0.0,tfidf
+c15,1,What are the key points being discussed?,20,3,0.0,tfidf
+c15,1,What are the key points being discussed?,21,4,0.0,tfidf
+c15,1,What are the key points being discussed?,22,5,0.0,tfidf
+c15,2,What decisions were made?,71,1,0.0,tfidf
+c15,2,What decisions were made?,26,2,0.0,tfidf
+c15,2,What decisions were made?,20,3,0.0,tfidf
+c15,2,What decisions were made?,21,4,0.0,tfidf
+c15,2,What decisions were made?,22,5,0.0,tfidf
+c15,3,What concerns were raised?,71,1,0.0,tfidf
+c15,3,What concerns were raised?,26,2,0.0,tfidf
+c15,3,What concerns were raised?,20,3,0.0,tfidf
+c15,3,What concerns were raised?,21,4,0.0,tfidf
+c15,3,What concerns were raised?,22,5,0.0,tfidf
+c15,4,What is the recommended approach?,71,1,0.0,tfidf
+c15,4,What is the recommended approach?,26,2,0.0,tfidf
+c15,4,What is the recommended approach?,20,3,0.0,tfidf
+c15,4,What is the recommended approach?,21,4,0.0,tfidf
+c15,4,What is the recommended approach?,22,5,0.0,tfidf
+c16,0,What is the main topic of discussion?,68,1,0.37132223588201674,tfidf
+c16,0,What is the main topic of discussion?,14,2,0.37132223588201674,tfidf
+c16,0,What is the main topic of discussion?,32,3,0.3535139392251636,tfidf
+c16,0,What is the main topic of discussion?,10,4,0.3526306604912603,tfidf
+c16,0,What is the main topic of discussion?,21,5,0.3429310806718388,tfidf
+c16,1,What are the key points being discussed?,74,1,0.0,tfidf
+c16,1,What are the key points being discussed?,19,2,0.0,tfidf
+c16,1,What are the key points being discussed?,21,3,0.0,tfidf
+c16,1,What are the key points being discussed?,22,4,0.0,tfidf
+c16,1,What are the key points being discussed?,23,5,0.0,tfidf
+c16,2,What decisions were made?,74,1,0.0,tfidf
+c16,2,What decisions were made?,19,2,0.0,tfidf
+c16,2,What decisions were made?,21,3,0.0,tfidf
+c16,2,What decisions were made?,22,4,0.0,tfidf
+c16,2,What decisions were made?,23,5,0.0,tfidf
+c16,3,What concerns were raised?,74,1,0.0,tfidf
+c16,3,What concerns were raised?,19,2,0.0,tfidf
+c16,3,What concerns were raised?,21,3,0.0,tfidf
+c16,3,What concerns were raised?,22,4,0.0,tfidf
+c16,3,What concerns were raised?,23,5,0.0,tfidf
+c16,4,What is the recommended approach?,74,1,0.0,tfidf
+c16,4,What is the recommended approach?,19,2,0.0,tfidf
+c16,4,What is the recommended approach?,21,3,0.0,tfidf
+c16,4,What is the recommended approach?,22,4,0.0,tfidf
+c16,4,What is the recommended approach?,23,5,0.0,tfidf
+c17,0,What is the main topic of discussion?,6,1,0.3397617811726203,tfidf
+c17,0,What is the main topic of discussion?,41,2,0.3397617811726203,tfidf
+c17,0,What is the main topic of discussion?,42,3,0.3389071470524314,tfidf
+c17,0,What is the main topic of discussion?,38,4,0.3279487526973716,tfidf
+c17,0,What is the main topic of discussion?,61,5,0.0,tfidf
+c17,1,What are the key points being discussed?,61,1,0.0,tfidf
+c17,1,What are the key points being discussed?,30,2,0.0,tfidf
+c17,1,What are the key points being discussed?,28,3,0.0,tfidf
+c17,1,What are the key points being discussed?,27,4,0.0,tfidf
+c17,1,What are the key points being discussed?,26,5,0.0,tfidf
+c17,2,What decisions were made?,61,1,0.0,tfidf
+c17,2,What decisions were made?,30,2,0.0,tfidf
+c17,2,What decisions were made?,28,3,0.0,tfidf
+c17,2,What decisions were made?,27,4,0.0,tfidf
+c17,2,What decisions were made?,26,5,0.0,tfidf
+c17,3,What concerns were raised?,61,1,0.0,tfidf
+c17,3,What concerns were raised?,30,2,0.0,tfidf
+c17,3,What concerns were raised?,28,3,0.0,tfidf
+c17,3,What concerns were raised?,27,4,0.0,tfidf
+c17,3,What concerns were raised?,26,5,0.0,tfidf
+c17,4,What is the recommended approach?,61,1,0.0,tfidf
+c17,4,What is the recommended approach?,30,2,0.0,tfidf
+c17,4,What is the recommended approach?,28,3,0.0,tfidf
+c17,4,What is the recommended approach?,27,4,0.0,tfidf
+c17,4,What is the recommended approach?,26,5,0.0,tfidf
+c18,0,What is the main topic of discussion?,55,1,0.0,tfidf
+c18,0,What is the main topic of discussion?,14,2,0.0,tfidf
+c18,0,What is the main topic of discussion?,25,3,0.0,tfidf
+c18,0,What is the main topic of discussion?,24,4,0.0,tfidf
+c18,0,What is the main topic of discussion?,23,5,0.0,tfidf
+c18,1,What are the key points being discussed?,55,1,0.0,tfidf
+c18,1,What are the key points being discussed?,14,2,0.0,tfidf
+c18,1,What are the key points being discussed?,25,3,0.0,tfidf
+c18,1,What are the key points being discussed?,24,4,0.0,tfidf
+c18,1,What are the key points being discussed?,23,5,0.0,tfidf
+c18,2,What decisions were made?,55,1,0.0,tfidf
+c18,2,What decisions were made?,14,2,0.0,tfidf
+c18,2,What decisions were made?,25,3,0.0,tfidf
+c18,2,What decisions were made?,24,4,0.0,tfidf
+c18,2,What decisions were made?,23,5,0.0,tfidf
+c18,3,What concerns were raised?,55,1,0.0,tfidf
+c18,3,What concerns were raised?,14,2,0.0,tfidf
+c18,3,What concerns were raised?,25,3,0.0,tfidf
+c18,3,What concerns were raised?,24,4,0.0,tfidf
+c18,3,What concerns were raised?,23,5,0.0,tfidf
+c18,4,What is the recommended approach?,55,1,0.0,tfidf
+c18,4,What is the recommended approach?,14,2,0.0,tfidf
+c18,4,What is the recommended approach?,25,3,0.0,tfidf
+c18,4,What is the recommended approach?,24,4,0.0,tfidf
+c18,4,What is the recommended approach?,23,5,0.0,tfidf
+c19,0,What is the main topic of discussion?,37,1,0.3421996294347044,tfidf
+c19,0,What is the main topic of discussion?,26,2,0.3020249549928213,tfidf
+c19,0,What is the main topic of discussion?,34,3,0.2863227817212294,tfidf
+c19,0,What is the main topic of discussion?,22,4,0.28063255653687535,tfidf
+c19,0,What is the main topic of discussion?,23,5,0.2769112413552296,tfidf
+c19,1,What are the key points being discussed?,55,1,0.0,tfidf
+c19,1,What are the key points being discussed?,14,2,0.0,tfidf
+c19,1,What are the key points being discussed?,25,3,0.0,tfidf
+c19,1,What are the key points being discussed?,24,4,0.0,tfidf
+c19,1,What are the key points being discussed?,23,5,0.0,tfidf
+c19,2,What decisions were made?,55,1,0.0,tfidf
+c19,2,What decisions were made?,14,2,0.0,tfidf
+c19,2,What decisions were made?,25,3,0.0,tfidf
+c19,2,What decisions were made?,24,4,0.0,tfidf
+c19,2,What decisions were made?,23,5,0.0,tfidf
+c19,3,What concerns were raised?,55,1,0.0,tfidf
+c19,3,What concerns were raised?,14,2,0.0,tfidf
+c19,3,What concerns were raised?,25,3,0.0,tfidf
+c19,3,What concerns were raised?,24,4,0.0,tfidf
+c19,3,What concerns were raised?,23,5,0.0,tfidf
+c19,4,What is the recommended approach?,55,1,0.0,tfidf
+c19,4,What is the recommended approach?,14,2,0.0,tfidf
+c19,4,What is the recommended approach?,25,3,0.0,tfidf
+c19,4,What is the recommended approach?,24,4,0.0,tfidf
+c19,4,What is the recommended approach?,23,5,0.0,tfidf
+c2,0,What is the main topic of discussion?,1,1,0.3640877992797074,tfidf
+c2,0,What is the main topic of discussion?,25,2,0.0,tfidf
+c2,0,What is the main topic of discussion?,19,3,0.0,tfidf
+c2,0,What is the main topic of discussion?,20,4,0.0,tfidf
+c2,0,What is the main topic of discussion?,21,5,0.0,tfidf
+c2,1,What are the key points being discussed?,69,1,0.0,tfidf
+c2,1,What are the key points being discussed?,25,2,0.0,tfidf
+c2,1,What are the key points being discussed?,19,3,0.0,tfidf
+c2,1,What are the key points being discussed?,20,4,0.0,tfidf
+c2,1,What are the key points being discussed?,21,5,0.0,tfidf
+c2,2,What decisions were made?,69,1,0.0,tfidf
+c2,2,What decisions were made?,25,2,0.0,tfidf
+c2,2,What decisions were made?,19,3,0.0,tfidf
+c2,2,What decisions were made?,20,4,0.0,tfidf
+c2,2,What decisions were made?,21,5,0.0,tfidf
+c2,3,What concerns were raised?,69,1,0.0,tfidf
+c2,3,What concerns were raised?,25,2,0.0,tfidf
+c2,3,What concerns were raised?,19,3,0.0,tfidf
+c2,3,What concerns were raised?,20,4,0.0,tfidf
+c2,3,What concerns were raised?,21,5,0.0,tfidf
+c2,4,What is the recommended approach?,69,1,0.0,tfidf
+c2,4,What is the recommended approach?,25,2,0.0,tfidf
+c2,4,What is the recommended approach?,19,3,0.0,tfidf
+c2,4,What is the recommended approach?,20,4,0.0,tfidf
+c2,4,What is the recommended approach?,21,5,0.0,tfidf
+c20,0,What is the main topic of discussion?,1,1,0.3521123823042815,tfidf
+c20,0,What is the main topic of discussion?,55,2,0.0,tfidf
+c20,0,What is the main topic of discussion?,26,3,0.0,tfidf
+c20,0,What is the main topic of discussion?,25,4,0.0,tfidf
+c20,0,What is the main topic of discussion?,24,5,0.0,tfidf
+c20,1,What are the key points being discussed?,56,1,0.0,tfidf
+c20,1,What are the key points being discussed?,55,2,0.0,tfidf
+c20,1,What are the key points being discussed?,26,3,0.0,tfidf
+c20,1,What are the key points being discussed?,25,4,0.0,tfidf
+c20,1,What are the key points being discussed?,24,5,0.0,tfidf
+c20,2,What decisions were made?,56,1,0.0,tfidf
+c20,2,What decisions were made?,55,2,0.0,tfidf
+c20,2,What decisions were made?,26,3,0.0,tfidf
+c20,2,What decisions were made?,25,4,0.0,tfidf
+c20,2,What decisions were made?,24,5,0.0,tfidf
+c20,3,What concerns were raised?,56,1,0.0,tfidf
+c20,3,What concerns were raised?,55,2,0.0,tfidf
+c20,3,What concerns were raised?,26,3,0.0,tfidf
+c20,3,What concerns were raised?,25,4,0.0,tfidf
+c20,3,What concerns were raised?,24,5,0.0,tfidf
+c20,4,What is the recommended approach?,56,1,0.0,tfidf
+c20,4,What is the recommended approach?,55,2,0.0,tfidf
+c20,4,What is the recommended approach?,26,3,0.0,tfidf
+c20,4,What is the recommended approach?,25,4,0.0,tfidf
+c20,4,What is the recommended approach?,24,5,0.0,tfidf
+c21,0,What is the main topic of discussion?,1,1,0.3623214871768847,tfidf
+c21,0,What is the main topic of discussion?,63,2,0.0,tfidf
+c21,0,What is the main topic of discussion?,30,3,0.0,tfidf
+c21,0,What is the main topic of discussion?,29,4,0.0,tfidf
+c21,0,What is the main topic of discussion?,28,5,0.0,tfidf
+c21,1,What are the key points being discussed?,64,1,0.0,tfidf
+c21,1,What are the key points being discussed?,63,2,0.0,tfidf
+c21,1,What are the key points being discussed?,30,3,0.0,tfidf
+c21,1,What are the key points being discussed?,29,4,0.0,tfidf
+c21,1,What are the key points being discussed?,28,5,0.0,tfidf
+c21,2,What decisions were made?,64,1,0.0,tfidf
+c21,2,What decisions were made?,63,2,0.0,tfidf
+c21,2,What decisions were made?,30,3,0.0,tfidf
+c21,2,What decisions were made?,29,4,0.0,tfidf
+c21,2,What decisions were made?,28,5,0.0,tfidf
+c21,3,What concerns were raised?,64,1,0.0,tfidf
+c21,3,What concerns were raised?,63,2,0.0,tfidf
+c21,3,What concerns were raised?,30,3,0.0,tfidf
+c21,3,What concerns were raised?,29,4,0.0,tfidf
+c21,3,What concerns were raised?,28,5,0.0,tfidf
+c21,4,What is the recommended approach?,64,1,0.0,tfidf
+c21,4,What is the recommended approach?,63,2,0.0,tfidf
+c21,4,What is the recommended approach?,30,3,0.0,tfidf
+c21,4,What is the recommended approach?,29,4,0.0,tfidf
+c21,4,What is the recommended approach?,28,5,0.0,tfidf
+c22,0,What is the main topic of discussion?,1,1,0.3555419618952116,tfidf
+c22,0,What is the main topic of discussion?,15,2,0.0,tfidf
+c22,0,What is the main topic of discussion?,27,3,0.0,tfidf
+c22,0,What is the main topic of discussion?,26,4,0.0,tfidf
+c22,0,What is the main topic of discussion?,25,5,0.0,tfidf
+c22,1,What are the key points being discussed?,58,1,0.0,tfidf
+c22,1,What are the key points being discussed?,15,2,0.0,tfidf
+c22,1,What are the key points being discussed?,27,3,0.0,tfidf
+c22,1,What are the key points being discussed?,26,4,0.0,tfidf
+c22,1,What are the key points being discussed?,25,5,0.0,tfidf
+c22,2,What decisions were made?,58,1,0.0,tfidf
+c22,2,What decisions were made?,15,2,0.0,tfidf
+c22,2,What decisions were made?,27,3,0.0,tfidf
+c22,2,What decisions were made?,26,4,0.0,tfidf
+c22,2,What decisions were made?,25,5,0.0,tfidf
+c22,3,What concerns were raised?,58,1,0.0,tfidf
+c22,3,What concerns were raised?,15,2,0.0,tfidf
+c22,3,What concerns were raised?,27,3,0.0,tfidf
+c22,3,What concerns were raised?,26,4,0.0,tfidf
+c22,3,What concerns were raised?,25,5,0.0,tfidf
+c22,4,What is the recommended approach?,58,1,0.0,tfidf
+c22,4,What is the recommended approach?,15,2,0.0,tfidf
+c22,4,What is the recommended approach?,27,3,0.0,tfidf
+c22,4,What is the recommended approach?,26,4,0.0,tfidf
+c22,4,What is the recommended approach?,25,5,0.0,tfidf
+c23,0,What is the main topic of discussion?,1,1,0.3608582441825917,tfidf
+c23,0,What is the main topic of discussion?,59,2,0.0,tfidf
+c23,0,What is the main topic of discussion?,28,3,0.0,tfidf
+c23,0,What is the main topic of discussion?,27,4,0.0,tfidf
+c23,0,What is the main topic of discussion?,26,5,0.0,tfidf
+c23,1,What are the key points being discussed?,60,1,0.0,tfidf
+c23,1,What are the key points being discussed?,59,2,0.0,tfidf
+c23,1,What are the key points being discussed?,28,3,0.0,tfidf
+c23,1,What are the key points being discussed?,27,4,0.0,tfidf
+c23,1,What are the key points being discussed?,26,5,0.0,tfidf
+c23,2,What decisions were made?,60,1,0.0,tfidf
+c23,2,What decisions were made?,59,2,0.0,tfidf
+c23,2,What decisions were made?,28,3,0.0,tfidf
+c23,2,What decisions were made?,27,4,0.0,tfidf
+c23,2,What decisions were made?,26,5,0.0,tfidf
+c23,3,What concerns were raised?,60,1,0.0,tfidf
+c23,3,What concerns were raised?,59,2,0.0,tfidf
+c23,3,What concerns were raised?,28,3,0.0,tfidf
+c23,3,What concerns were raised?,27,4,0.0,tfidf
+c23,3,What concerns were raised?,26,5,0.0,tfidf
+c23,4,What is the recommended approach?,60,1,0.0,tfidf
+c23,4,What is the recommended approach?,59,2,0.0,tfidf
+c23,4,What is the recommended approach?,28,3,0.0,tfidf
+c23,4,What is the recommended approach?,27,4,0.0,tfidf
+c23,4,What is the recommended approach?,26,5,0.0,tfidf
+c24,0,What is the main topic of discussion?,64,1,0.0,tfidf
+c24,0,What is the main topic of discussion?,63,2,0.0,tfidf
+c24,0,What is the main topic of discussion?,30,3,0.0,tfidf
+c24,0,What is the main topic of discussion?,29,4,0.0,tfidf
+c24,0,What is the main topic of discussion?,28,5,0.0,tfidf
+c24,1,What are the key points being discussed?,64,1,0.0,tfidf
+c24,1,What are the key points being discussed?,63,2,0.0,tfidf
+c24,1,What are the key points being discussed?,30,3,0.0,tfidf
+c24,1,What are the key points being discussed?,29,4,0.0,tfidf
+c24,1,What are the key points being discussed?,28,5,0.0,tfidf
+c24,2,What decisions were made?,64,1,0.0,tfidf
+c24,2,What decisions were made?,63,2,0.0,tfidf
+c24,2,What decisions were made?,30,3,0.0,tfidf
+c24,2,What decisions were made?,29,4,0.0,tfidf
+c24,2,What decisions were made?,28,5,0.0,tfidf
+c24,3,What concerns were raised?,64,1,0.0,tfidf
+c24,3,What concerns were raised?,63,2,0.0,tfidf
+c24,3,What concerns were raised?,30,3,0.0,tfidf
+c24,3,What concerns were raised?,29,4,0.0,tfidf
+c24,3,What concerns were raised?,28,5,0.0,tfidf
+c24,4,What is the recommended approach?,64,1,0.0,tfidf
+c24,4,What is the recommended approach?,63,2,0.0,tfidf
+c24,4,What is the recommended approach?,30,3,0.0,tfidf
+c24,4,What is the recommended approach?,29,4,0.0,tfidf
+c24,4,What is the recommended approach?,28,5,0.0,tfidf
+c25,0,What is the main topic of discussion?,32,1,0.35786406634764184,tfidf
+c25,0,What is the main topic of discussion?,55,2,0.3300963538455633,tfidf
+c25,0,What is the main topic of discussion?,24,3,0.0,tfidf
+c25,0,What is the main topic of discussion?,19,4,0.0,tfidf
+c25,0,What is the main topic of discussion?,20,5,0.0,tfidf
+c25,1,What are the key points being discussed?,67,1,0.0,tfidf
+c25,1,What are the key points being discussed?,17,2,0.0,tfidf
+c25,1,What are the key points being discussed?,31,3,0.0,tfidf
+c25,1,What are the key points being discussed?,30,4,0.0,tfidf
+c25,1,What are the key points being discussed?,29,5,0.0,tfidf
+c25,2,What decisions were made?,67,1,0.0,tfidf
+c25,2,What decisions were made?,17,2,0.0,tfidf
+c25,2,What decisions were made?,31,3,0.0,tfidf
+c25,2,What decisions were made?,30,4,0.0,tfidf
+c25,2,What decisions were made?,29,5,0.0,tfidf
+c25,3,What concerns were raised?,67,1,0.0,tfidf
+c25,3,What concerns were raised?,17,2,0.0,tfidf
+c25,3,What concerns were raised?,31,3,0.0,tfidf
+c25,3,What concerns were raised?,30,4,0.0,tfidf
+c25,3,What concerns were raised?,29,5,0.0,tfidf
+c25,4,What is the recommended approach?,67,1,0.0,tfidf
+c25,4,What is the recommended approach?,17,2,0.0,tfidf
+c25,4,What is the recommended approach?,31,3,0.0,tfidf
+c25,4,What is the recommended approach?,30,4,0.0,tfidf
+c25,4,What is the recommended approach?,29,5,0.0,tfidf
+c3,0,What is the main topic of discussion?,75,1,0.0,tfidf
+c3,0,What is the main topic of discussion?,19,2,0.0,tfidf
+c3,0,What is the main topic of discussion?,21,3,0.0,tfidf
+c3,0,What is the main topic of discussion?,22,4,0.0,tfidf
+c3,0,What is the main topic of discussion?,23,5,0.0,tfidf
+c3,1,What are the key points being discussed?,75,1,0.0,tfidf
+c3,1,What are the key points being discussed?,19,2,0.0,tfidf
+c3,1,What are the key points being discussed?,21,3,0.0,tfidf
+c3,1,What are the key points being discussed?,22,4,0.0,tfidf
+c3,1,What are the key points being discussed?,23,5,0.0,tfidf
+c3,2,What decisions were made?,75,1,0.0,tfidf
+c3,2,What decisions were made?,19,2,0.0,tfidf
+c3,2,What decisions were made?,21,3,0.0,tfidf
+c3,2,What decisions were made?,22,4,0.0,tfidf
+c3,2,What decisions were made?,23,5,0.0,tfidf
+c3,3,What concerns were raised?,75,1,0.0,tfidf
+c3,3,What concerns were raised?,19,2,0.0,tfidf
+c3,3,What concerns were raised?,21,3,0.0,tfidf
+c3,3,What concerns were raised?,22,4,0.0,tfidf
+c3,3,What concerns were raised?,23,5,0.0,tfidf
+c3,4,What is the recommended approach?,75,1,0.0,tfidf
+c3,4,What is the recommended approach?,19,2,0.0,tfidf
+c3,4,What is the recommended approach?,21,3,0.0,tfidf
+c3,4,What is the recommended approach?,22,4,0.0,tfidf
+c3,4,What is the recommended approach?,23,5,0.0,tfidf
+c4,0,What is the main topic of discussion?,43,1,0.3677096170025783,tfidf
+c4,0,What is the main topic of discussion?,41,2,0.31704113282635465,tfidf
+c4,0,What is the main topic of discussion?,7,3,0.31704113282635465,tfidf
+c4,0,What is the main topic of discussion?,26,4,0.31431881910320725,tfidf
+c4,0,What is the main topic of discussion?,5,5,0.29606793110274315,tfidf
+c4,1,What are the key points being discussed?,62,1,0.0,tfidf
+c4,1,What are the key points being discussed?,16,2,0.0,tfidf
+c4,1,What are the key points being discussed?,29,3,0.0,tfidf
+c4,1,What are the key points being discussed?,28,4,0.0,tfidf
+c4,1,What are the key points being discussed?,27,5,0.0,tfidf
+c4,2,What decisions were made?,62,1,0.0,tfidf
+c4,2,What decisions were made?,16,2,0.0,tfidf
+c4,2,What decisions were made?,29,3,0.0,tfidf
+c4,2,What decisions were made?,28,4,0.0,tfidf
+c4,2,What decisions were made?,27,5,0.0,tfidf
+c4,3,What concerns were raised?,62,1,0.0,tfidf
+c4,3,What concerns were raised?,16,2,0.0,tfidf
+c4,3,What concerns were raised?,29,3,0.0,tfidf
+c4,3,What concerns were raised?,28,4,0.0,tfidf
+c4,3,What concerns were raised?,27,5,0.0,tfidf
+c4,4,What is the recommended approach?,62,1,0.0,tfidf
+c4,4,What is the recommended approach?,16,2,0.0,tfidf
+c4,4,What is the recommended approach?,29,3,0.0,tfidf
+c4,4,What is the recommended approach?,28,4,0.0,tfidf
+c4,4,What is the recommended approach?,27,5,0.0,tfidf
+c5,0,What is the main topic of discussion?,57,1,0.0,tfidf
+c5,0,What is the main topic of discussion?,28,2,0.0,tfidf
+c5,0,What is the main topic of discussion?,26,3,0.0,tfidf
+c5,0,What is the main topic of discussion?,25,4,0.0,tfidf
+c5,0,What is the main topic of discussion?,24,5,0.0,tfidf
+c5,1,What are the key points being discussed?,57,1,0.0,tfidf
+c5,1,What are the key points being discussed?,28,2,0.0,tfidf
+c5,1,What are the key points being discussed?,26,3,0.0,tfidf
+c5,1,What are the key points being discussed?,25,4,0.0,tfidf
+c5,1,What are the key points being discussed?,24,5,0.0,tfidf
+c5,2,What decisions were made?,57,1,0.0,tfidf
+c5,2,What decisions were made?,28,2,0.0,tfidf
+c5,2,What decisions were made?,26,3,0.0,tfidf
+c5,2,What decisions were made?,25,4,0.0,tfidf
+c5,2,What decisions were made?,24,5,0.0,tfidf
+c5,3,What concerns were raised?,57,1,0.0,tfidf
+c5,3,What concerns were raised?,28,2,0.0,tfidf
+c5,3,What concerns were raised?,26,3,0.0,tfidf
+c5,3,What concerns were raised?,25,4,0.0,tfidf
+c5,3,What concerns were raised?,24,5,0.0,tfidf
+c5,4,What is the recommended approach?,57,1,0.0,tfidf
+c5,4,What is the recommended approach?,28,2,0.0,tfidf
+c5,4,What is the recommended approach?,26,3,0.0,tfidf
+c5,4,What is the recommended approach?,25,4,0.0,tfidf
+c5,4,What is the recommended approach?,24,5,0.0,tfidf
+c6,0,What is the main topic of discussion?,43,1,0.38454497359125905,tfidf
+c6,0,What is the main topic of discussion?,5,2,0.3157650997089057,tfidf
+c6,0,What is the main topic of discussion?,24,3,0.30535009401232927,tfidf
+c6,0,What is the main topic of discussion?,38,4,0.28508866323983745,tfidf
+c6,0,What is the main topic of discussion?,17,5,0.2805554243061606,tfidf
+c6,1,What are the key points being discussed?,69,1,0.0,tfidf
+c6,1,What are the key points being discussed?,25,2,0.0,tfidf
+c6,1,What are the key points being discussed?,19,3,0.0,tfidf
+c6,1,What are the key points being discussed?,20,4,0.0,tfidf
+c6,1,What are the key points being discussed?,21,5,0.0,tfidf
+c6,2,What decisions were made?,69,1,0.0,tfidf
+c6,2,What decisions were made?,25,2,0.0,tfidf
+c6,2,What decisions were made?,19,3,0.0,tfidf
+c6,2,What decisions were made?,20,4,0.0,tfidf
+c6,2,What decisions were made?,21,5,0.0,tfidf
+c6,3,What concerns were raised?,69,1,0.0,tfidf
+c6,3,What concerns were raised?,25,2,0.0,tfidf
+c6,3,What concerns were raised?,19,3,0.0,tfidf
+c6,3,What concerns were raised?,20,4,0.0,tfidf
+c6,3,What concerns were raised?,21,5,0.0,tfidf
+c6,4,What is the recommended approach?,69,1,0.0,tfidf
+c6,4,What is the recommended approach?,25,2,0.0,tfidf
+c6,4,What is the recommended approach?,19,3,0.0,tfidf
+c6,4,What is the recommended approach?,20,4,0.0,tfidf
+c6,4,What is the recommended approach?,21,5,0.0,tfidf
+c7,0,What is the main topic of discussion?,1,1,0.3527909479465461,tfidf
+c7,0,What is the main topic of discussion?,26,2,0.0,tfidf
+c7,0,What is the main topic of discussion?,20,3,0.0,tfidf
+c7,0,What is the main topic of discussion?,21,4,0.0,tfidf
+c7,0,What is the main topic of discussion?,22,5,0.0,tfidf
+c7,1,What are the key points being discussed?,71,1,0.0,tfidf
+c7,1,What are the key points being discussed?,26,2,0.0,tfidf
+c7,1,What are the key points being discussed?,20,3,0.0,tfidf
+c7,1,What are the key points being discussed?,21,4,0.0,tfidf
+c7,1,What are the key points being discussed?,22,5,0.0,tfidf
+c7,2,What decisions were made?,71,1,0.0,tfidf
+c7,2,What decisions were made?,26,2,0.0,tfidf
+c7,2,What decisions were made?,20,3,0.0,tfidf
+c7,2,What decisions were made?,21,4,0.0,tfidf
+c7,2,What decisions were made?,22,5,0.0,tfidf
+c7,3,What concerns were raised?,71,1,0.0,tfidf
+c7,3,What concerns were raised?,26,2,0.0,tfidf
+c7,3,What concerns were raised?,20,3,0.0,tfidf
+c7,3,What concerns were raised?,21,4,0.0,tfidf
+c7,3,What concerns were raised?,22,5,0.0,tfidf
+c7,4,What is the recommended approach?,71,1,0.0,tfidf
+c7,4,What is the recommended approach?,26,2,0.0,tfidf
+c7,4,What is the recommended approach?,20,3,0.0,tfidf
+c7,4,What is the recommended approach?,21,4,0.0,tfidf
+c7,4,What is the recommended approach?,22,5,0.0,tfidf
+c8,0,What is the main topic of discussion?,30,1,0.359738637532585,tfidf
+c8,0,What is the main topic of discussion?,59,2,0.359738637532585,tfidf
+c8,0,What is the main topic of discussion?,56,3,0.359738637532585,tfidf
+c8,0,What is the main topic of discussion?,26,4,0.3189174658971782,tfidf
+c8,0,What is the main topic of discussion?,10,5,0.3028284366715107,tfidf
+c8,1,What are the key points being discussed?,68,1,0.0,tfidf
+c8,1,What are the key points being discussed?,25,2,0.0,tfidf
+c8,1,What are the key points being discussed?,19,3,0.0,tfidf
+c8,1,What are the key points being discussed?,20,4,0.0,tfidf
+c8,1,What are the key points being discussed?,21,5,0.0,tfidf
+c8,2,What decisions were made?,68,1,0.0,tfidf
+c8,2,What decisions were made?,25,2,0.0,tfidf
+c8,2,What decisions were made?,19,3,0.0,tfidf
+c8,2,What decisions were made?,20,4,0.0,tfidf
+c8,2,What decisions were made?,21,5,0.0,tfidf
+c8,3,What concerns were raised?,68,1,0.0,tfidf
+c8,3,What concerns were raised?,25,2,0.0,tfidf
+c8,3,What concerns were raised?,19,3,0.0,tfidf
+c8,3,What concerns were raised?,20,4,0.0,tfidf
+c8,3,What concerns were raised?,21,5,0.0,tfidf
+c8,4,What is the recommended approach?,68,1,0.0,tfidf
+c8,4,What is the recommended approach?,25,2,0.0,tfidf
+c8,4,What is the recommended approach?,19,3,0.0,tfidf
+c8,4,What is the recommended approach?,20,4,0.0,tfidf
+c8,4,What is the recommended approach?,21,5,0.0,tfidf
+c9,0,What is the main topic of discussion?,60,1,0.0,tfidf
+c9,0,What is the main topic of discussion?,59,2,0.0,tfidf
+c9,0,What is the main topic of discussion?,28,3,0.0,tfidf
+c9,0,What is the main topic of discussion?,27,4,0.0,tfidf
+c9,0,What is the main topic of discussion?,26,5,0.0,tfidf
+c9,1,What are the key points being discussed?,60,1,0.0,tfidf
+c9,1,What are the key points being discussed?,59,2,0.0,tfidf
+c9,1,What are the key points being discussed?,28,3,0.0,tfidf
+c9,1,What are the key points being discussed?,27,4,0.0,tfidf
+c9,1,What are the key points being discussed?,26,5,0.0,tfidf
+c9,2,What decisions were made?,60,1,0.0,tfidf
+c9,2,What decisions were made?,59,2,0.0,tfidf
+c9,2,What decisions were made?,28,3,0.0,tfidf
+c9,2,What decisions were made?,27,4,0.0,tfidf
+c9,2,What decisions were made?,26,5,0.0,tfidf
+c9,3,What concerns were raised?,60,1,0.0,tfidf
+c9,3,What concerns were raised?,59,2,0.0,tfidf
+c9,3,What concerns were raised?,28,3,0.0,tfidf
+c9,3,What concerns were raised?,27,4,0.0,tfidf
+c9,3,What concerns were raised?,26,5,0.0,tfidf
+c9,4,What is the recommended approach?,60,1,0.0,tfidf
+c9,4,What is the recommended approach?,59,2,0.0,tfidf
+c9,4,What is the recommended approach?,28,3,0.0,tfidf
+c9,4,What is the recommended approach?,27,4,0.0,tfidf
+c9,4,What is the recommended approach?,26,5,0.0,tfidf
