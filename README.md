@@ -122,7 +122,7 @@ SP26-CS498-Selective-Memory
 
 # Pipeline Overview
 
-The pipeline consists of three major stages:
+The pipeline consists of four major stages:
 
 ### 1. Dataset Preparation
 Raw conversation data is cleaned and normalized into a standardized format.
@@ -135,6 +135,9 @@ Two retrieval mechanisms simulate how AI assistants retrieve conversational mess
 
 ### 3. Retrieval Analysis
 Speaker fairness metrics and logistic regression models analyze which messages are selected.
+
+### 4. Visualization Pipeline
+Generates plots to visualize speaker representation and retrieval bias across retrieval methods.
 
 ---
 
@@ -166,7 +169,9 @@ Python 3.9+
 ## Step 1 — Prepare Dataset
 
 ```bash
-python3 scripts/prepare_dataset.py   --input data/raw/conversations.csv   --output data/processed/conversations_clean.csv
+python3 scripts/prepare_dataset.py \
+  --input data/raw/conversations.csv \
+  --output data/processed/conversations_clean.csv
 ```
 
 ## Step 2 — Run Retrieval
@@ -174,13 +179,21 @@ python3 scripts/prepare_dataset.py   --input data/raw/conversations.csv   --outp
 TF-IDF:
 
 ```bash
-python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results.csv   --top-k 5   --retriever tfidf
+python3 scripts/run_retrieval.py \
+  --input data/processed/conversations_clean.csv \
+  --output outputs/results/retrieval_results_tfidf.csv \
+  --top-k 5 \
+  --retriever tfidf
 ```
 
 Dense Retrieval:
 
 ```bash
-python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results.csv   --top-k 5   --retriever dense
+python3 scripts/run_retrieval.py \
+  --input data/processed/conversations_clean.csv \
+  --output outputs/results/retrieval_results_dense.csv \
+  --top-k 5 \
+  --retriever dense
 ```
 
 ## Step 3 — Run Analysis
@@ -193,7 +206,7 @@ python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.
 python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results_dense.csv   --output-dir outputs/results
 ```
 
-## 4. Visualization
+## Step 4 — Visualization
 
 Generate all plots:
 
