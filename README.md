@@ -1,6 +1,6 @@
 # Selective Memory: Measuring Retrieval Bias in AI-Augmented Group Conversations
 
-**CS498 – Human-AI Interaction**  
+**CS498 – Human-LLM interaction**  
 **Team:** Bhavyaa Chauhan, Jyoti Rawat, Sandra John  
 
 ---
@@ -317,7 +317,7 @@ Human evaluation | Planned |
 
 # Acknowledgments
 
-Course: **CS498 – Human‑AI Interaction**  
+Course: **CS498 – Human-LLM interaction**  
 Institution: **University of Illinois Urbana‑Champaign**  
 Semester: **Spring 2026**
 
