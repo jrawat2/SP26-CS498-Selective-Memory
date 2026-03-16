@@ -17,11 +17,12 @@ This repository implements a **retrieval analysis pipeline** to measure whether 
 
 # Key Features
 
-• Retrieval simulation using **TF-IDF and Dense Retrieval (Sentence-BERT)**  
+• Retrieval simulation using **TF-IDF, Dense Retrieval (Sentence-BERT), and ChromaDB Vector Retrieval**  
 • Speaker fairness metrics for **representation imbalance**  
 • Linguistic feature extraction for **communication style analysis**  
 • Logistic regression models predicting **retrieval likelihood**  
-• Visualization pipeline for analyzing **retrieval bias**
+• Visualization pipeline for analyzing **retrieval bias**  
+• Comparative analysis across **lexical retrieval, dense semantic retrieval, and vector database retrieval**
 
 ---
 
@@ -74,24 +75,32 @@ SP26-CS498-Selective-Memory
 │   ├── figures
 │   │   ├── participation_vs_retrieval_tfidf.png
 │   │   ├── participation_vs_retrieval_dense.png
+│   │   ├── participation_vs_retrieval_chroma.png
 │   │   ├── speaker_representation_comparison.png
 │   │   ├── retrieval_histogram_tfidf.png
 │   │   ├── retrieval_histogram_dense.png
+│   │   ├── retrieval_histogram_chroma.png
 │   │   └── gini_comparison.png
 │   ├── logs
 │   └── results
 │       ├── retrieval_results_tfidf.csv
 │       ├── retrieval_results_dense.csv
+│       ├── retrieval_results_chroma.csv
 │       ├── speaker_metrics_tfidf.csv
 │       ├── speaker_metrics_dense.csv
+│       ├── speaker_metrics_chroma.csv
 │       ├── message_level_features_tfidf.csv
 │       ├── message_level_features_dense.csv
+│       ├── message_level_features_chroma.csv
 │       ├── regression_coefficients_tfidf.csv
 │       ├── regression_coefficients_dense.csv
+│       ├── regression_coefficients_chroma.csv
 │       ├── regression_coefficients_style_only_tfidf.csv
 │       ├── regression_coefficients_style_only_dense.csv
+│       ├── regression_coefficients_style_only_chroma.csv
 │       ├── regression_summary_tfidf.txt
-│       └── regression_summary_dense.txt
+│       ├── regression_summary_dense.txt
+│       └── regression_summary_chroma.txt
 │
 ├── scripts
 │   ├── prepare_dataset.py
@@ -109,7 +118,8 @@ SP26-CS498-Selective-Memory
 │   │   └── logistic_regression.py
 │   ├── retrieval
 │   │   ├── dense_retriever.py
-│   │   └── tfidf_retriever.py
+│   │   ├── tfidf_retriever.py
+│   │   └── chroma_retriever.py
 │   └── utils
 │       └── helpers.py
 │
@@ -128,10 +138,13 @@ The pipeline consists of four major stages:
 Raw conversation data is cleaned and normalized into a standardized format.
 
 ### 2. Retrieval Simulation
-Two retrieval mechanisms simulate how AI assistants retrieve conversational messages:
+Three retrieval mechanisms simulate how AI assistants retrieve conversational messages:
 
 • **TF-IDF retrieval** – lexical similarity baseline  
-• **Dense retrieval (Sentence-BERT)** – semantic similarity retrieval
+• **Dense retrieval (Sentence-BERT)** – semantic similarity retrieval  
+• **ChromaDB retrieval** – vector database powered semantic retrieval
+
+The ChromaDB implementation stores Sentence-BERT embeddings in a vector database and performs nearest-neighbor similarity search to retrieve the most relevant messages.
 
 ### 3. Retrieval Analysis
 Speaker fairness metrics and logistic regression models analyze which messages are selected.
@@ -169,9 +182,7 @@ Python 3.9+
 ## Step 1 — Prepare Dataset
 
 ```bash
-python3 scripts/prepare_dataset.py \
-  --input data/raw/conversations.csv \
-  --output data/processed/conversations_clean.csv
+python3 scripts/prepare_dataset.py   --input data/raw/conversations.csv   --output data/processed/conversations_clean.csv
 ```
 
 ## Step 2 — Run Retrieval
@@ -179,21 +190,19 @@ python3 scripts/prepare_dataset.py \
 TF-IDF:
 
 ```bash
-python3 scripts/run_retrieval.py \
-  --input data/processed/conversations_clean.csv \
-  --output outputs/results/retrieval_results_tfidf.csv \
-  --top-k 5 \
-  --retriever tfidf
+python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results_tfidf.csv   --top-k 5   --retriever tfidf
 ```
 
 Dense Retrieval:
 
 ```bash
-python3 scripts/run_retrieval.py \
-  --input data/processed/conversations_clean.csv \
-  --output outputs/results/retrieval_results_dense.csv \
-  --top-k 5 \
-  --retriever dense
+python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results_dense.csv   --top-k 5   --retriever dense
+```
+
+ChromaDB Retrieval:
+
+```bash
+python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results_chroma.csv   --top-k 5   --retriever chroma
 ```
 
 ## Step 3 — Run Analysis
@@ -204,6 +213,10 @@ python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.
 
 ```bash
 python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results_dense.csv   --output-dir outputs/results
+```
+
+```bash
+python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results_chroma.csv   --output-dir outputs/results
 ```
 
 ## Step 4 — Visualization
@@ -231,14 +244,16 @@ The visualization script generates several figures for analysis.
 Shows how often each speaker participates versus how often they are retrieved.
 
 • TF-IDF Retrieval  
-• Dense Retrieval
+• Dense Retrieval  
+• ChromaDB Retrieval
 
 ### Retrieval Distribution Histogram
 
 Displays how retrieved messages are distributed across speakers.
 
 • TF-IDF histogram  
-• Dense histogram
+• Dense histogram  
+• Chroma histogram
 
 ### Speaker Representation Ratio
 
@@ -302,6 +317,7 @@ pandas
 numpy
 scikit-learn
 sentence-transformers
+chromadb
 matplotlib
 ```
 
@@ -320,6 +336,7 @@ pip install -r requirements.txt
 Dataset preprocessing | Complete |
 TF-IDF retrieval | Complete |
 Dense retrieval | Complete |
+ChromaDB retrieval | Complete |
 Fairness metrics | Complete |
 Linguistic feature extraction | Complete |
 Regression analysis | Complete |

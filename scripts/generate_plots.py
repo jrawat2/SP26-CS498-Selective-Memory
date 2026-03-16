@@ -20,19 +20,26 @@ def load_metrics(filename: str) -> pd.DataFrame:
 def plot_representation_ratio_comparison(
     df_tfidf: pd.DataFrame,
     df_dense: pd.DataFrame,
+    df_chroma: pd.DataFrame,
 ) -> None:
     merged = df_tfidf[["speaker", "representation_ratio"]].merge(
         df_dense[["speaker", "representation_ratio"]],
         on="speaker",
         suffixes=("_tfidf", "_dense"),
+    ).merge(
+        df_chroma[["speaker", "representation_ratio"]],
+        on="speaker",
     )
 
+    merged = merged.rename(columns={"representation_ratio": "representation_ratio_chroma"})
+
     x = range(len(merged))
-    width = 0.35
+    width = 0.25
 
     plt.figure(figsize=(10, 6))
-    plt.bar([i - width / 2 for i in x], merged["representation_ratio_tfidf"], width=width, label="TF-IDF")
-    plt.bar([i + width / 2 for i in x], merged["representation_ratio_dense"], width=width, label="Dense")
+    plt.bar([i - width for i in x], merged["representation_ratio_tfidf"], width=width, label="TF-IDF")
+    plt.bar(x, merged["representation_ratio_dense"], width=width, label="Dense")
+    plt.bar([i + width for i in x], merged["representation_ratio_chroma"], width=width, label="Chroma")
 
     plt.axhline(1.0, linestyle="--", linewidth=1)
     plt.xticks(list(x), merged["speaker"])
@@ -75,12 +82,14 @@ def plot_participation_vs_retrieval(
 def plot_gini_comparison(
     df_tfidf: pd.DataFrame,
     df_dense: pd.DataFrame,
+    df_chroma: pd.DataFrame,
 ) -> None:
     gini_tfidf = float(df_tfidf["gini"].iloc[0])
     gini_dense = float(df_dense["gini"].iloc[0])
+    gini_chroma = float(df_chroma["gini"].iloc[0])
 
-    methods = ["TF-IDF", "Dense"]
-    gini_values = [gini_tfidf, gini_dense]
+    methods = ["TF-IDF", "Dense", "Chroma"]
+    gini_values = [gini_tfidf, gini_dense, gini_chroma]
 
     plt.figure(figsize=(8, 5))
     plt.bar(methods, gini_values)
@@ -97,12 +106,21 @@ def plot_gini_comparison(
 def save_summary_table(
     df_tfidf: pd.DataFrame,
     df_dense: pd.DataFrame,
+    df_chroma: pd.DataFrame,
 ) -> None:
     summary = pd.DataFrame(
         {
-            "retriever": ["tfidf", "dense"],
-            "gini": [float(df_tfidf["gini"].iloc[0]), float(df_dense["gini"].iloc[0])],
-            "max_gap": [float(df_tfidf["max_gap"].iloc[0]), float(df_dense["max_gap"].iloc[0])],
+            "retriever": ["tfidf", "dense", "chroma"],
+            "gini": [
+                float(df_tfidf["gini"].iloc[0]),
+                float(df_dense["gini"].iloc[0]),
+                float(df_chroma["gini"].iloc[0]),
+            ],
+            "max_gap": [
+                float(df_tfidf["max_gap"].iloc[0]),
+                float(df_dense["max_gap"].iloc[0]),
+                float(df_chroma["max_gap"].iloc[0]),
+            ],
         }
     )
 
@@ -149,14 +167,17 @@ def main() -> None:
 
     df_tfidf = load_metrics("speaker_metrics_tfidf.csv")
     df_dense = load_metrics("speaker_metrics_dense.csv")
+    df_chroma = load_metrics("speaker_metrics_chroma.csv")
 
-    plot_representation_ratio_comparison(df_tfidf, df_dense)
+    plot_representation_ratio_comparison(df_tfidf, df_dense, df_chroma)
     plot_participation_vs_retrieval(df_tfidf, "TFIDF")
     plot_participation_vs_retrieval(df_dense, "Dense")
-    plot_gini_comparison(df_tfidf, df_dense)
-    save_summary_table(df_tfidf, df_dense)
+    plot_participation_vs_retrieval(df_chroma, "Chroma")
+    plot_gini_comparison(df_tfidf, df_dense, df_chroma)
+    save_summary_table(df_tfidf, df_dense, df_chroma)
     plot_retrieval_histogram(df_tfidf, "TFIDF")
     plot_retrieval_histogram(df_dense, "Dense")
+    plot_retrieval_histogram(df_chroma, "Chroma")
 
     print("\nAll plots generated successfully.")
 

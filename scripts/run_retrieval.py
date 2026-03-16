@@ -11,6 +11,7 @@ sys.path.append(str(ROOT / "src"))
 
 from selective_memory.retrieval.tfidf_retriever import TfidfRetriever  # noqa: E402
 from selective_memory.retrieval.dense_retriever import DenseRetriever  # noqa: E402
+from selective_memory.retrieval.chroma_retriever import ChromaRetriever  # noqa: E402
 
 
 STANDARD_QUERIES = [
@@ -29,9 +30,11 @@ def build_retriever(retriever_name: str):
         return TfidfRetriever()
     if retriever_name == "dense":
         return DenseRetriever()
+    if retriever_name == "chroma":
+        return ChromaRetriever()
 
     raise ValueError(
-        f"Unsupported retriever '{retriever_name}'. Use one of: ['tfidf', 'dense']"
+        f"Unsupported retriever '{retriever_name}'. Use one of: ['tfidf', 'dense', 'chroma']"
     )
 
 
@@ -146,7 +149,7 @@ if __name__ == "__main__":
         "--retriever",
         type=str,
         default="tfidf",
-        choices=["tfidf", "dense"],
+        choices=["tfidf", "dense", "chroma"],
         help="Retriever type to use",
     )
     args = parser.parse_args()
