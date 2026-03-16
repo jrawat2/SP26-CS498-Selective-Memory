@@ -22,14 +22,14 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
     df_messages = pd.read_csv(messages_path)
     df_retrieval = pd.read_csv(retrieval_path)
 
-    required_message_cols = {"msg_id", "speaker", "message"}
+    required_message_cols = {"message_uid", "speaker", "message"}
     missing_message_cols = required_message_cols - set(df_messages.columns)
     if missing_message_cols:
         raise ValueError(
             f"Messages file is missing required columns: {sorted(missing_message_cols)}"
         )
 
-    required_retrieval_cols = {"retrieved_msg_id"}
+    required_retrieval_cols = {"retrieved_message_uid", "retriever"}
     missing_retrieval_cols = required_retrieval_cols - set(df_retrieval.columns)
     if missing_retrieval_cols:
         raise ValueError(
@@ -39,16 +39,17 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
     df_messages = df_messages.copy()
     df_retrieval = df_retrieval.copy()
 
-    df_messages["msg_id"] = pd.to_numeric(df_messages["msg_id"], errors="coerce")
-    df_retrieval["retrieved_msg_id"] = pd.to_numeric(
-        df_retrieval["retrieved_msg_id"], errors="coerce"
-    )
+    retriever_values = df_retrieval["retriever"].dropna().astype(str).unique().tolist()
+    if len(retriever_values) != 1:
+        raise ValueError(
+            f"Expected exactly one retriever type in retrieval file, found: {retriever_values}"
+        )
 
-    df_messages = df_messages.dropna(subset=["msg_id"]).copy()
-    df_retrieval = df_retrieval.dropna(subset=["retrieved_msg_id"]).copy()
+    retriever_type = retriever_values[0].lower()
+    suffix = f"_{retriever_type}"
 
-    df_messages["msg_id"] = df_messages["msg_id"].astype(int)
-    df_retrieval["retrieved_msg_id"] = df_retrieval["retrieved_msg_id"].astype(int)
+    df_messages["message_uid"] = df_messages["message_uid"].astype(str)
+    df_retrieval["retrieved_message_uid"] = df_retrieval["retrieved_message_uid"].astype(str)
 
     # Feature extraction
     df_messages = extract_linguistic_features(df_messages)
@@ -57,8 +58,8 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
     df_labeled = build_message_level_retrieval_labels(
         df_messages=df_messages,
         df_retrieval=df_retrieval,
-        msg_id_col="msg_id",
-        retrieved_msg_id_col="retrieved_msg_id",
+        msg_id_col="message_uid",
+        retrieved_msg_id_col="retrieved_message_uid",
     )
 
     # Speaker-level fairness metrics
@@ -66,7 +67,7 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
         df_messages=df_messages,
         df_retrieval=df_retrieval,
         speaker_col="speaker",
-        msg_id_col="msg_id",
+        msg_id_col="message_uid",
     )
 
     # Regression 1: style + speaker
@@ -80,11 +81,11 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    speaker_metrics_path = output_path / "speaker_metrics.csv"
-    message_features_path = output_path / "message_level_features.csv"
-    regression_summary_path = output_path / "regression_summary.txt"
-    coefficients_full_path = output_path / "regression_coefficients.csv"
-    coefficients_style_path = output_path / "regression_coefficients_style_only.csv"
+    speaker_metrics_path = output_path / f"speaker_metrics{suffix}.csv"
+    message_features_path = output_path / f"message_level_features{suffix}.csv"
+    regression_summary_path = output_path / f"regression_summary{suffix}.txt"
+    coefficients_full_path = output_path / f"regression_coefficients{suffix}.csv"
+    coefficients_style_path = output_path / f"regression_coefficients_style_only{suffix}.csv"
 
     speaker_metrics.to_csv(speaker_metrics_path, index=False)
     df_labeled.to_csv(message_features_path, index=False)
@@ -100,6 +101,7 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
         f.write("Logistic regression fitted successfully.\n")
         f.write("Proposal-style retrieval setting: standardized queries per conversation.\n\n")
 
+        f.write(f"Retriever: {retriever_type}\n")
         f.write(f"Total messages: {total_messages}\n")
         f.write(f"Total unique retrieved messages: {total_retrieved_unique}\n")
         f.write(f"Total retrieval events: {total_retrieval_events}\n")
@@ -130,8 +132,8 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
         )
 
         f.write("Top coefficients saved in:\n")
-        f.write("- regression_coefficients.csv\n")
-        f.write("- regression_coefficients_style_only.csv\n")
+        f.write(f"- {coefficients_full_path.name}\n")
+        f.write(f"- {coefficients_style_path.name}\n")
 
     print(f"Saved speaker metrics to: {speaker_metrics_path}")
     print(f"Saved message-level features to: {message_features_path}")
@@ -140,6 +142,7 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
     print(f"Saved style-only regression coefficients to: {coefficients_style_path}")
 
     print("\nAnalysis diagnostics:")
+    print(f"Retriever: {retriever_type}")
     print(f"Total messages: {total_messages}")
     print(f"Total unique retrieved messages: {total_retrieved_unique}")
     print(f"Total retrieval events: {total_retrieval_events}")

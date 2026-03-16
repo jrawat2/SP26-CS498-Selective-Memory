@@ -1,0 +1,626 @@
+conv_id,query_id,query_text,retrieved_message_uid,rank,score,retriever
+c1,0,What is the main topic of discussion?,c1_56,1,0.36488470435142517,dense
+c1,0,What is the main topic of discussion?,c1_6,2,0.3501591682434082,dense
+c1,0,What is the main topic of discussion?,c1_10,3,0.3444365859031677,dense
+c1,0,What is the main topic of discussion?,c1_60,4,0.3296356797218323,dense
+c1,0,What is the main topic of discussion?,c1_27,5,0.3296356797218323,dense
+c1,1,What are the key points being discussed?,c1_33,1,0.37124669551849365,dense
+c1,1,What are the key points being discussed?,c1_60,2,0.35996803641319275,dense
+c1,1,What are the key points being discussed?,c1_27,3,0.35996803641319275,dense
+c1,1,What are the key points being discussed?,c1_36,4,0.35996803641319275,dense
+c1,1,What are the key points being discussed?,c1_38,5,0.35996803641319275,dense
+c1,2,What decisions were made?,c1_4,1,0.19726377725601196,dense
+c1,2,What decisions were made?,c1_1,2,0.19261521100997925,dense
+c1,2,What decisions were made?,c1_38,3,0.1858321726322174,dense
+c1,2,What decisions were made?,c1_27,4,0.1858321726322174,dense
+c1,2,What decisions were made?,c1_36,5,0.1858321726322174,dense
+c1,3,What concerns were raised?,c1_33,1,0.3770967721939087,dense
+c1,3,What concerns were raised?,c1_43,2,0.3587604761123657,dense
+c1,3,What concerns were raised?,c1_16,3,0.3587604761123657,dense
+c1,3,What concerns were raised?,c1_39,4,0.3587604761123657,dense
+c1,3,What concerns were raised?,c1_20,5,0.3587604761123657,dense
+c1,4,What is the recommended approach?,c1_8,1,0.42024171352386475,dense
+c1,4,What is the recommended approach?,c1_19,2,0.4169856905937195,dense
+c1,4,What is the recommended approach?,c1_11,3,0.41415053606033325,dense
+c1,4,What is the recommended approach?,c1_3,4,0.4092472195625305,dense
+c1,4,What is the recommended approach?,c1_15,5,0.3972288966178894,dense
+c10,0,What is the main topic of discussion?,c10_50,1,0.37895551323890686,dense
+c10,0,What is the main topic of discussion?,c10_55,2,0.3437265157699585,dense
+c10,0,What is the main topic of discussion?,c10_65,3,0.32690104842185974,dense
+c10,0,What is the main topic of discussion?,c10_40,4,0.32690104842185974,dense
+c10,0,What is the main topic of discussion?,c10_49,5,0.32690104842185974,dense
+c10,1,What are the key points being discussed?,c10_61,1,0.4035790264606476,dense
+c10,1,What are the key points being discussed?,c10_38,2,0.3825116753578186,dense
+c10,1,What are the key points being discussed?,c10_33,3,0.37189680337905884,dense
+c10,1,What are the key points being discussed?,c10_60,4,0.35685810446739197,dense
+c10,1,What are the key points being discussed?,c10_25,5,0.3471549451351166,dense
+c10,2,What decisions were made?,c10_24,1,0.2126387655735016,dense
+c10,2,What decisions were made?,c10_66,2,0.2081318497657776,dense
+c10,2,What decisions were made?,c10_33,3,0.20500634610652924,dense
+c10,2,What decisions were made?,c10_51,4,0.19566163420677185,dense
+c10,2,What decisions were made?,c10_47,5,0.19566163420677185,dense
+c10,3,What concerns were raised?,c10_67,1,0.23416782915592194,dense
+c10,3,What concerns were raised?,c10_26,2,0.23416782915592194,dense
+c10,3,What concerns were raised?,c10_63,3,0.23416782915592194,dense
+c10,3,What concerns were raised?,c10_9,4,0.22903771698474884,dense
+c10,3,What concerns were raised?,c10_27,5,0.22885705530643463,dense
+c10,4,What is the recommended approach?,c10_66,1,0.24864892661571503,dense
+c10,4,What is the recommended approach?,c10_16,2,0.19329768419265747,dense
+c10,4,What is the recommended approach?,c10_33,3,0.18424302339553833,dense
+c10,4,What is the recommended approach?,c10_28,4,0.18273252248764038,dense
+c10,4,What is the recommended approach?,c10_1,5,0.1763080358505249,dense
+c11,0,What is the main topic of discussion?,c11_36,1,0.3629103899002075,dense
+c11,0,What is the main topic of discussion?,c11_5,2,0.3367421627044678,dense
+c11,0,What is the main topic of discussion?,c11_49,3,0.33284929394721985,dense
+c11,0,What is the main topic of discussion?,c11_6,4,0.33284929394721985,dense
+c11,0,What is the main topic of discussion?,c11_18,5,0.33284929394721985,dense
+c11,1,What are the key points being discussed?,c11_6,1,0.5155107975006104,dense
+c11,1,What are the key points being discussed?,c11_18,2,0.5155107975006104,dense
+c11,1,What are the key points being discussed?,c11_49,3,0.5155107975006104,dense
+c11,1,What are the key points being discussed?,c11_23,4,0.40821003913879395,dense
+c11,1,What are the key points being discussed?,c11_25,5,0.4017730951309204,dense
+c11,2,What decisions were made?,c11_49,1,0.2632044851779938,dense
+c11,2,What decisions were made?,c11_6,2,0.2632044851779938,dense
+c11,2,What decisions were made?,c11_18,3,0.2632044851779938,dense
+c11,2,What decisions were made?,c11_38,4,0.25323349237442017,dense
+c11,2,What decisions were made?,c11_9,5,0.22422727942466736,dense
+c11,3,What concerns were raised?,c11_17,1,0.33769771456718445,dense
+c11,3,What concerns were raised?,c11_49,2,0.29719024896621704,dense
+c11,3,What concerns were raised?,c11_6,3,0.29719024896621704,dense
+c11,3,What concerns were raised?,c11_18,4,0.29719024896621704,dense
+c11,3,What concerns were raised?,c11_50,5,0.2631693482398987,dense
+c11,4,What is the recommended approach?,c11_16,1,0.28021419048309326,dense
+c11,4,What is the recommended approach?,c11_21,2,0.24524803459644318,dense
+c11,4,What is the recommended approach?,c11_9,3,0.24313047528266907,dense
+c11,4,What is the recommended approach?,c11_38,4,0.21739034354686737,dense
+c11,4,What is the recommended approach?,c11_14,5,0.2029280662536621,dense
+c12,0,What is the main topic of discussion?,c12_1,1,0.43200254440307617,dense
+c12,0,What is the main topic of discussion?,c12_47,2,0.3568033277988434,dense
+c12,0,What is the main topic of discussion?,c12_27,3,0.3460240960121155,dense
+c12,0,What is the main topic of discussion?,c12_26,4,0.3451676368713379,dense
+c12,0,What is the main topic of discussion?,c12_31,5,0.3451676368713379,dense
+c12,1,What are the key points being discussed?,c12_47,1,0.4208209812641144,dense
+c12,1,What are the key points being discussed?,c12_64,2,0.36633557081222534,dense
+c12,1,What are the key points being discussed?,c12_22,3,0.359340101480484,dense
+c12,1,What are the key points being discussed?,c12_1,4,0.35491305589675903,dense
+c12,1,What are the key points being discussed?,c12_59,5,0.3460685610771179,dense
+c12,2,What decisions were made?,c12_30,1,0.24829864501953125,dense
+c12,2,What decisions were made?,c12_64,2,0.2362130731344223,dense
+c12,2,What decisions were made?,c12_20,3,0.22680819034576416,dense
+c12,2,What decisions were made?,c12_59,4,0.2208973914384842,dense
+c12,2,What decisions were made?,c12_56,5,0.20858043432235718,dense
+c12,3,What concerns were raised?,c12_3,1,0.3299013376235962,dense
+c12,3,What concerns were raised?,c12_38,2,0.3191376030445099,dense
+c12,3,What concerns were raised?,c12_2,3,0.3014839291572571,dense
+c12,3,What concerns were raised?,c12_28,4,0.2862827777862549,dense
+c12,3,What concerns were raised?,c12_41,5,0.28395727276802063,dense
+c12,4,What is the recommended approach?,c12_22,1,0.21716971695423126,dense
+c12,4,What is the recommended approach?,c12_1,2,0.21412929892539978,dense
+c12,4,What is the recommended approach?,c12_17,3,0.21276426315307617,dense
+c12,4,What is the recommended approach?,c12_30,4,0.20899957418441772,dense
+c12,4,What is the recommended approach?,c12_61,5,0.20631203055381775,dense
+c13,0,What is the main topic of discussion?,c13_47,1,0.34357398748397827,dense
+c13,0,What is the main topic of discussion?,c13_27,2,0.34177982807159424,dense
+c13,0,What is the main topic of discussion?,c13_19,3,0.3331330716609955,dense
+c13,0,What is the main topic of discussion?,c13_55,4,0.32690104842185974,dense
+c13,0,What is the main topic of discussion?,c13_61,5,0.32237499952316284,dense
+c13,1,What are the key points being discussed?,c13_46,1,0.42673176527023315,dense
+c13,1,What are the key points being discussed?,c13_37,2,0.40291768312454224,dense
+c13,1,What are the key points being discussed?,c13_34,3,0.38446858525276184,dense
+c13,1,What are the key points being discussed?,c13_25,4,0.3614170253276825,dense
+c13,1,What are the key points being discussed?,c13_4,5,0.3612913191318512,dense
+c13,2,What decisions were made?,c13_57,1,0.22891703248023987,dense
+c13,2,What decisions were made?,c13_4,2,0.2225196361541748,dense
+c13,2,What decisions were made?,c13_24,3,0.21388846635818481,dense
+c13,2,What decisions were made?,c13_30,4,0.21381449699401855,dense
+c13,2,What decisions were made?,c13_12,5,0.21155765652656555,dense
+c13,3,What concerns were raised?,c13_57,1,0.2819117605686188,dense
+c13,3,What concerns were raised?,c13_35,2,0.2528318166732788,dense
+c13,3,What concerns were raised?,c13_37,3,0.24569754302501678,dense
+c13,3,What concerns were raised?,c13_58,4,0.2436957061290741,dense
+c13,3,What concerns were raised?,c13_5,5,0.2436957061290741,dense
+c13,4,What is the recommended approach?,c13_50,1,0.34321048855781555,dense
+c13,4,What is the recommended approach?,c13_40,2,0.3038384020328522,dense
+c13,4,What is the recommended approach?,c13_29,3,0.26098769903182983,dense
+c13,4,What is the recommended approach?,c13_52,4,0.24864892661571503,dense
+c13,4,What is the recommended approach?,c13_10,5,0.24468959867954254,dense
+c14,0,What is the main topic of discussion?,c14_54,1,0.3614920675754547,dense
+c14,0,What is the main topic of discussion?,c14_42,2,0.35659414529800415,dense
+c14,0,What is the main topic of discussion?,c14_28,3,0.35659414529800415,dense
+c14,0,What is the main topic of discussion?,c14_19,4,0.35659414529800415,dense
+c14,0,What is the main topic of discussion?,c14_29,5,0.327066570520401,dense
+c14,1,What are the key points being discussed?,c14_19,1,0.40853285789489746,dense
+c14,1,What are the key points being discussed?,c14_28,2,0.40853285789489746,dense
+c14,1,What are the key points being discussed?,c14_42,3,0.40853285789489746,dense
+c14,1,What are the key points being discussed?,c14_47,4,0.40478789806365967,dense
+c14,1,What are the key points being discussed?,c14_24,5,0.3992314338684082,dense
+c14,2,What decisions were made?,c14_42,1,0.22267746925354004,dense
+c14,2,What decisions were made?,c14_19,2,0.22267746925354004,dense
+c14,2,What decisions were made?,c14_28,3,0.22267746925354004,dense
+c14,2,What decisions were made?,c14_17,4,0.2200196087360382,dense
+c14,2,What decisions were made?,c14_61,5,0.21177025139331818,dense
+c14,3,What concerns were raised?,c14_37,1,0.2739327847957611,dense
+c14,3,What concerns were raised?,c14_19,2,0.25878477096557617,dense
+c14,3,What concerns were raised?,c14_42,3,0.25878477096557617,dense
+c14,3,What concerns were raised?,c14_28,4,0.25878477096557617,dense
+c14,3,What concerns were raised?,c14_51,5,0.24147793650627136,dense
+c14,4,What is the recommended approach?,c14_50,1,0.3378017246723175,dense
+c14,4,What is the recommended approach?,c14_35,2,0.30476728081703186,dense
+c14,4,What is the recommended approach?,c14_3,3,0.30332353711128235,dense
+c14,4,What is the recommended approach?,c14_39,4,0.266012966632843,dense
+c14,4,What is the recommended approach?,c14_24,5,0.25908756256103516,dense
+c15,0,What is the main topic of discussion?,c15_1,1,0.43200254440307617,dense
+c15,0,What is the main topic of discussion?,c15_55,2,0.3483503758907318,dense
+c15,0,What is the main topic of discussion?,c15_42,3,0.3417055308818817,dense
+c15,0,What is the main topic of discussion?,c15_63,4,0.33807671070098877,dense
+c15,0,What is the main topic of discussion?,c15_40,5,0.33713018894195557,dense
+c15,1,What are the key points being discussed?,c15_10,1,0.3664504885673523,dense
+c15,1,What are the key points being discussed?,c15_1,2,0.35491305589675903,dense
+c15,1,What are the key points being discussed?,c15_4,3,0.34961116313934326,dense
+c15,1,What are the key points being discussed?,c15_44,4,0.34836235642433167,dense
+c15,1,What are the key points being discussed?,c15_51,5,0.3460685610771179,dense
+c15,2,What decisions were made?,c15_51,1,0.22089743614196777,dense
+c15,2,What decisions were made?,c15_24,2,0.22089743614196777,dense
+c15,2,What decisions were made?,c15_12,3,0.21669165790081024,dense
+c15,2,What decisions were made?,c15_48,4,0.20865605771541595,dense
+c15,2,What decisions were made?,c15_38,5,0.20793311297893524,dense
+c15,3,What concerns were raised?,c15_25,1,0.3854517936706543,dense
+c15,3,What concerns were raised?,c15_44,2,0.37717026472091675,dense
+c15,3,What concerns were raised?,c15_52,3,0.3249986469745636,dense
+c15,3,What concerns were raised?,c15_41,4,0.31111109256744385,dense
+c15,3,What concerns were raised?,c15_11,5,0.2778523862361908,dense
+c15,4,What is the recommended approach?,c15_70,1,0.2748678922653198,dense
+c15,4,What is the recommended approach?,c15_18,2,0.2748678922653198,dense
+c15,4,What is the recommended approach?,c15_10,3,0.25546690821647644,dense
+c15,4,What is the recommended approach?,c15_71,4,0.22902357578277588,dense
+c15,4,What is the recommended approach?,c15_66,5,0.22902357578277588,dense
+c16,0,What is the main topic of discussion?,c16_42,1,0.33058008551597595,dense
+c16,0,What is the main topic of discussion?,c16_1,2,0.3200283646583557,dense
+c16,0,What is the main topic of discussion?,c16_11,3,0.31780654191970825,dense
+c16,0,What is the main topic of discussion?,c16_30,4,0.31775641441345215,dense
+c16,0,What is the main topic of discussion?,c16_69,5,0.3176577687263489,dense
+c16,1,What are the key points being discussed?,c16_61,1,0.449969083070755,dense
+c16,1,What are the key points being discussed?,c16_48,2,0.4296833276748657,dense
+c16,1,What are the key points being discussed?,c16_53,3,0.4090867042541504,dense
+c16,1,What are the key points being discussed?,c16_11,4,0.40460556745529175,dense
+c16,1,What are the key points being discussed?,c16_45,5,0.38157346844673157,dense
+c16,2,What decisions were made?,c16_11,1,0.23052442073822021,dense
+c16,2,What decisions were made?,c16_65,2,0.23026826977729797,dense
+c16,2,What decisions were made?,c16_14,3,0.22001969814300537,dense
+c16,2,What decisions were made?,c16_68,4,0.22001969814300537,dense
+c16,2,What decisions were made?,c16_62,5,0.2081318497657776,dense
+c16,3,What concerns were raised?,c16_61,1,0.25344133377075195,dense
+c16,3,What concerns were raised?,c16_4,2,0.24321752786636353,dense
+c16,3,What concerns were raised?,c16_18,3,0.23416784405708313,dense
+c16,3,What concerns were raised?,c16_40,4,0.23032930493354797,dense
+c16,3,What concerns were raised?,c16_48,5,0.2266152948141098,dense
+c16,4,What is the recommended approach?,c16_23,1,0.32661208510398865,dense
+c16,4,What is the recommended approach?,c16_21,2,0.266012966632843,dense
+c16,4,What is the recommended approach?,c16_63,3,0.24864892661571503,dense
+c16,4,What is the recommended approach?,c16_49,4,0.24864892661571503,dense
+c16,4,What is the recommended approach?,c16_62,5,0.24864892661571503,dense
+c17,0,What is the main topic of discussion?,c17_43,1,0.3614920675754547,dense
+c17,0,What is the main topic of discussion?,c17_5,2,0.36058467626571655,dense
+c17,0,What is the main topic of discussion?,c17_11,3,0.34661731123924255,dense
+c17,0,What is the main topic of discussion?,c17_33,4,0.3433111608028412,dense
+c17,0,What is the main topic of discussion?,c17_61,5,0.32690104842185974,dense
+c17,1,What are the key points being discussed?,c17_18,1,0.43279266357421875,dense
+c17,1,What are the key points being discussed?,c17_49,2,0.40821003913879395,dense
+c17,1,What are the key points being discussed?,c17_42,3,0.3718969225883484,dense
+c17,1,What are the key points being discussed?,c17_25,4,0.3621658384799957,dense
+c17,1,What are the key points being discussed?,c17_13,5,0.361625611782074,dense
+c17,2,What decisions were made?,c17_59,1,0.2081318497657776,dense
+c17,2,What decisions were made?,c17_16,2,0.2081318497657776,dense
+c17,2,What decisions were made?,c17_42,3,0.20500639081001282,dense
+c17,2,What decisions were made?,c17_27,4,0.19565244019031525,dense
+c17,2,What decisions were made?,c17_38,5,0.19529405236244202,dense
+c17,3,What concerns were raised?,c17_45,1,0.2521405816078186,dense
+c17,3,What concerns were raised?,c17_57,2,0.251371294260025,dense
+c17,3,What concerns were raised?,c17_7,3,0.24690252542495728,dense
+c17,3,What concerns were raised?,c17_8,4,0.2436957061290741,dense
+c17,3,What concerns were raised?,c17_18,5,0.22495171427726746,dense
+c17,4,What is the recommended approach?,c17_23,1,0.25600266456604004,dense
+c17,4,What is the recommended approach?,c17_16,2,0.24864892661571503,dense
+c17,4,What is the recommended approach?,c17_59,3,0.24864892661571503,dense
+c17,4,What is the recommended approach?,c17_38,4,0.19112728536128998,dense
+c17,4,What is the recommended approach?,c17_42,5,0.1842428743839264,dense
+c18,0,What is the main topic of discussion?,c18_3,1,0.35977092385292053,dense
+c18,0,What is the main topic of discussion?,c18_12,2,0.35756397247314453,dense
+c18,0,What is the main topic of discussion?,c18_29,3,0.341516375541687,dense
+c18,0,What is the main topic of discussion?,c18_34,4,0.3296356797218323,dense
+c18,0,What is the main topic of discussion?,c18_30,5,0.31874385476112366,dense
+c18,1,What are the key points being discussed?,c18_3,1,0.3873565196990967,dense
+c18,1,What are the key points being discussed?,c18_12,2,0.38271254301071167,dense
+c18,1,What are the key points being discussed?,c18_34,3,0.35996803641319275,dense
+c18,1,What are the key points being discussed?,c18_11,4,0.3228742480278015,dense
+c18,1,What are the key points being discussed?,c18_23,5,0.3226187229156494,dense
+c18,2,What decisions were made?,c18_1,1,0.19261521100997925,dense
+c18,2,What decisions were made?,c18_3,2,0.18614038825035095,dense
+c18,2,What decisions were made?,c18_34,3,0.1858321726322174,dense
+c18,2,What decisions were made?,c18_12,4,0.18527254462242126,dense
+c18,2,What decisions were made?,c18_11,5,0.1798197329044342,dense
+c18,3,What concerns were raised?,c18_31,1,0.34619683027267456,dense
+c18,3,What concerns were raised?,c18_3,2,0.2580210268497467,dense
+c18,3,What concerns were raised?,c18_12,3,0.25717729330062866,dense
+c18,3,What concerns were raised?,c18_34,4,0.24427460134029388,dense
+c18,3,What concerns were raised?,c18_23,5,0.2409711331129074,dense
+c18,4,What is the recommended approach?,c18_18,1,0.4429958462715149,dense
+c18,4,What is the recommended approach?,c18_36,2,0.4284179210662842,dense
+c18,4,What is the recommended approach?,c18_55,3,0.41415053606033325,dense
+c18,4,What is the recommended approach?,c18_50,4,0.41415053606033325,dense
+c18,4,What is the recommended approach?,c18_25,5,0.41415053606033325,dense
+c19,0,What is the main topic of discussion?,c19_37,1,0.4926353096961975,dense
+c19,0,What is the main topic of discussion?,c19_26,2,0.4810016453266144,dense
+c19,0,What is the main topic of discussion?,c19_32,3,0.47460705041885376,dense
+c19,0,What is the main topic of discussion?,c19_22,4,0.43992486596107483,dense
+c19,0,What is the main topic of discussion?,c19_34,5,0.4081006348133087,dense
+c19,1,What are the key points being discussed?,c19_37,1,0.5089215636253357,dense
+c19,1,What are the key points being discussed?,c19_32,2,0.4908427596092224,dense
+c19,1,What are the key points being discussed?,c19_26,3,0.48996928334236145,dense
+c19,1,What are the key points being discussed?,c19_22,4,0.4713677763938904,dense
+c19,1,What are the key points being discussed?,c19_34,5,0.4358012080192566,dense
+c19,2,What decisions were made?,c19_28,1,0.4805455207824707,dense
+c19,2,What decisions were made?,c19_19,2,0.4805455207824707,dense
+c19,2,What decisions were made?,c19_17,3,0.47819846868515015,dense
+c19,2,What decisions were made?,c19_31,4,0.4647531807422638,dense
+c19,2,What decisions were made?,c19_34,5,0.39364320039749146,dense
+c19,3,What concerns were raised?,c19_37,1,0.29397645592689514,dense
+c19,3,What concerns were raised?,c19_31,2,0.2918856143951416,dense
+c19,3,What concerns were raised?,c19_28,3,0.29023998975753784,dense
+c19,3,What concerns were raised?,c19_19,4,0.29023998975753784,dense
+c19,3,What concerns were raised?,c19_26,5,0.2866557240486145,dense
+c19,4,What is the recommended approach?,c19_23,1,0.39695754647254944,dense
+c19,4,What is the recommended approach?,c19_39,2,0.28034982085227966,dense
+c19,4,What is the recommended approach?,c19_12,3,0.28034982085227966,dense
+c19,4,What is the recommended approach?,c19_36,4,0.28034982085227966,dense
+c19,4,What is the recommended approach?,c19_55,5,0.25003141164779663,dense
+c2,0,What is the main topic of discussion?,c2_1,1,0.43200254440307617,dense
+c2,0,What is the main topic of discussion?,c2_29,2,0.3451675772666931,dense
+c2,0,What is the main topic of discussion?,c2_52,3,0.3309440016746521,dense
+c2,0,What is the main topic of discussion?,c2_24,4,0.3215872645378113,dense
+c2,0,What is the main topic of discussion?,c2_38,5,0.3143389821052551,dense
+c2,1,What are the key points being discussed?,c2_59,1,0.37377816438674927,dense
+c2,1,What are the key points being discussed?,c2_1,2,0.35491305589675903,dense
+c2,1,What are the key points being discussed?,c2_13,3,0.3526001572608948,dense
+c2,1,What are the key points being discussed?,c2_15,4,0.34961116313934326,dense
+c2,1,What are the key points being discussed?,c2_62,5,0.3303270637989044,dense
+c2,2,What decisions were made?,c2_13,1,0.23258692026138306,dense
+c2,2,What decisions were made?,c2_62,2,0.20725944638252258,dense
+c2,2,What decisions were made?,c2_68,3,0.18216294050216675,dense
+c2,2,What decisions were made?,c2_1,4,0.18160380423069,dense
+c2,2,What decisions were made?,c2_31,5,0.15188312530517578,dense
+c2,3,What concerns were raised?,c2_64,1,0.3249986469745636,dense
+c2,3,What concerns were raised?,c2_43,2,0.3062624931335449,dense
+c2,3,What concerns were raised?,c2_10,3,0.27987605333328247,dense
+c2,3,What concerns were raised?,c2_13,4,0.24963292479515076,dense
+c2,3,What concerns were raised?,c2_62,5,0.24954110383987427,dense
+c2,4,What is the recommended approach?,c2_43,1,0.2771735191345215,dense
+c2,4,What is the recommended approach?,c2_1,2,0.21412929892539978,dense
+c2,4,What is the recommended approach?,c2_48,3,0.18528535962104797,dense
+c2,4,What is the recommended approach?,c2_64,4,0.1801917850971222,dense
+c2,4,What is the recommended approach?,c2_13,5,0.17778059840202332,dense
+c20,0,What is the main topic of discussion?,c20_1,1,0.43200254440307617,dense
+c20,0,What is the main topic of discussion?,c20_52,2,0.353823184967041,dense
+c20,0,What is the main topic of discussion?,c20_41,3,0.33543911576271057,dense
+c20,0,What is the main topic of discussion?,c20_39,4,0.3127845227718353,dense
+c20,0,What is the main topic of discussion?,c20_44,5,0.2996458411216736,dense
+c20,1,What are the key points being discussed?,c20_22,1,0.36209526658058167,dense
+c20,1,What are the key points being discussed?,c20_1,2,0.35491305589675903,dense
+c20,1,What are the key points being discussed?,c20_37,3,0.3460685610771179,dense
+c20,1,What are the key points being discussed?,c20_44,4,0.33686181902885437,dense
+c20,1,What are the key points being discussed?,c20_39,5,0.33089232444763184,dense
+c20,2,What decisions were made?,c20_37,1,0.22089743614196777,dense
+c20,2,What decisions were made?,c20_8,2,0.22009144723415375,dense
+c20,2,What decisions were made?,c20_42,3,0.18951661884784698,dense
+c20,2,What decisions were made?,c20_11,4,0.18951661884784698,dense
+c20,2,What decisions were made?,c20_18,5,0.18746887147426605,dense
+c20,3,What concerns were raised?,c20_15,1,0.3249986171722412,dense
+c20,3,What concerns were raised?,c20_3,2,0.3223922550678253,dense
+c20,3,What concerns were raised?,c20_13,3,0.31111109256744385,dense
+c20,3,What concerns were raised?,c20_46,4,0.3058544993400574,dense
+c20,3,What concerns were raised?,c20_17,5,0.3000904321670532,dense
+c20,4,What is the recommended approach?,c20_21,1,0.22304676473140717,dense
+c20,4,What is the recommended approach?,c20_1,2,0.21412929892539978,dense
+c20,4,What is the recommended approach?,c20_11,3,0.20598232746124268,dense
+c20,4,What is the recommended approach?,c20_42,4,0.20598232746124268,dense
+c20,4,What is the recommended approach?,c20_3,5,0.20595557987689972,dense
+c21,0,What is the main topic of discussion?,c21_1,1,0.43200254440307617,dense
+c21,0,What is the main topic of discussion?,c21_32,2,0.3568033277988434,dense
+c21,0,What is the main topic of discussion?,c21_36,3,0.3460240960121155,dense
+c21,0,What is the main topic of discussion?,c21_33,4,0.33256101608276367,dense
+c21,0,What is the main topic of discussion?,c21_10,5,0.33213168382644653,dense
+c21,1,What are the key points being discussed?,c21_32,1,0.4208209812641144,dense
+c21,1,What are the key points being discussed?,c21_1,2,0.35491305589675903,dense
+c21,1,What are the key points being discussed?,c21_38,3,0.34836235642433167,dense
+c21,1,What are the key points being discussed?,c21_51,4,0.33614635467529297,dense
+c21,1,What are the key points being discussed?,c21_49,5,0.32621848583221436,dense
+c21,2,What decisions were made?,c21_17,1,0.23633623123168945,dense
+c21,2,What decisions were made?,c21_49,2,0.21008668839931488,dense
+c21,2,What decisions were made?,c21_48,3,0.20595085620880127,dense
+c21,2,What decisions were made?,c21_50,4,0.19806472957134247,dense
+c21,2,What decisions were made?,c21_20,5,0.19806472957134247,dense
+c21,3,What concerns were raised?,c21_38,1,0.37717026472091675,dense
+c21,3,What concerns were raised?,c21_9,2,0.3249986171722412,dense
+c21,3,What concerns were raised?,c21_63,3,0.31538814306259155,dense
+c21,3,What concerns were raised?,c21_47,4,0.29403796792030334,dense
+c21,3,What concerns were raised?,c21_50,5,0.25388962030410767,dense
+c21,4,What is the recommended approach?,c21_21,1,0.24918456375598907,dense
+c21,4,What is the recommended approach?,c21_4,2,0.24669241905212402,dense
+c21,4,What is the recommended approach?,c21_23,3,0.24669241905212402,dense
+c21,4,What is the recommended approach?,c21_22,4,0.2304556518793106,dense
+c21,4,What is the recommended approach?,c21_47,5,0.22242885828018188,dense
+c22,0,What is the main topic of discussion?,c22_1,1,0.43200254440307617,dense
+c22,0,What is the main topic of discussion?,c22_14,2,0.33543911576271057,dense
+c22,0,What is the main topic of discussion?,c22_18,3,0.33543911576271057,dense
+c22,0,What is the main topic of discussion?,c22_32,4,0.33543911576271057,dense
+c22,0,What is the main topic of discussion?,c22_2,5,0.333506315946579,dense
+c22,1,What are the key points being discussed?,c22_40,1,0.36814141273498535,dense
+c22,1,What are the key points being discussed?,c22_5,2,0.36633557081222534,dense
+c22,1,What are the key points being discussed?,c22_1,3,0.35491305589675903,dense
+c22,1,What are the key points being discussed?,c22_49,4,0.34836235642433167,dense
+c22,1,What are the key points being discussed?,c22_7,5,0.33089232444763184,dense
+c22,2,What decisions were made?,c22_5,1,0.2362130731344223,dense
+c22,2,What decisions were made?,c22_1,2,0.18160380423069,dense
+c22,2,What decisions were made?,c22_15,3,0.16302427649497986,dense
+c22,2,What decisions were made?,c22_49,4,0.1605541706085205,dense
+c22,2,What decisions were made?,c22_40,5,0.15133248269557953,dense
+c22,3,What concerns were raised?,c22_49,1,0.37717026472091675,dense
+c22,3,What concerns were raised?,c22_20,2,0.3249986171722412,dense
+c22,3,What concerns were raised?,c22_28,3,0.3047269582748413,dense
+c22,3,What concerns were raised?,c22_5,4,0.25945255160331726,dense
+c22,3,What concerns were raised?,c22_40,5,0.18884842097759247,dense
+c22,4,What is the recommended approach?,c22_28,1,0.23143549263477325,dense
+c22,4,What is the recommended approach?,c22_1,2,0.21412929892539978,dense
+c22,4,What is the recommended approach?,c22_50,3,0.21276426315307617,dense
+c22,4,What is the recommended approach?,c22_41,4,0.18091437220573425,dense
+c22,4,What is the recommended approach?,c22_7,5,0.18091437220573425,dense
+c23,0,What is the main topic of discussion?,c23_1,1,0.43200254440307617,dense
+c23,0,What is the main topic of discussion?,c23_52,2,0.3311476707458496,dense
+c23,0,What is the main topic of discussion?,c23_58,3,0.32279172539711,dense
+c23,0,What is the main topic of discussion?,c23_34,4,0.3056428134441376,dense
+c23,0,What is the main topic of discussion?,c23_46,5,0.2984331250190735,dense
+c23,1,What are the key points being discussed?,c23_18,1,0.36633557081222534,dense
+c23,1,What are the key points being discussed?,c23_1,2,0.35491305589675903,dense
+c23,1,What are the key points being discussed?,c23_6,3,0.343798965215683,dense
+c23,1,What are the key points being discussed?,c23_21,4,0.3311489522457123,dense
+c23,1,What are the key points being discussed?,c23_57,5,0.32838040590286255,dense
+c23,2,What decisions were made?,c23_18,1,0.2362130731344223,dense
+c23,2,What decisions were made?,c23_57,2,0.22081077098846436,dense
+c23,2,What decisions were made?,c23_6,3,0.21716788411140442,dense
+c23,2,What decisions were made?,c23_21,4,0.21280521154403687,dense
+c23,2,What decisions were made?,c23_8,5,0.19837802648544312,dense
+c23,3,What concerns were raised?,c23_45,1,0.3191376030445099,dense
+c23,3,What concerns were raised?,c23_55,2,0.3191376030445099,dense
+c23,3,What concerns were raised?,c23_6,3,0.3162959814071655,dense
+c23,3,What concerns were raised?,c23_15,4,0.3047269582748413,dense
+c23,3,What concerns were raised?,c23_21,5,0.2638929784297943,dense
+c23,4,What is the recommended approach?,c23_49,1,0.30017614364624023,dense
+c23,4,What is the recommended approach?,c23_42,2,0.24918456375598907,dense
+c23,4,What is the recommended approach?,c23_8,3,0.2398919016122818,dense
+c23,4,What is the recommended approach?,c23_15,4,0.23143549263477325,dense
+c23,4,What is the recommended approach?,c23_1,5,0.21412929892539978,dense
+c24,0,What is the main topic of discussion?,c24_61,1,0.42797785997390747,dense
+c24,0,What is the main topic of discussion?,c24_57,2,0.3788386583328247,dense
+c24,0,What is the main topic of discussion?,c24_50,3,0.35977092385292053,dense
+c24,0,What is the main topic of discussion?,c24_6,4,0.3506771922111511,dense
+c24,0,What is the main topic of discussion?,c24_55,5,0.3186671733856201,dense
+c24,1,What are the key points being discussed?,c24_18,1,0.39945006370544434,dense
+c24,1,What are the key points being discussed?,c24_50,2,0.3873565196990967,dense
+c24,1,What are the key points being discussed?,c24_24,3,0.3534170985221863,dense
+c24,1,What are the key points being discussed?,c24_61,4,0.3432576060295105,dense
+c24,1,What are the key points being discussed?,c24_51,5,0.33648210763931274,dense
+c24,2,What decisions were made?,c24_38,1,0.21866224706172943,dense
+c24,2,What decisions were made?,c24_35,2,0.19542455673217773,dense
+c24,2,What decisions were made?,c24_19,3,0.19362875819206238,dense
+c24,2,What decisions were made?,c24_1,4,0.19261521100997925,dense
+c24,2,What decisions were made?,c24_50,5,0.18614038825035095,dense
+c24,3,What concerns were raised?,c24_54,1,0.33263567090034485,dense
+c24,3,What concerns were raised?,c24_49,2,0.33150357007980347,dense
+c24,3,What concerns were raised?,c24_35,3,0.32051023840904236,dense
+c24,3,What concerns were raised?,c24_18,4,0.3183048367500305,dense
+c24,3,What concerns were raised?,c24_41,5,0.29713207483291626,dense
+c24,4,What is the recommended approach?,c24_14,1,0.462138831615448,dense
+c24,4,What is the recommended approach?,c24_11,2,0.4210917353630066,dense
+c24,4,What is the recommended approach?,c24_12,3,0.42024165391921997,dense
+c24,4,What is the recommended approach?,c24_30,4,0.41709280014038086,dense
+c24,4,What is the recommended approach?,c24_40,5,0.36677202582359314,dense
+c25,0,What is the main topic of discussion?,c25_11,1,0.37623289227485657,dense
+c25,0,What is the main topic of discussion?,c25_8,2,0.36841505765914917,dense
+c25,0,What is the main topic of discussion?,c25_4,3,0.3629103899002075,dense
+c25,0,What is the main topic of discussion?,c25_40,4,0.34177982807159424,dense
+c25,0,What is the main topic of discussion?,c25_44,5,0.33561331033706665,dense
+c25,1,What are the key points being discussed?,c25_32,1,0.44484013319015503,dense
+c25,1,What are the key points being discussed?,c25_57,2,0.40478789806365967,dense
+c25,1,What are the key points being discussed?,c25_58,3,0.3825116753578186,dense
+c25,1,What are the key points being discussed?,c25_55,4,0.3704412579536438,dense
+c25,1,What are the key points being discussed?,c25_6,5,0.36658281087875366,dense
+c25,2,What decisions were made?,c25_10,1,0.2447381317615509,dense
+c25,2,What decisions were made?,c25_32,2,0.22224701941013336,dense
+c25,2,What decisions were made?,c25_6,3,0.21911880373954773,dense
+c25,2,What decisions were made?,c25_25,4,0.2081318497657776,dense
+c25,2,What decisions were made?,c25_47,5,0.20780542492866516,dense
+c25,3,What concerns were raised?,c25_19,1,0.2739327847957611,dense
+c25,3,What concerns were raised?,c25_45,2,0.2739327847957611,dense
+c25,3,What concerns were raised?,c25_32,3,0.26777562499046326,dense
+c25,3,What concerns were raised?,c25_50,4,0.25214052200317383,dense
+c25,3,What concerns were raised?,c25_37,5,0.2390201985836029,dense
+c25,4,What is the recommended approach?,c25_34,1,0.3251449465751648,dense
+c25,4,What is the recommended approach?,c25_28,2,0.3251449465751648,dense
+c25,4,What is the recommended approach?,c25_36,3,0.3251449465751648,dense
+c25,4,What is the recommended approach?,c25_61,4,0.27826011180877686,dense
+c25,4,What is the recommended approach?,c25_42,5,0.27605265378952026,dense
+c3,0,What is the main topic of discussion?,c3_71,1,0.38506239652633667,dense
+c3,0,What is the main topic of discussion?,c3_12,2,0.37895551323890686,dense
+c3,0,What is the main topic of discussion?,c3_23,3,0.36740097403526306,dense
+c3,0,What is the main topic of discussion?,c3_70,4,0.3672941327095032,dense
+c3,0,What is the main topic of discussion?,c3_8,5,0.35659414529800415,dense
+c3,1,What are the key points being discussed?,c3_8,1,0.40853285789489746,dense
+c3,1,What are the key points being discussed?,c3_11,2,0.3774871230125427,dense
+c3,1,What are the key points being discussed?,c3_15,3,0.3568580150604248,dense
+c3,1,What are the key points being discussed?,c3_20,4,0.3479059338569641,dense
+c3,1,What are the key points being discussed?,c3_72,5,0.343352347612381,dense
+c3,2,What decisions were made?,c3_50,1,0.22891703248023987,dense
+c3,2,What decisions were made?,c3_8,2,0.22267746925354004,dense
+c3,2,What decisions were made?,c3_18,3,0.2041049748659134,dense
+c3,2,What decisions were made?,c3_1,4,0.18524032831192017,dense
+c3,2,What decisions were made?,c3_31,5,0.17848563194274902,dense
+c3,3,What concerns were raised?,c3_50,1,0.2819117605686188,dense
+c3,3,What concerns were raised?,c3_8,2,0.25878477096557617,dense
+c3,3,What concerns were raised?,c3_18,3,0.23284491896629333,dense
+c3,3,What concerns were raised?,c3_61,4,0.21101929247379303,dense
+c3,3,What concerns were raised?,c3_51,5,0.20828023552894592,dense
+c3,4,What is the recommended approach?,c3_48,1,0.25911957025527954,dense
+c3,4,What is the recommended approach?,c3_45,2,0.2026275396347046,dense
+c3,4,What is the recommended approach?,c3_58,3,0.18607892096042633,dense
+c3,4,What is the recommended approach?,c3_61,4,0.177351176738739,dense
+c3,4,What is the recommended approach?,c3_1,5,0.1763080358505249,dense
+c4,0,What is the main topic of discussion?,c4_42,1,0.5496163368225098,dense
+c4,0,What is the main topic of discussion?,c4_27,2,0.5138368010520935,dense
+c4,0,What is the main topic of discussion?,c4_43,3,0.4926353096961975,dense
+c4,0,What is the main topic of discussion?,c4_7,4,0.48844781517982483,dense
+c4,0,What is the main topic of discussion?,c4_41,5,0.4810016453266144,dense
+c4,1,What are the key points being discussed?,c4_7,1,0.5185434818267822,dense
+c4,1,What are the key points being discussed?,c4_43,2,0.5089215636253357,dense
+c4,1,What are the key points being discussed?,c4_42,3,0.49534231424331665,dense
+c4,1,What are the key points being discussed?,c4_41,4,0.48996928334236145,dense
+c4,1,What are the key points being discussed?,c4_27,5,0.47973331809043884,dense
+c4,2,What decisions were made?,c4_59,1,0.5111620426177979,dense
+c4,2,What decisions were made?,c4_21,2,0.4805455207824707,dense
+c4,2,What decisions were made?,c4_22,3,0.4805455207824707,dense
+c4,2,What decisions were made?,c4_39,4,0.46010684967041016,dense
+c4,2,What decisions were made?,c4_53,5,0.42629092931747437,dense
+c4,3,What concerns were raised?,c4_59,1,0.31074079871177673,dense
+c4,3,What concerns were raised?,c4_43,2,0.29397645592689514,dense
+c4,3,What concerns were raised?,c4_22,3,0.29023998975753784,dense
+c4,3,What concerns were raised?,c4_21,4,0.29023998975753784,dense
+c4,3,What concerns were raised?,c4_41,5,0.2866557240486145,dense
+c4,4,What is the recommended approach?,c4_47,1,0.2582172453403473,dense
+c4,4,What is the recommended approach?,c4_11,2,0.25720733404159546,dense
+c4,4,What is the recommended approach?,c4_26,3,0.2529619336128235,dense
+c4,4,What is the recommended approach?,c4_13,4,0.251578152179718,dense
+c4,4,What is the recommended approach?,c4_60,5,0.249015212059021,dense
+c5,0,What is the main topic of discussion?,c5_21,1,0.3506772518157959,dense
+c5,0,What is the main topic of discussion?,c5_10,2,0.34126242995262146,dense
+c5,0,What is the main topic of discussion?,c5_34,3,0.33988186717033386,dense
+c5,0,What is the main topic of discussion?,c5_27,4,0.3230014443397522,dense
+c5,0,What is the main topic of discussion?,c5_18,5,0.3078722357749939,dense
+c5,1,What are the key points being discussed?,c5_50,1,0.349698543548584,dense
+c5,1,What are the key points being discussed?,c5_14,2,0.34553876519203186,dense
+c5,1,What are the key points being discussed?,c5_39,3,0.3223114013671875,dense
+c5,1,What are the key points being discussed?,c5_47,4,0.31720826029777527,dense
+c5,1,What are the key points being discussed?,c5_23,5,0.31263741850852966,dense
+c5,2,What decisions were made?,c5_1,1,0.19261521100997925,dense
+c5,2,What decisions were made?,c5_50,2,0.1783832609653473,dense
+c5,2,What decisions were made?,c5_23,3,0.1757698357105255,dense
+c5,2,What decisions were made?,c5_49,4,0.1756661832332611,dense
+c5,2,What decisions were made?,c5_36,5,0.16925521194934845,dense
+c5,3,What concerns were raised?,c5_47,1,0.3610066771507263,dense
+c5,3,What concerns were raised?,c5_4,2,0.357324481010437,dense
+c5,3,What concerns were raised?,c5_20,3,0.3103857934474945,dense
+c5,3,What concerns were raised?,c5_50,4,0.2608017325401306,dense
+c5,3,What concerns were raised?,c5_14,5,0.25330087542533875,dense
+c5,4,What is the recommended approach?,c5_7,1,0.4621388018131256,dense
+c5,4,What is the recommended approach?,c5_53,2,0.4499650001525879,dense
+c5,4,What is the recommended approach?,c5_43,3,0.41415053606033325,dense
+c5,4,What is the recommended approach?,c5_44,4,0.3547872304916382,dense
+c5,4,What is the recommended approach?,c5_35,5,0.31875327229499817,dense
+c6,0,What is the main topic of discussion?,c6_21,1,0.3523784875869751,dense
+c6,0,What is the main topic of discussion?,c6_38,2,0.33284929394721985,dense
+c6,0,What is the main topic of discussion?,c6_50,3,0.32690104842185974,dense
+c6,0,What is the main topic of discussion?,c6_1,4,0.32002848386764526,dense
+c6,0,What is the main topic of discussion?,c6_9,5,0.3195573091506958,dense
+c6,1,What are the key points being discussed?,c6_38,1,0.5155107975006104,dense
+c6,1,What are the key points being discussed?,c6_21,2,0.44593024253845215,dense
+c6,1,What are the key points being discussed?,c6_5,3,0.44484013319015503,dense
+c6,1,What are the key points being discussed?,c6_17,4,0.39571449160575867,dense
+c6,1,What are the key points being discussed?,c6_14,5,0.3893612325191498,dense
+c6,2,What decisions were made?,c6_38,1,0.2632044851779938,dense
+c6,2,What decisions were made?,c6_5,2,0.22224701941013336,dense
+c6,2,What decisions were made?,c6_26,3,0.21949991583824158,dense
+c6,2,What decisions were made?,c6_16,4,0.21741819381713867,dense
+c6,2,What decisions were made?,c6_58,5,0.21741819381713867,dense
+c6,3,What concerns were raised?,c6_38,1,0.29719024896621704,dense
+c6,3,What concerns were raised?,c6_5,2,0.26777562499046326,dense
+c6,3,What concerns were raised?,c6_20,3,0.2640511393547058,dense
+c6,3,What concerns were raised?,c6_43,4,0.21456462144851685,dense
+c6,3,What concerns were raised?,c6_21,5,0.21449865400791168,dense
+c6,4,What is the recommended approach?,c6_53,1,0.22896158695220947,dense
+c6,4,What is the recommended approach?,c6_32,2,0.22896158695220947,dense
+c6,4,What is the recommended approach?,c6_26,3,0.20723386108875275,dense
+c6,4,What is the recommended approach?,c6_24,4,0.19112728536128998,dense
+c6,4,What is the recommended approach?,c6_31,5,0.18153148889541626,dense
+c7,0,What is the main topic of discussion?,c7_1,1,0.43200254440307617,dense
+c7,0,What is the main topic of discussion?,c7_39,2,0.3568033277988434,dense
+c7,0,What is the main topic of discussion?,c7_23,3,0.33543911576271057,dense
+c7,0,What is the main topic of discussion?,c7_26,4,0.32945379614830017,dense
+c7,0,What is the main topic of discussion?,c7_36,5,0.31793835759162903,dense
+c7,1,What are the key points being discussed?,c7_39,1,0.4208209812641144,dense
+c7,1,What are the key points being discussed?,c7_71,2,0.3811158537864685,dense
+c7,1,What are the key points being discussed?,c7_10,3,0.37223654985427856,dense
+c7,1,What are the key points being discussed?,c7_66,4,0.35917308926582336,dense
+c7,1,What are the key points being discussed?,c7_1,5,0.35491305589675903,dense
+c7,2,What decisions were made?,c7_18,1,0.23258692026138306,dense
+c7,2,What decisions were made?,c7_61,2,0.22009149193763733,dense
+c7,2,What decisions were made?,c7_50,3,0.20858043432235718,dense
+c7,2,What decisions were made?,c7_30,4,0.20113477110862732,dense
+c7,2,What decisions were made?,c7_71,5,0.18583893775939941,dense
+c7,3,What concerns were raised?,c7_4,1,0.3415173292160034,dense
+c7,3,What concerns were raised?,c7_48,2,0.3366818428039551,dense
+c7,3,What concerns were raised?,c7_37,3,0.3365861773490906,dense
+c7,3,What concerns were raised?,c7_25,4,0.33242979645729065,dense
+c7,3,What concerns were raised?,c7_65,5,0.3271356225013733,dense
+c7,4,What is the recommended approach?,c7_15,1,0.23143549263477325,dense
+c7,4,What is the recommended approach?,c7_1,2,0.21412929892539978,dense
+c7,4,What is the recommended approach?,c7_39,3,0.20535200834274292,dense
+c7,4,What is the recommended approach?,c7_69,4,0.18869860470294952,dense
+c7,4,What is the recommended approach?,c7_66,5,0.18397295475006104,dense
+c8,0,What is the main topic of discussion?,c8_30,1,0.5068022608757019,dense
+c8,0,What is the main topic of discussion?,c8_56,2,0.49560728669166565,dense
+c8,0,What is the main topic of discussion?,c8_63,3,0.4889618754386902,dense
+c8,0,What is the main topic of discussion?,c8_59,4,0.4713122844696045,dense
+c8,0,What is the main topic of discussion?,c8_24,5,0.4651103615760803,dense
+c8,1,What are the key points being discussed?,c8_59,1,0.5701045989990234,dense
+c8,1,What are the key points being discussed?,c8_24,2,0.555547833442688,dense
+c8,1,What are the key points being discussed?,c8_30,3,0.5503802299499512,dense
+c8,1,What are the key points being discussed?,c8_9,4,0.5282505750656128,dense
+c8,1,What are the key points being discussed?,c8_56,5,0.5260231494903564,dense
+c8,2,What decisions were made?,c8_33,1,0.5229147672653198,dense
+c8,2,What decisions were made?,c8_22,2,0.46329784393310547,dense
+c8,2,What decisions were made?,c8_25,3,0.422401487827301,dense
+c8,2,What decisions were made?,c8_51,4,0.4199133813381195,dense
+c8,2,What decisions were made?,c8_26,5,0.415603369474411,dense
+c8,3,What concerns were raised?,c8_59,1,0.36308351159095764,dense
+c8,3,What concerns were raised?,c8_24,2,0.3346431255340576,dense
+c8,3,What concerns were raised?,c8_33,3,0.3251858651638031,dense
+c8,3,What concerns were raised?,c8_9,4,0.32311326265335083,dense
+c8,3,What concerns were raised?,c8_30,5,0.31723752617836,dense
+c8,4,What is the recommended approach?,c8_36,1,0.37798768281936646,dense
+c8,4,What is the recommended approach?,c8_45,2,0.2865433096885681,dense
+c8,4,What is the recommended approach?,c8_16,3,0.2572871446609497,dense
+c8,4,What is the recommended approach?,c8_32,4,0.2543024718761444,dense
+c8,4,What is the recommended approach?,c8_38,5,0.23029664158821106,dense
+c9,0,What is the main topic of discussion?,c9_45,1,0.35756397247314453,dense
+c9,0,What is the main topic of discussion?,c9_25,2,0.34750938415527344,dense
+c9,0,What is the main topic of discussion?,c9_23,3,0.34722936153411865,dense
+c9,0,What is the main topic of discussion?,c9_57,4,0.33198976516723633,dense
+c9,0,What is the main topic of discussion?,c9_33,5,0.3296356797218323,dense
+c9,1,What are the key points being discussed?,c9_45,1,0.38271254301071167,dense
+c9,1,What are the key points being discussed?,c9_20,2,0.37124669551849365,dense
+c9,1,What are the key points being discussed?,c9_33,3,0.35996803641319275,dense
+c9,1,What are the key points being discussed?,c9_47,4,0.3598947823047638,dense
+c9,1,What are the key points being discussed?,c9_36,5,0.3377078175544739,dense
+c9,2,What decisions were made?,c9_56,1,0.21866224706172943,dense
+c9,2,What decisions were made?,c9_14,2,0.21866224706172943,dense
+c9,2,What decisions were made?,c9_36,3,0.19837415218353271,dense
+c9,2,What decisions were made?,c9_8,4,0.19726377725601196,dense
+c9,2,What decisions were made?,c9_1,5,0.19261521100997925,dense
+c9,3,What concerns were raised?,c9_20,1,0.3770967721939087,dense
+c9,3,What concerns were raised?,c9_30,2,0.2935802638530731,dense
+c9,3,What concerns were raised?,c9_37,3,0.28663796186447144,dense
+c9,3,What concerns were raised?,c9_47,4,0.26333093643188477,dense
+c9,3,What concerns were raised?,c9_45,5,0.25717729330062866,dense
+c9,4,What is the recommended approach?,c9_16,1,0.48718708753585815,dense
+c9,4,What is the recommended approach?,c9_43,2,0.4333959221839905,dense
+c9,4,What is the recommended approach?,c9_53,3,0.4210917353630066,dense
+c9,4,What is the recommended approach?,c9_49,4,0.3581843674182892,dense
+c9,4,What is the recommended approach?,c9_24,5,0.3497183322906494,dense

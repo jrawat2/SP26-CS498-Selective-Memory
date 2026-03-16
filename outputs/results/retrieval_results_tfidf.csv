@@ -1,0 +1,626 @@
+conv_id,query_id,query_text,retrieved_message_uid,rank,score,retriever
+c1,0,What is the main topic of discussion?,c1_60,1,0.0,tfidf
+c1,0,What is the main topic of discussion?,c1_59,2,0.0,tfidf
+c1,0,What is the main topic of discussion?,c1_28,3,0.0,tfidf
+c1,0,What is the main topic of discussion?,c1_27,4,0.0,tfidf
+c1,0,What is the main topic of discussion?,c1_26,5,0.0,tfidf
+c1,1,What are the key points being discussed?,c1_60,1,0.0,tfidf
+c1,1,What are the key points being discussed?,c1_59,2,0.0,tfidf
+c1,1,What are the key points being discussed?,c1_28,3,0.0,tfidf
+c1,1,What are the key points being discussed?,c1_27,4,0.0,tfidf
+c1,1,What are the key points being discussed?,c1_26,5,0.0,tfidf
+c1,2,What decisions were made?,c1_60,1,0.0,tfidf
+c1,2,What decisions were made?,c1_59,2,0.0,tfidf
+c1,2,What decisions were made?,c1_28,3,0.0,tfidf
+c1,2,What decisions were made?,c1_27,4,0.0,tfidf
+c1,2,What decisions were made?,c1_26,5,0.0,tfidf
+c1,3,What concerns were raised?,c1_60,1,0.0,tfidf
+c1,3,What concerns were raised?,c1_59,2,0.0,tfidf
+c1,3,What concerns were raised?,c1_28,3,0.0,tfidf
+c1,3,What concerns were raised?,c1_27,4,0.0,tfidf
+c1,3,What concerns were raised?,c1_26,5,0.0,tfidf
+c1,4,What is the recommended approach?,c1_60,1,0.0,tfidf
+c1,4,What is the recommended approach?,c1_59,2,0.0,tfidf
+c1,4,What is the recommended approach?,c1_28,3,0.0,tfidf
+c1,4,What is the recommended approach?,c1_27,4,0.0,tfidf
+c1,4,What is the recommended approach?,c1_26,5,0.0,tfidf
+c10,0,What is the main topic of discussion?,c10_37,1,0.3541506419329061,tfidf
+c10,0,What is the main topic of discussion?,c10_23,2,0.34108697209135674,tfidf
+c10,0,What is the main topic of discussion?,c10_33,3,0.32277713990543,tfidf
+c10,0,What is the main topic of discussion?,c10_26,4,0.0,tfidf
+c10,0,What is the main topic of discussion?,c10_20,5,0.0,tfidf
+c10,1,What are the key points being discussed?,c10_70,1,0.0,tfidf
+c10,1,What are the key points being discussed?,c10_26,2,0.0,tfidf
+c10,1,What are the key points being discussed?,c10_20,3,0.0,tfidf
+c10,1,What are the key points being discussed?,c10_21,4,0.0,tfidf
+c10,1,What are the key points being discussed?,c10_22,5,0.0,tfidf
+c10,2,What decisions were made?,c10_70,1,0.0,tfidf
+c10,2,What decisions were made?,c10_26,2,0.0,tfidf
+c10,2,What decisions were made?,c10_20,3,0.0,tfidf
+c10,2,What decisions were made?,c10_21,4,0.0,tfidf
+c10,2,What decisions were made?,c10_22,5,0.0,tfidf
+c10,3,What concerns were raised?,c10_70,1,0.0,tfidf
+c10,3,What concerns were raised?,c10_26,2,0.0,tfidf
+c10,3,What concerns were raised?,c10_20,3,0.0,tfidf
+c10,3,What concerns were raised?,c10_21,4,0.0,tfidf
+c10,3,What concerns were raised?,c10_22,5,0.0,tfidf
+c10,4,What is the recommended approach?,c10_70,1,0.0,tfidf
+c10,4,What is the recommended approach?,c10_26,2,0.0,tfidf
+c10,4,What is the recommended approach?,c10_20,3,0.0,tfidf
+c10,4,What is the recommended approach?,c10_21,4,0.0,tfidf
+c10,4,What is the recommended approach?,c10_22,5,0.0,tfidf
+c11,0,What is the main topic of discussion?,c11_33,1,0.3542458893432093,tfidf
+c11,0,What is the main topic of discussion?,c11_14,2,0.34269652809562934,tfidf
+c11,0,What is the main topic of discussion?,c11_15,3,0.33554278185256575,tfidf
+c11,0,What is the main topic of discussion?,c11_24,4,0.33554278185256575,tfidf
+c11,0,What is the main topic of discussion?,c11_6,5,0.2860942357239941,tfidf
+c11,1,What are the key points being discussed?,c11_62,1,0.0,tfidf
+c11,1,What are the key points being discussed?,c11_16,2,0.0,tfidf
+c11,1,What are the key points being discussed?,c11_29,3,0.0,tfidf
+c11,1,What are the key points being discussed?,c11_28,4,0.0,tfidf
+c11,1,What are the key points being discussed?,c11_27,5,0.0,tfidf
+c11,2,What decisions were made?,c11_62,1,0.0,tfidf
+c11,2,What decisions were made?,c11_16,2,0.0,tfidf
+c11,2,What decisions were made?,c11_29,3,0.0,tfidf
+c11,2,What decisions were made?,c11_28,4,0.0,tfidf
+c11,2,What decisions were made?,c11_27,5,0.0,tfidf
+c11,3,What concerns were raised?,c11_62,1,0.0,tfidf
+c11,3,What concerns were raised?,c11_16,2,0.0,tfidf
+c11,3,What concerns were raised?,c11_29,3,0.0,tfidf
+c11,3,What concerns were raised?,c11_28,4,0.0,tfidf
+c11,3,What concerns were raised?,c11_27,5,0.0,tfidf
+c11,4,What is the recommended approach?,c11_62,1,0.0,tfidf
+c11,4,What is the recommended approach?,c11_16,2,0.0,tfidf
+c11,4,What is the recommended approach?,c11_29,3,0.0,tfidf
+c11,4,What is the recommended approach?,c11_28,4,0.0,tfidf
+c11,4,What is the recommended approach?,c11_27,5,0.0,tfidf
+c12,0,What is the main topic of discussion?,c12_1,1,0.35046877763286427,tfidf
+c12,0,What is the main topic of discussion?,c12_26,2,0.0,tfidf
+c12,0,What is the main topic of discussion?,c12_20,3,0.0,tfidf
+c12,0,What is the main topic of discussion?,c12_21,4,0.0,tfidf
+c12,0,What is the main topic of discussion?,c12_22,5,0.0,tfidf
+c12,1,What are the key points being discussed?,c12_71,1,0.0,tfidf
+c12,1,What are the key points being discussed?,c12_26,2,0.0,tfidf
+c12,1,What are the key points being discussed?,c12_20,3,0.0,tfidf
+c12,1,What are the key points being discussed?,c12_21,4,0.0,tfidf
+c12,1,What are the key points being discussed?,c12_22,5,0.0,tfidf
+c12,2,What decisions were made?,c12_71,1,0.0,tfidf
+c12,2,What decisions were made?,c12_26,2,0.0,tfidf
+c12,2,What decisions were made?,c12_20,3,0.0,tfidf
+c12,2,What decisions were made?,c12_21,4,0.0,tfidf
+c12,2,What decisions were made?,c12_22,5,0.0,tfidf
+c12,3,What concerns were raised?,c12_71,1,0.0,tfidf
+c12,3,What concerns were raised?,c12_26,2,0.0,tfidf
+c12,3,What concerns were raised?,c12_20,3,0.0,tfidf
+c12,3,What concerns were raised?,c12_21,4,0.0,tfidf
+c12,3,What concerns were raised?,c12_22,5,0.0,tfidf
+c12,4,What is the recommended approach?,c12_71,1,0.0,tfidf
+c12,4,What is the recommended approach?,c12_26,2,0.0,tfidf
+c12,4,What is the recommended approach?,c12_20,3,0.0,tfidf
+c12,4,What is the recommended approach?,c12_21,4,0.0,tfidf
+c12,4,What is the recommended approach?,c12_22,5,0.0,tfidf
+c13,0,What is the main topic of discussion?,c13_31,1,0.3802557243828879,tfidf
+c13,0,What is the main topic of discussion?,c13_20,2,0.3606668144385702,tfidf
+c13,0,What is the main topic of discussion?,c13_4,3,0.34783751022362813,tfidf
+c13,0,What is the main topic of discussion?,c13_37,4,0.34127967651677815,tfidf
+c13,0,What is the main topic of discussion?,c13_59,5,0.3252174282843313,tfidf
+c13,1,What are the key points being discussed?,c13_61,1,0.0,tfidf
+c13,1,What are the key points being discussed?,c13_30,2,0.0,tfidf
+c13,1,What are the key points being discussed?,c13_28,3,0.0,tfidf
+c13,1,What are the key points being discussed?,c13_27,4,0.0,tfidf
+c13,1,What are the key points being discussed?,c13_26,5,0.0,tfidf
+c13,2,What decisions were made?,c13_61,1,0.0,tfidf
+c13,2,What decisions were made?,c13_30,2,0.0,tfidf
+c13,2,What decisions were made?,c13_28,3,0.0,tfidf
+c13,2,What decisions were made?,c13_27,4,0.0,tfidf
+c13,2,What decisions were made?,c13_26,5,0.0,tfidf
+c13,3,What concerns were raised?,c13_61,1,0.0,tfidf
+c13,3,What concerns were raised?,c13_30,2,0.0,tfidf
+c13,3,What concerns were raised?,c13_28,3,0.0,tfidf
+c13,3,What concerns were raised?,c13_27,4,0.0,tfidf
+c13,3,What concerns were raised?,c13_26,5,0.0,tfidf
+c13,4,What is the recommended approach?,c13_61,1,0.0,tfidf
+c13,4,What is the recommended approach?,c13_30,2,0.0,tfidf
+c13,4,What is the recommended approach?,c13_28,3,0.0,tfidf
+c13,4,What is the recommended approach?,c13_27,4,0.0,tfidf
+c13,4,What is the recommended approach?,c13_26,5,0.0,tfidf
+c14,0,What is the main topic of discussion?,c14_17,1,0.39396676527437796,tfidf
+c14,0,What is the main topic of discussion?,c14_39,2,0.3633653590508832,tfidf
+c14,0,What is the main topic of discussion?,c14_61,3,0.35285493749706576,tfidf
+c14,0,What is the main topic of discussion?,c14_24,4,0.2689986821707147,tfidf
+c14,0,What is the main topic of discussion?,c14_16,5,0.0,tfidf
+c14,1,What are the key points being discussed?,c14_61,1,0.0,tfidf
+c14,1,What are the key points being discussed?,c14_30,2,0.0,tfidf
+c14,1,What are the key points being discussed?,c14_28,3,0.0,tfidf
+c14,1,What are the key points being discussed?,c14_27,4,0.0,tfidf
+c14,1,What are the key points being discussed?,c14_26,5,0.0,tfidf
+c14,2,What decisions were made?,c14_61,1,0.0,tfidf
+c14,2,What decisions were made?,c14_30,2,0.0,tfidf
+c14,2,What decisions were made?,c14_28,3,0.0,tfidf
+c14,2,What decisions were made?,c14_27,4,0.0,tfidf
+c14,2,What decisions were made?,c14_26,5,0.0,tfidf
+c14,3,What concerns were raised?,c14_61,1,0.0,tfidf
+c14,3,What concerns were raised?,c14_30,2,0.0,tfidf
+c14,3,What concerns were raised?,c14_28,3,0.0,tfidf
+c14,3,What concerns were raised?,c14_27,4,0.0,tfidf
+c14,3,What concerns were raised?,c14_26,5,0.0,tfidf
+c14,4,What is the recommended approach?,c14_61,1,0.0,tfidf
+c14,4,What is the recommended approach?,c14_30,2,0.0,tfidf
+c14,4,What is the recommended approach?,c14_28,3,0.0,tfidf
+c14,4,What is the recommended approach?,c14_27,4,0.0,tfidf
+c14,4,What is the recommended approach?,c14_26,5,0.0,tfidf
+c15,0,What is the main topic of discussion?,c15_1,1,0.36901721070678484,tfidf
+c15,0,What is the main topic of discussion?,c15_26,2,0.0,tfidf
+c15,0,What is the main topic of discussion?,c15_20,3,0.0,tfidf
+c15,0,What is the main topic of discussion?,c15_21,4,0.0,tfidf
+c15,0,What is the main topic of discussion?,c15_22,5,0.0,tfidf
+c15,1,What are the key points being discussed?,c15_71,1,0.0,tfidf
+c15,1,What are the key points being discussed?,c15_26,2,0.0,tfidf
+c15,1,What are the key points being discussed?,c15_20,3,0.0,tfidf
+c15,1,What are the key points being discussed?,c15_21,4,0.0,tfidf
+c15,1,What are the key points being discussed?,c15_22,5,0.0,tfidf
+c15,2,What decisions were made?,c15_71,1,0.0,tfidf
+c15,2,What decisions were made?,c15_26,2,0.0,tfidf
+c15,2,What decisions were made?,c15_20,3,0.0,tfidf
+c15,2,What decisions were made?,c15_21,4,0.0,tfidf
+c15,2,What decisions were made?,c15_22,5,0.0,tfidf
+c15,3,What concerns were raised?,c15_71,1,0.0,tfidf
+c15,3,What concerns were raised?,c15_26,2,0.0,tfidf
+c15,3,What concerns were raised?,c15_20,3,0.0,tfidf
+c15,3,What concerns were raised?,c15_21,4,0.0,tfidf
+c15,3,What concerns were raised?,c15_22,5,0.0,tfidf
+c15,4,What is the recommended approach?,c15_71,1,0.0,tfidf
+c15,4,What is the recommended approach?,c15_26,2,0.0,tfidf
+c15,4,What is the recommended approach?,c15_20,3,0.0,tfidf
+c15,4,What is the recommended approach?,c15_21,4,0.0,tfidf
+c15,4,What is the recommended approach?,c15_22,5,0.0,tfidf
+c16,0,What is the main topic of discussion?,c16_68,1,0.37132223588201674,tfidf
+c16,0,What is the main topic of discussion?,c16_14,2,0.37132223588201674,tfidf
+c16,0,What is the main topic of discussion?,c16_32,3,0.3535139392251636,tfidf
+c16,0,What is the main topic of discussion?,c16_10,4,0.3526306604912603,tfidf
+c16,0,What is the main topic of discussion?,c16_21,5,0.3429310806718388,tfidf
+c16,1,What are the key points being discussed?,c16_74,1,0.0,tfidf
+c16,1,What are the key points being discussed?,c16_19,2,0.0,tfidf
+c16,1,What are the key points being discussed?,c16_21,3,0.0,tfidf
+c16,1,What are the key points being discussed?,c16_22,4,0.0,tfidf
+c16,1,What are the key points being discussed?,c16_23,5,0.0,tfidf
+c16,2,What decisions were made?,c16_74,1,0.0,tfidf
+c16,2,What decisions were made?,c16_19,2,0.0,tfidf
+c16,2,What decisions were made?,c16_21,3,0.0,tfidf
+c16,2,What decisions were made?,c16_22,4,0.0,tfidf
+c16,2,What decisions were made?,c16_23,5,0.0,tfidf
+c16,3,What concerns were raised?,c16_74,1,0.0,tfidf
+c16,3,What concerns were raised?,c16_19,2,0.0,tfidf
+c16,3,What concerns were raised?,c16_21,3,0.0,tfidf
+c16,3,What concerns were raised?,c16_22,4,0.0,tfidf
+c16,3,What concerns were raised?,c16_23,5,0.0,tfidf
+c16,4,What is the recommended approach?,c16_74,1,0.0,tfidf
+c16,4,What is the recommended approach?,c16_19,2,0.0,tfidf
+c16,4,What is the recommended approach?,c16_21,3,0.0,tfidf
+c16,4,What is the recommended approach?,c16_22,4,0.0,tfidf
+c16,4,What is the recommended approach?,c16_23,5,0.0,tfidf
+c17,0,What is the main topic of discussion?,c17_6,1,0.3397617811726203,tfidf
+c17,0,What is the main topic of discussion?,c17_41,2,0.3397617811726203,tfidf
+c17,0,What is the main topic of discussion?,c17_42,3,0.3389071470524314,tfidf
+c17,0,What is the main topic of discussion?,c17_38,4,0.3279487526973716,tfidf
+c17,0,What is the main topic of discussion?,c17_61,5,0.0,tfidf
+c17,1,What are the key points being discussed?,c17_61,1,0.0,tfidf
+c17,1,What are the key points being discussed?,c17_30,2,0.0,tfidf
+c17,1,What are the key points being discussed?,c17_28,3,0.0,tfidf
+c17,1,What are the key points being discussed?,c17_27,4,0.0,tfidf
+c17,1,What are the key points being discussed?,c17_26,5,0.0,tfidf
+c17,2,What decisions were made?,c17_61,1,0.0,tfidf
+c17,2,What decisions were made?,c17_30,2,0.0,tfidf
+c17,2,What decisions were made?,c17_28,3,0.0,tfidf
+c17,2,What decisions were made?,c17_27,4,0.0,tfidf
+c17,2,What decisions were made?,c17_26,5,0.0,tfidf
+c17,3,What concerns were raised?,c17_61,1,0.0,tfidf
+c17,3,What concerns were raised?,c17_30,2,0.0,tfidf
+c17,3,What concerns were raised?,c17_28,3,0.0,tfidf
+c17,3,What concerns were raised?,c17_27,4,0.0,tfidf
+c17,3,What concerns were raised?,c17_26,5,0.0,tfidf
+c17,4,What is the recommended approach?,c17_61,1,0.0,tfidf
+c17,4,What is the recommended approach?,c17_30,2,0.0,tfidf
+c17,4,What is the recommended approach?,c17_28,3,0.0,tfidf
+c17,4,What is the recommended approach?,c17_27,4,0.0,tfidf
+c17,4,What is the recommended approach?,c17_26,5,0.0,tfidf
+c18,0,What is the main topic of discussion?,c18_55,1,0.0,tfidf
+c18,0,What is the main topic of discussion?,c18_14,2,0.0,tfidf
+c18,0,What is the main topic of discussion?,c18_25,3,0.0,tfidf
+c18,0,What is the main topic of discussion?,c18_24,4,0.0,tfidf
+c18,0,What is the main topic of discussion?,c18_23,5,0.0,tfidf
+c18,1,What are the key points being discussed?,c18_55,1,0.0,tfidf
+c18,1,What are the key points being discussed?,c18_14,2,0.0,tfidf
+c18,1,What are the key points being discussed?,c18_25,3,0.0,tfidf
+c18,1,What are the key points being discussed?,c18_24,4,0.0,tfidf
+c18,1,What are the key points being discussed?,c18_23,5,0.0,tfidf
+c18,2,What decisions were made?,c18_55,1,0.0,tfidf
+c18,2,What decisions were made?,c18_14,2,0.0,tfidf
+c18,2,What decisions were made?,c18_25,3,0.0,tfidf
+c18,2,What decisions were made?,c18_24,4,0.0,tfidf
+c18,2,What decisions were made?,c18_23,5,0.0,tfidf
+c18,3,What concerns were raised?,c18_55,1,0.0,tfidf
+c18,3,What concerns were raised?,c18_14,2,0.0,tfidf
+c18,3,What concerns were raised?,c18_25,3,0.0,tfidf
+c18,3,What concerns were raised?,c18_24,4,0.0,tfidf
+c18,3,What concerns were raised?,c18_23,5,0.0,tfidf
+c18,4,What is the recommended approach?,c18_55,1,0.0,tfidf
+c18,4,What is the recommended approach?,c18_14,2,0.0,tfidf
+c18,4,What is the recommended approach?,c18_25,3,0.0,tfidf
+c18,4,What is the recommended approach?,c18_24,4,0.0,tfidf
+c18,4,What is the recommended approach?,c18_23,5,0.0,tfidf
+c19,0,What is the main topic of discussion?,c19_37,1,0.3421996294347044,tfidf
+c19,0,What is the main topic of discussion?,c19_26,2,0.3020249549928213,tfidf
+c19,0,What is the main topic of discussion?,c19_34,3,0.2863227817212294,tfidf
+c19,0,What is the main topic of discussion?,c19_22,4,0.28063255653687535,tfidf
+c19,0,What is the main topic of discussion?,c19_23,5,0.2769112413552296,tfidf
+c19,1,What are the key points being discussed?,c19_55,1,0.0,tfidf
+c19,1,What are the key points being discussed?,c19_14,2,0.0,tfidf
+c19,1,What are the key points being discussed?,c19_25,3,0.0,tfidf
+c19,1,What are the key points being discussed?,c19_24,4,0.0,tfidf
+c19,1,What are the key points being discussed?,c19_23,5,0.0,tfidf
+c19,2,What decisions were made?,c19_55,1,0.0,tfidf
+c19,2,What decisions were made?,c19_14,2,0.0,tfidf
+c19,2,What decisions were made?,c19_25,3,0.0,tfidf
+c19,2,What decisions were made?,c19_24,4,0.0,tfidf
+c19,2,What decisions were made?,c19_23,5,0.0,tfidf
+c19,3,What concerns were raised?,c19_55,1,0.0,tfidf
+c19,3,What concerns were raised?,c19_14,2,0.0,tfidf
+c19,3,What concerns were raised?,c19_25,3,0.0,tfidf
+c19,3,What concerns were raised?,c19_24,4,0.0,tfidf
+c19,3,What concerns were raised?,c19_23,5,0.0,tfidf
+c19,4,What is the recommended approach?,c19_55,1,0.0,tfidf
+c19,4,What is the recommended approach?,c19_14,2,0.0,tfidf
+c19,4,What is the recommended approach?,c19_25,3,0.0,tfidf
+c19,4,What is the recommended approach?,c19_24,4,0.0,tfidf
+c19,4,What is the recommended approach?,c19_23,5,0.0,tfidf
+c2,0,What is the main topic of discussion?,c2_1,1,0.3640877992797074,tfidf
+c2,0,What is the main topic of discussion?,c2_25,2,0.0,tfidf
+c2,0,What is the main topic of discussion?,c2_19,3,0.0,tfidf
+c2,0,What is the main topic of discussion?,c2_20,4,0.0,tfidf
+c2,0,What is the main topic of discussion?,c2_21,5,0.0,tfidf
+c2,1,What are the key points being discussed?,c2_69,1,0.0,tfidf
+c2,1,What are the key points being discussed?,c2_25,2,0.0,tfidf
+c2,1,What are the key points being discussed?,c2_19,3,0.0,tfidf
+c2,1,What are the key points being discussed?,c2_20,4,0.0,tfidf
+c2,1,What are the key points being discussed?,c2_21,5,0.0,tfidf
+c2,2,What decisions were made?,c2_69,1,0.0,tfidf
+c2,2,What decisions were made?,c2_25,2,0.0,tfidf
+c2,2,What decisions were made?,c2_19,3,0.0,tfidf
+c2,2,What decisions were made?,c2_20,4,0.0,tfidf
+c2,2,What decisions were made?,c2_21,5,0.0,tfidf
+c2,3,What concerns were raised?,c2_69,1,0.0,tfidf
+c2,3,What concerns were raised?,c2_25,2,0.0,tfidf
+c2,3,What concerns were raised?,c2_19,3,0.0,tfidf
+c2,3,What concerns were raised?,c2_20,4,0.0,tfidf
+c2,3,What concerns were raised?,c2_21,5,0.0,tfidf
+c2,4,What is the recommended approach?,c2_69,1,0.0,tfidf
+c2,4,What is the recommended approach?,c2_25,2,0.0,tfidf
+c2,4,What is the recommended approach?,c2_19,3,0.0,tfidf
+c2,4,What is the recommended approach?,c2_20,4,0.0,tfidf
+c2,4,What is the recommended approach?,c2_21,5,0.0,tfidf
+c20,0,What is the main topic of discussion?,c20_1,1,0.3521123823042815,tfidf
+c20,0,What is the main topic of discussion?,c20_55,2,0.0,tfidf
+c20,0,What is the main topic of discussion?,c20_26,3,0.0,tfidf
+c20,0,What is the main topic of discussion?,c20_25,4,0.0,tfidf
+c20,0,What is the main topic of discussion?,c20_24,5,0.0,tfidf
+c20,1,What are the key points being discussed?,c20_56,1,0.0,tfidf
+c20,1,What are the key points being discussed?,c20_55,2,0.0,tfidf
+c20,1,What are the key points being discussed?,c20_26,3,0.0,tfidf
+c20,1,What are the key points being discussed?,c20_25,4,0.0,tfidf
+c20,1,What are the key points being discussed?,c20_24,5,0.0,tfidf
+c20,2,What decisions were made?,c20_56,1,0.0,tfidf
+c20,2,What decisions were made?,c20_55,2,0.0,tfidf
+c20,2,What decisions were made?,c20_26,3,0.0,tfidf
+c20,2,What decisions were made?,c20_25,4,0.0,tfidf
+c20,2,What decisions were made?,c20_24,5,0.0,tfidf
+c20,3,What concerns were raised?,c20_56,1,0.0,tfidf
+c20,3,What concerns were raised?,c20_55,2,0.0,tfidf
+c20,3,What concerns were raised?,c20_26,3,0.0,tfidf
+c20,3,What concerns were raised?,c20_25,4,0.0,tfidf
+c20,3,What concerns were raised?,c20_24,5,0.0,tfidf
+c20,4,What is the recommended approach?,c20_56,1,0.0,tfidf
+c20,4,What is the recommended approach?,c20_55,2,0.0,tfidf
+c20,4,What is the recommended approach?,c20_26,3,0.0,tfidf
+c20,4,What is the recommended approach?,c20_25,4,0.0,tfidf
+c20,4,What is the recommended approach?,c20_24,5,0.0,tfidf
+c21,0,What is the main topic of discussion?,c21_1,1,0.3623214871768847,tfidf
+c21,0,What is the main topic of discussion?,c21_63,2,0.0,tfidf
+c21,0,What is the main topic of discussion?,c21_30,3,0.0,tfidf
+c21,0,What is the main topic of discussion?,c21_29,4,0.0,tfidf
+c21,0,What is the main topic of discussion?,c21_28,5,0.0,tfidf
+c21,1,What are the key points being discussed?,c21_64,1,0.0,tfidf
+c21,1,What are the key points being discussed?,c21_63,2,0.0,tfidf
+c21,1,What are the key points being discussed?,c21_30,3,0.0,tfidf
+c21,1,What are the key points being discussed?,c21_29,4,0.0,tfidf
+c21,1,What are the key points being discussed?,c21_28,5,0.0,tfidf
+c21,2,What decisions were made?,c21_64,1,0.0,tfidf
+c21,2,What decisions were made?,c21_63,2,0.0,tfidf
+c21,2,What decisions were made?,c21_30,3,0.0,tfidf
+c21,2,What decisions were made?,c21_29,4,0.0,tfidf
+c21,2,What decisions were made?,c21_28,5,0.0,tfidf
+c21,3,What concerns were raised?,c21_64,1,0.0,tfidf
+c21,3,What concerns were raised?,c21_63,2,0.0,tfidf
+c21,3,What concerns were raised?,c21_30,3,0.0,tfidf
+c21,3,What concerns were raised?,c21_29,4,0.0,tfidf
+c21,3,What concerns were raised?,c21_28,5,0.0,tfidf
+c21,4,What is the recommended approach?,c21_64,1,0.0,tfidf
+c21,4,What is the recommended approach?,c21_63,2,0.0,tfidf
+c21,4,What is the recommended approach?,c21_30,3,0.0,tfidf
+c21,4,What is the recommended approach?,c21_29,4,0.0,tfidf
+c21,4,What is the recommended approach?,c21_28,5,0.0,tfidf
+c22,0,What is the main topic of discussion?,c22_1,1,0.3555419618952116,tfidf
+c22,0,What is the main topic of discussion?,c22_15,2,0.0,tfidf
+c22,0,What is the main topic of discussion?,c22_27,3,0.0,tfidf
+c22,0,What is the main topic of discussion?,c22_26,4,0.0,tfidf
+c22,0,What is the main topic of discussion?,c22_25,5,0.0,tfidf
+c22,1,What are the key points being discussed?,c22_58,1,0.0,tfidf
+c22,1,What are the key points being discussed?,c22_15,2,0.0,tfidf
+c22,1,What are the key points being discussed?,c22_27,3,0.0,tfidf
+c22,1,What are the key points being discussed?,c22_26,4,0.0,tfidf
+c22,1,What are the key points being discussed?,c22_25,5,0.0,tfidf
+c22,2,What decisions were made?,c22_58,1,0.0,tfidf
+c22,2,What decisions were made?,c22_15,2,0.0,tfidf
+c22,2,What decisions were made?,c22_27,3,0.0,tfidf
+c22,2,What decisions were made?,c22_26,4,0.0,tfidf
+c22,2,What decisions were made?,c22_25,5,0.0,tfidf
+c22,3,What concerns were raised?,c22_58,1,0.0,tfidf
+c22,3,What concerns were raised?,c22_15,2,0.0,tfidf
+c22,3,What concerns were raised?,c22_27,3,0.0,tfidf
+c22,3,What concerns were raised?,c22_26,4,0.0,tfidf
+c22,3,What concerns were raised?,c22_25,5,0.0,tfidf
+c22,4,What is the recommended approach?,c22_58,1,0.0,tfidf
+c22,4,What is the recommended approach?,c22_15,2,0.0,tfidf
+c22,4,What is the recommended approach?,c22_27,3,0.0,tfidf
+c22,4,What is the recommended approach?,c22_26,4,0.0,tfidf
+c22,4,What is the recommended approach?,c22_25,5,0.0,tfidf
+c23,0,What is the main topic of discussion?,c23_1,1,0.3608582441825917,tfidf
+c23,0,What is the main topic of discussion?,c23_59,2,0.0,tfidf
+c23,0,What is the main topic of discussion?,c23_28,3,0.0,tfidf
+c23,0,What is the main topic of discussion?,c23_27,4,0.0,tfidf
+c23,0,What is the main topic of discussion?,c23_26,5,0.0,tfidf
+c23,1,What are the key points being discussed?,c23_60,1,0.0,tfidf
+c23,1,What are the key points being discussed?,c23_59,2,0.0,tfidf
+c23,1,What are the key points being discussed?,c23_28,3,0.0,tfidf
+c23,1,What are the key points being discussed?,c23_27,4,0.0,tfidf
+c23,1,What are the key points being discussed?,c23_26,5,0.0,tfidf
+c23,2,What decisions were made?,c23_60,1,0.0,tfidf
+c23,2,What decisions were made?,c23_59,2,0.0,tfidf
+c23,2,What decisions were made?,c23_28,3,0.0,tfidf
+c23,2,What decisions were made?,c23_27,4,0.0,tfidf
+c23,2,What decisions were made?,c23_26,5,0.0,tfidf
+c23,3,What concerns were raised?,c23_60,1,0.0,tfidf
+c23,3,What concerns were raised?,c23_59,2,0.0,tfidf
+c23,3,What concerns were raised?,c23_28,3,0.0,tfidf
+c23,3,What concerns were raised?,c23_27,4,0.0,tfidf
+c23,3,What concerns were raised?,c23_26,5,0.0,tfidf
+c23,4,What is the recommended approach?,c23_60,1,0.0,tfidf
+c23,4,What is the recommended approach?,c23_59,2,0.0,tfidf
+c23,4,What is the recommended approach?,c23_28,3,0.0,tfidf
+c23,4,What is the recommended approach?,c23_27,4,0.0,tfidf
+c23,4,What is the recommended approach?,c23_26,5,0.0,tfidf
+c24,0,What is the main topic of discussion?,c24_64,1,0.0,tfidf
+c24,0,What is the main topic of discussion?,c24_63,2,0.0,tfidf
+c24,0,What is the main topic of discussion?,c24_30,3,0.0,tfidf
+c24,0,What is the main topic of discussion?,c24_29,4,0.0,tfidf
+c24,0,What is the main topic of discussion?,c24_28,5,0.0,tfidf
+c24,1,What are the key points being discussed?,c24_64,1,0.0,tfidf
+c24,1,What are the key points being discussed?,c24_63,2,0.0,tfidf
+c24,1,What are the key points being discussed?,c24_30,3,0.0,tfidf
+c24,1,What are the key points being discussed?,c24_29,4,0.0,tfidf
+c24,1,What are the key points being discussed?,c24_28,5,0.0,tfidf
+c24,2,What decisions were made?,c24_64,1,0.0,tfidf
+c24,2,What decisions were made?,c24_63,2,0.0,tfidf
+c24,2,What decisions were made?,c24_30,3,0.0,tfidf
+c24,2,What decisions were made?,c24_29,4,0.0,tfidf
+c24,2,What decisions were made?,c24_28,5,0.0,tfidf
+c24,3,What concerns were raised?,c24_64,1,0.0,tfidf
+c24,3,What concerns were raised?,c24_63,2,0.0,tfidf
+c24,3,What concerns were raised?,c24_30,3,0.0,tfidf
+c24,3,What concerns were raised?,c24_29,4,0.0,tfidf
+c24,3,What concerns were raised?,c24_28,5,0.0,tfidf
+c24,4,What is the recommended approach?,c24_64,1,0.0,tfidf
+c24,4,What is the recommended approach?,c24_63,2,0.0,tfidf
+c24,4,What is the recommended approach?,c24_30,3,0.0,tfidf
+c24,4,What is the recommended approach?,c24_29,4,0.0,tfidf
+c24,4,What is the recommended approach?,c24_28,5,0.0,tfidf
+c25,0,What is the main topic of discussion?,c25_32,1,0.35786406634764184,tfidf
+c25,0,What is the main topic of discussion?,c25_55,2,0.3300963538455633,tfidf
+c25,0,What is the main topic of discussion?,c25_24,3,0.0,tfidf
+c25,0,What is the main topic of discussion?,c25_19,4,0.0,tfidf
+c25,0,What is the main topic of discussion?,c25_20,5,0.0,tfidf
+c25,1,What are the key points being discussed?,c25_67,1,0.0,tfidf
+c25,1,What are the key points being discussed?,c25_17,2,0.0,tfidf
+c25,1,What are the key points being discussed?,c25_31,3,0.0,tfidf
+c25,1,What are the key points being discussed?,c25_30,4,0.0,tfidf
+c25,1,What are the key points being discussed?,c25_29,5,0.0,tfidf
+c25,2,What decisions were made?,c25_67,1,0.0,tfidf
+c25,2,What decisions were made?,c25_17,2,0.0,tfidf
+c25,2,What decisions were made?,c25_31,3,0.0,tfidf
+c25,2,What decisions were made?,c25_30,4,0.0,tfidf
+c25,2,What decisions were made?,c25_29,5,0.0,tfidf
+c25,3,What concerns were raised?,c25_67,1,0.0,tfidf
+c25,3,What concerns were raised?,c25_17,2,0.0,tfidf
+c25,3,What concerns were raised?,c25_31,3,0.0,tfidf
+c25,3,What concerns were raised?,c25_30,4,0.0,tfidf
+c25,3,What concerns were raised?,c25_29,5,0.0,tfidf
+c25,4,What is the recommended approach?,c25_67,1,0.0,tfidf
+c25,4,What is the recommended approach?,c25_17,2,0.0,tfidf
+c25,4,What is the recommended approach?,c25_31,3,0.0,tfidf
+c25,4,What is the recommended approach?,c25_30,4,0.0,tfidf
+c25,4,What is the recommended approach?,c25_29,5,0.0,tfidf
+c3,0,What is the main topic of discussion?,c3_75,1,0.0,tfidf
+c3,0,What is the main topic of discussion?,c3_19,2,0.0,tfidf
+c3,0,What is the main topic of discussion?,c3_21,3,0.0,tfidf
+c3,0,What is the main topic of discussion?,c3_22,4,0.0,tfidf
+c3,0,What is the main topic of discussion?,c3_23,5,0.0,tfidf
+c3,1,What are the key points being discussed?,c3_75,1,0.0,tfidf
+c3,1,What are the key points being discussed?,c3_19,2,0.0,tfidf
+c3,1,What are the key points being discussed?,c3_21,3,0.0,tfidf
+c3,1,What are the key points being discussed?,c3_22,4,0.0,tfidf
+c3,1,What are the key points being discussed?,c3_23,5,0.0,tfidf
+c3,2,What decisions were made?,c3_75,1,0.0,tfidf
+c3,2,What decisions were made?,c3_19,2,0.0,tfidf
+c3,2,What decisions were made?,c3_21,3,0.0,tfidf
+c3,2,What decisions were made?,c3_22,4,0.0,tfidf
+c3,2,What decisions were made?,c3_23,5,0.0,tfidf
+c3,3,What concerns were raised?,c3_75,1,0.0,tfidf
+c3,3,What concerns were raised?,c3_19,2,0.0,tfidf
+c3,3,What concerns were raised?,c3_21,3,0.0,tfidf
+c3,3,What concerns were raised?,c3_22,4,0.0,tfidf
+c3,3,What concerns were raised?,c3_23,5,0.0,tfidf
+c3,4,What is the recommended approach?,c3_75,1,0.0,tfidf
+c3,4,What is the recommended approach?,c3_19,2,0.0,tfidf
+c3,4,What is the recommended approach?,c3_21,3,0.0,tfidf
+c3,4,What is the recommended approach?,c3_22,4,0.0,tfidf
+c3,4,What is the recommended approach?,c3_23,5,0.0,tfidf
+c4,0,What is the main topic of discussion?,c4_43,1,0.3677096170025783,tfidf
+c4,0,What is the main topic of discussion?,c4_41,2,0.31704113282635465,tfidf
+c4,0,What is the main topic of discussion?,c4_7,3,0.31704113282635465,tfidf
+c4,0,What is the main topic of discussion?,c4_26,4,0.31431881910320725,tfidf
+c4,0,What is the main topic of discussion?,c4_5,5,0.29606793110274315,tfidf
+c4,1,What are the key points being discussed?,c4_62,1,0.0,tfidf
+c4,1,What are the key points being discussed?,c4_16,2,0.0,tfidf
+c4,1,What are the key points being discussed?,c4_29,3,0.0,tfidf
+c4,1,What are the key points being discussed?,c4_28,4,0.0,tfidf
+c4,1,What are the key points being discussed?,c4_27,5,0.0,tfidf
+c4,2,What decisions were made?,c4_62,1,0.0,tfidf
+c4,2,What decisions were made?,c4_16,2,0.0,tfidf
+c4,2,What decisions were made?,c4_29,3,0.0,tfidf
+c4,2,What decisions were made?,c4_28,4,0.0,tfidf
+c4,2,What decisions were made?,c4_27,5,0.0,tfidf
+c4,3,What concerns were raised?,c4_62,1,0.0,tfidf
+c4,3,What concerns were raised?,c4_16,2,0.0,tfidf
+c4,3,What concerns were raised?,c4_29,3,0.0,tfidf
+c4,3,What concerns were raised?,c4_28,4,0.0,tfidf
+c4,3,What concerns were raised?,c4_27,5,0.0,tfidf
+c4,4,What is the recommended approach?,c4_62,1,0.0,tfidf
+c4,4,What is the recommended approach?,c4_16,2,0.0,tfidf
+c4,4,What is the recommended approach?,c4_29,3,0.0,tfidf
+c4,4,What is the recommended approach?,c4_28,4,0.0,tfidf
+c4,4,What is the recommended approach?,c4_27,5,0.0,tfidf
+c5,0,What is the main topic of discussion?,c5_57,1,0.0,tfidf
+c5,0,What is the main topic of discussion?,c5_28,2,0.0,tfidf
+c5,0,What is the main topic of discussion?,c5_26,3,0.0,tfidf
+c5,0,What is the main topic of discussion?,c5_25,4,0.0,tfidf
+c5,0,What is the main topic of discussion?,c5_24,5,0.0,tfidf
+c5,1,What are the key points being discussed?,c5_57,1,0.0,tfidf
+c5,1,What are the key points being discussed?,c5_28,2,0.0,tfidf
+c5,1,What are the key points being discussed?,c5_26,3,0.0,tfidf
+c5,1,What are the key points being discussed?,c5_25,4,0.0,tfidf
+c5,1,What are the key points being discussed?,c5_24,5,0.0,tfidf
+c5,2,What decisions were made?,c5_57,1,0.0,tfidf
+c5,2,What decisions were made?,c5_28,2,0.0,tfidf
+c5,2,What decisions were made?,c5_26,3,0.0,tfidf
+c5,2,What decisions were made?,c5_25,4,0.0,tfidf
+c5,2,What decisions were made?,c5_24,5,0.0,tfidf
+c5,3,What concerns were raised?,c5_57,1,0.0,tfidf
+c5,3,What concerns were raised?,c5_28,2,0.0,tfidf
+c5,3,What concerns were raised?,c5_26,3,0.0,tfidf
+c5,3,What concerns were raised?,c5_25,4,0.0,tfidf
+c5,3,What concerns were raised?,c5_24,5,0.0,tfidf
+c5,4,What is the recommended approach?,c5_57,1,0.0,tfidf
+c5,4,What is the recommended approach?,c5_28,2,0.0,tfidf
+c5,4,What is the recommended approach?,c5_26,3,0.0,tfidf
+c5,4,What is the recommended approach?,c5_25,4,0.0,tfidf
+c5,4,What is the recommended approach?,c5_24,5,0.0,tfidf
+c6,0,What is the main topic of discussion?,c6_43,1,0.38454497359125905,tfidf
+c6,0,What is the main topic of discussion?,c6_5,2,0.3157650997089057,tfidf
+c6,0,What is the main topic of discussion?,c6_24,3,0.30535009401232927,tfidf
+c6,0,What is the main topic of discussion?,c6_38,4,0.28508866323983745,tfidf
+c6,0,What is the main topic of discussion?,c6_17,5,0.2805554243061606,tfidf
+c6,1,What are the key points being discussed?,c6_69,1,0.0,tfidf
+c6,1,What are the key points being discussed?,c6_25,2,0.0,tfidf
+c6,1,What are the key points being discussed?,c6_19,3,0.0,tfidf
+c6,1,What are the key points being discussed?,c6_20,4,0.0,tfidf
+c6,1,What are the key points being discussed?,c6_21,5,0.0,tfidf
+c6,2,What decisions were made?,c6_69,1,0.0,tfidf
+c6,2,What decisions were made?,c6_25,2,0.0,tfidf
+c6,2,What decisions were made?,c6_19,3,0.0,tfidf
+c6,2,What decisions were made?,c6_20,4,0.0,tfidf
+c6,2,What decisions were made?,c6_21,5,0.0,tfidf
+c6,3,What concerns were raised?,c6_69,1,0.0,tfidf
+c6,3,What concerns were raised?,c6_25,2,0.0,tfidf
+c6,3,What concerns were raised?,c6_19,3,0.0,tfidf
+c6,3,What concerns were raised?,c6_20,4,0.0,tfidf
+c6,3,What concerns were raised?,c6_21,5,0.0,tfidf
+c6,4,What is the recommended approach?,c6_69,1,0.0,tfidf
+c6,4,What is the recommended approach?,c6_25,2,0.0,tfidf
+c6,4,What is the recommended approach?,c6_19,3,0.0,tfidf
+c6,4,What is the recommended approach?,c6_20,4,0.0,tfidf
+c6,4,What is the recommended approach?,c6_21,5,0.0,tfidf
+c7,0,What is the main topic of discussion?,c7_1,1,0.3527909479465461,tfidf
+c7,0,What is the main topic of discussion?,c7_26,2,0.0,tfidf
+c7,0,What is the main topic of discussion?,c7_20,3,0.0,tfidf
+c7,0,What is the main topic of discussion?,c7_21,4,0.0,tfidf
+c7,0,What is the main topic of discussion?,c7_22,5,0.0,tfidf
+c7,1,What are the key points being discussed?,c7_71,1,0.0,tfidf
+c7,1,What are the key points being discussed?,c7_26,2,0.0,tfidf
+c7,1,What are the key points being discussed?,c7_20,3,0.0,tfidf
+c7,1,What are the key points being discussed?,c7_21,4,0.0,tfidf
+c7,1,What are the key points being discussed?,c7_22,5,0.0,tfidf
+c7,2,What decisions were made?,c7_71,1,0.0,tfidf
+c7,2,What decisions were made?,c7_26,2,0.0,tfidf
+c7,2,What decisions were made?,c7_20,3,0.0,tfidf
+c7,2,What decisions were made?,c7_21,4,0.0,tfidf
+c7,2,What decisions were made?,c7_22,5,0.0,tfidf
+c7,3,What concerns were raised?,c7_71,1,0.0,tfidf
+c7,3,What concerns were raised?,c7_26,2,0.0,tfidf
+c7,3,What concerns were raised?,c7_20,3,0.0,tfidf
+c7,3,What concerns were raised?,c7_21,4,0.0,tfidf
+c7,3,What concerns were raised?,c7_22,5,0.0,tfidf
+c7,4,What is the recommended approach?,c7_71,1,0.0,tfidf
+c7,4,What is the recommended approach?,c7_26,2,0.0,tfidf
+c7,4,What is the recommended approach?,c7_20,3,0.0,tfidf
+c7,4,What is the recommended approach?,c7_21,4,0.0,tfidf
+c7,4,What is the recommended approach?,c7_22,5,0.0,tfidf
+c8,0,What is the main topic of discussion?,c8_30,1,0.359738637532585,tfidf
+c8,0,What is the main topic of discussion?,c8_59,2,0.359738637532585,tfidf
+c8,0,What is the main topic of discussion?,c8_56,3,0.359738637532585,tfidf
+c8,0,What is the main topic of discussion?,c8_26,4,0.3189174658971782,tfidf
+c8,0,What is the main topic of discussion?,c8_10,5,0.3028284366715107,tfidf
+c8,1,What are the key points being discussed?,c8_68,1,0.0,tfidf
+c8,1,What are the key points being discussed?,c8_25,2,0.0,tfidf
+c8,1,What are the key points being discussed?,c8_19,3,0.0,tfidf
+c8,1,What are the key points being discussed?,c8_20,4,0.0,tfidf
+c8,1,What are the key points being discussed?,c8_21,5,0.0,tfidf
+c8,2,What decisions were made?,c8_68,1,0.0,tfidf
+c8,2,What decisions were made?,c8_25,2,0.0,tfidf
+c8,2,What decisions were made?,c8_19,3,0.0,tfidf
+c8,2,What decisions were made?,c8_20,4,0.0,tfidf
+c8,2,What decisions were made?,c8_21,5,0.0,tfidf
+c8,3,What concerns were raised?,c8_68,1,0.0,tfidf
+c8,3,What concerns were raised?,c8_25,2,0.0,tfidf
+c8,3,What concerns were raised?,c8_19,3,0.0,tfidf
+c8,3,What concerns were raised?,c8_20,4,0.0,tfidf
+c8,3,What concerns were raised?,c8_21,5,0.0,tfidf
+c8,4,What is the recommended approach?,c8_68,1,0.0,tfidf
+c8,4,What is the recommended approach?,c8_25,2,0.0,tfidf
+c8,4,What is the recommended approach?,c8_19,3,0.0,tfidf
+c8,4,What is the recommended approach?,c8_20,4,0.0,tfidf
+c8,4,What is the recommended approach?,c8_21,5,0.0,tfidf
+c9,0,What is the main topic of discussion?,c9_60,1,0.0,tfidf
+c9,0,What is the main topic of discussion?,c9_59,2,0.0,tfidf
+c9,0,What is the main topic of discussion?,c9_28,3,0.0,tfidf
+c9,0,What is the main topic of discussion?,c9_27,4,0.0,tfidf
+c9,0,What is the main topic of discussion?,c9_26,5,0.0,tfidf
+c9,1,What are the key points being discussed?,c9_60,1,0.0,tfidf
+c9,1,What are the key points being discussed?,c9_59,2,0.0,tfidf
+c9,1,What are the key points being discussed?,c9_28,3,0.0,tfidf
+c9,1,What are the key points being discussed?,c9_27,4,0.0,tfidf
+c9,1,What are the key points being discussed?,c9_26,5,0.0,tfidf
+c9,2,What decisions were made?,c9_60,1,0.0,tfidf
+c9,2,What decisions were made?,c9_59,2,0.0,tfidf
+c9,2,What decisions were made?,c9_28,3,0.0,tfidf
+c9,2,What decisions were made?,c9_27,4,0.0,tfidf
+c9,2,What decisions were made?,c9_26,5,0.0,tfidf
+c9,3,What concerns were raised?,c9_60,1,0.0,tfidf
+c9,3,What concerns were raised?,c9_59,2,0.0,tfidf
+c9,3,What concerns were raised?,c9_28,3,0.0,tfidf
+c9,3,What concerns were raised?,c9_27,4,0.0,tfidf
+c9,3,What concerns were raised?,c9_26,5,0.0,tfidf
+c9,4,What is the recommended approach?,c9_60,1,0.0,tfidf
+c9,4,What is the recommended approach?,c9_59,2,0.0,tfidf
+c9,4,What is the recommended approach?,c9_28,3,0.0,tfidf
+c9,4,What is the recommended approach?,c9_27,4,0.0,tfidf
+c9,4,What is the recommended approach?,c9_26,5,0.0,tfidf

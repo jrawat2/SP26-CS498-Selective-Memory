@@ -34,8 +34,8 @@ def compute_retrieval_share(
     df_messages: pd.DataFrame,
     df_retrieval: pd.DataFrame,
     speaker_col: str = "speaker",
-    msg_id_col: str = "msg_id",
-    retrieved_msg_id_col: str = "retrieved_msg_id",
+    msg_id_col: str = "message_uid",
+    retrieved_msg_id_col: str = "retrieved_message_uid",
 ) -> Dict[str, float]:
     speaker_lookup = df_messages.set_index(msg_id_col)[speaker_col].to_dict()
 
@@ -49,10 +49,11 @@ def compute_retrieval_share(
         retrieval_counts[speaker] = retrieval_counts.get(speaker, 0) + 1
         total += 1
 
-    if total == 0:
-        return {speaker: 0.0 for speaker in df_messages[speaker_col].unique()}
-
     all_speakers = sorted(df_messages[speaker_col].unique())
+
+    if total == 0:
+        return {speaker: 0.0 for speaker in all_speakers}
+
     return {
         speaker: retrieval_counts.get(speaker, 0) / total
         for speaker in all_speakers
@@ -90,16 +91,26 @@ def build_speaker_metrics_table(
     df_messages: pd.DataFrame,
     df_retrieval: pd.DataFrame,
     speaker_col: str = "speaker",
-    msg_id_col: str = "msg_id",
+    msg_id_col: str = "message_uid",
+    retrieved_msg_id_col: str = "retrieved_message_uid",
 ) -> pd.DataFrame:
-    participation_share = compute_participation_share(df_messages, speaker_col=speaker_col)
+    participation_share = compute_participation_share(
+        df_messages,
+        speaker_col=speaker_col,
+    )
+
     retrieval_share = compute_retrieval_share(
         df_messages=df_messages,
         df_retrieval=df_retrieval,
         speaker_col=speaker_col,
         msg_id_col=msg_id_col,
+        retrieved_msg_id_col=retrieved_msg_id_col,
     )
-    representation_ratio = compute_representation_ratio(participation_share, retrieval_share)
+
+    representation_ratio = compute_representation_ratio(
+        participation_share,
+        retrieval_share,
+    )
 
     speakers = sorted(set(participation_share) | set(retrieval_share))
 

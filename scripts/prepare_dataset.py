@@ -46,9 +46,15 @@ def prepare_dataset(input_path: str, output_path: str) -> None:
     if "conv_id" not in df.columns:
         df["conv_id"] = 0
 
+    df["conv_id"] = df["conv_id"].astype(str)
+    df["msg_id"] = df["msg_id"].astype(str)
+
+    # create globally unique message ID
+    df["message_uid"] = df["conv_id"] + "_" + df["msg_id"]
+
     # reorder columns
-    cols = ["msg_id", "conv_id", "speaker", "message"] + [
-        c for c in df.columns if c not in {"msg_id", "conv_id", "speaker", "message"}
+    cols = ["message_uid", "msg_id", "conv_id", "speaker", "message"] + [
+        c for c in df.columns if c not in {"message_uid", "msg_id", "conv_id", "speaker", "message"}
     ]
     df = df[cols]
 
@@ -59,6 +65,7 @@ def prepare_dataset(input_path: str, output_path: str) -> None:
 
     print(f"Saved cleaned dataset to: {output_path}")
     print(f"Rows: {len(df)}")
+    print("Example message_uid:", df["message_uid"].iloc[0] if len(df) > 0 else "N/A")
 
 
 if __name__ == "__main__":

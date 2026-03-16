@@ -1,6 +1,6 @@
 # Selective Memory: Measuring Retrieval Bias in AI-Augmented Group Conversations
 
-**CS498 – Human-LLM interaction**  
+**CS498 – Human-LLM Interaction**  
 **Team:** Bhavyaa Chauhan, Jyoti Rawat, Sandra John  
 
 ---
@@ -17,10 +17,10 @@ This repository implements a **retrieval analysis pipeline** to measure whether 
 
 # Key Features
 
-• Conversation retrieval simulation using TF‑IDF  
-• Speaker fairness metrics for representation imbalance  
-• Linguistic feature extraction for communication style analysis  
-• Logistic regression models predicting retrieval likelihood  
+• Conversation retrieval simulation using **TF-IDF and Dense Retrieval (Sentence-BERT)**  
+• Speaker fairness metrics for **representation imbalance**  
+• Linguistic feature extraction for **communication style analysis**  
+• Logistic regression models predicting **retrieval likelihood**  
 • Diagnostic outputs for analyzing retrieval bias
 
 ---
@@ -74,12 +74,18 @@ SP26-CS498-Selective-Memory
 │   ├── figures
 │   ├── logs
 │   └── results
-│       ├── message_level_features.csv
-│       ├── regression_coefficients_style_only.csv
-│       ├── regression_coefficients.csv
-│       ├── regression_summary.txt
-│       ├── retrieval_results.csv
-│       └── speaker_metrics.csv
+│       ├── retrieval_results_tfidf.csv
+│       ├── retrieval_results_dense.csv
+│       ├── speaker_metrics_tfidf.csv
+│       ├── speaker_metrics_dense.csv
+│       ├── message_level_features_tfidf.csv
+│       ├── message_level_features_dense.csv
+│       ├── regression_coefficients_tfidf.csv
+│       ├── regression_coefficients_dense.csv
+│       ├── regression_coefficients_style_only_tfidf.csv
+│       ├── regression_coefficients_style_only_dense.csv
+│       ├── regression_summary_tfidf.txt
+│       └── regression_summary_dense.txt
 │
 ├── scripts
 │   ├── prepare_dataset.py
@@ -149,115 +155,33 @@ Python 3.9+
 
 ## Step 1 — Prepare Dataset
 
-```
+```bash
 python3 scripts/prepare_dataset.py   --input data/raw/conversations.csv   --output data/processed/conversations_clean.csv
 ```
 
----
-
 ## Step 2 — Run Retrieval
 
-```
-python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results.csv   --top-k 5
+TF-IDF:
+
+```bash
+python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results.csv   --top-k 5   --retriever tfidf
 ```
 
----
+Dense Retrieval:
+
+```bash
+python3 scripts/run_retrieval.py   --input data/processed/conversations_clean.csv   --output outputs/results/retrieval_results.csv   --top-k 5   --retriever dense
+```
 
 ## Step 3 — Run Analysis
 
-```
-python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results.csv   --output-dir outputs/results
-```
-
----
-
-# Linguistic Features
-
-The analysis extracts message-level communication features including:
-
-• Message length (characters and words)  
-• Presence of questions  
-• Presence of exclamation marks  
-• Uppercase character usage  
-• Digit usage  
-• Hedge word frequency  
-• Politeness markers  
-• First‑person pronoun usage  
-
----
-
-# Fairness Metrics
-
-### Participation Share
-Fraction of total messages authored by a speaker.
-
-### Retrieval Share
-Fraction of retrieved messages attributed to that speaker.
-
-### Representation Ratio
-
-```
-retrieval_share / participation_share
+```bash
+python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results_tfidf.csv   --output-dir outputs/results
 ```
 
-Interpretation:
-
+```bash
+python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results_dense.csv   --output-dir outputs/results
 ```
-1.0  → proportional representation
->1.0 → over‑represented
-<1.0 → under‑represented
-```
-
-### Gini Coefficient
-
-Measures inequality in retrieval attention across speakers.
-
-```
-0 → perfectly equal distribution
-1 → maximum inequality
-```
-
----
-
-# Logistic Regression Analysis
-
-Two models are implemented:
-
-### Model 1 — Style + Speaker
-
-Uses:
-
-• Linguistic features  
-• Speaker identity  
-
-Purpose: determine whether linguistic features remain predictive after controlling for speaker identity.
-
----
-
-### Model 2 — Style Only
-
-Uses **only linguistic features**.
-
-Purpose: determine whether communication style alone influences retrieval likelihood.
-
----
-
-# Output Files
-
-Results are written to:
-
-```
-outputs/results/
-```
-
-Generated files:
-
-• retrieval_results.csv  
-• speaker_metrics.csv  
-• message_level_features.csv  
-• regression_summary.txt  
-• regression_coefficients.csv  
-• regression_coefficients_style_only.csv  
 
 ---
 
@@ -274,30 +198,9 @@ sentence-transformers
 
 Install using:
 
-```
+```bash
 pip install -r requirements.txt
 ```
-
----
-
-# Testing
-
-Run tests:
-
-```
-pytest tests/
-```
-
----
-
-# Future Work
-
-• Sentence‑BERT dense retrieval  
-• ChromaDB vector database indexing  
-• LangChain‑based RAG pipeline  
-• Claude LLM integration  
-• LangSmith tracing  
-• Human perception experiments
 
 ---
 
@@ -306,23 +209,24 @@ pytest tests/
 | Component | Status |
 |-----------|--------|
 Dataset preprocessing | Complete |
-TF‑IDF retrieval | Complete |
+TF-IDF retrieval | Complete |
+Dense retrieval | Complete |
 Fairness metrics | Complete |
 Linguistic feature extraction | Complete |
 Regression analysis | Complete |
-Dense retrieval | Planned |
+Visualization analysis | Planned |
 Human evaluation | Planned |
 
 ---
 
 # Acknowledgments
 
-Course: **CS498 – Human-LLM interaction**  
-Institution: **University of Illinois Urbana‑Champaign**  
+Course: **CS498 – Human-LLM Interaction**  
+Institution: **University of Illinois Urbana-Champaign**  
 Semester: **Spring 2026**
 
 ---
 
 # License
 
-This repository is intended for academic research and coursework.
+This repository is intended for **academic research and coursework**.
