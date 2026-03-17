@@ -82,7 +82,16 @@ def run_retrieval(
         msg_uids = conv_df["message_uid"].tolist()
 
         retriever = build_retriever(retriever_name)
-        retriever.fit(texts)
+
+        if retriever_name.lower() == "chroma":
+            retriever.fit(
+                texts,
+                msg_uids,
+                conv_df["speaker"].astype(str).tolist() if "speaker" in conv_df.columns else None,
+                conv_df["conv_id"].astype(str).tolist(),
+            )
+        else:
+            retriever.fit(texts)
 
         for query_id, query_text in enumerate(STANDARD_QUERIES):
             retrieved = retriever.retrieve(query=query_text, top_k=top_k)

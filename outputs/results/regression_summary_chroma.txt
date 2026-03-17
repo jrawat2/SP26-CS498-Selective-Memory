@@ -8,8 +8,8 @@ Total retrieval events: 625
 Retrieved label distribution: {0: 1157, 1: 444}
 
 === Model 1: Style + Speaker ===
-Intercept: -0.110286
-Train accuracy: 0.5809
+Intercept: -0.112837
+Train accuracy: 0.5834
 Positive samples: 444
 Negative samples: 1157
 Categorical features used: ['speaker']

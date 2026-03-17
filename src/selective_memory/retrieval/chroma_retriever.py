@@ -23,7 +23,13 @@ class ChromaRetriever:
 
         self.texts: List[str] = []
 
-    def fit(self, texts: List[str]) -> None:
+    def fit(
+        self,
+        texts: List[str],
+        message_uids: Optional[List[str]] = None,
+        speakers: Optional[List[str]] = None,
+        conv_ids: Optional[List[str]] = None,
+    ) -> None:
         self.texts = texts
 
         existing = [c.name for c in self.client.list_collections()]
@@ -40,7 +46,19 @@ class ChromaRetriever:
         ).tolist()
 
         ids = [str(i) for i in range(len(texts))]
-        metadatas = [{"doc_index": i} for i in range(len(texts))]
+
+        metadatas = []
+        for i in range(len(texts)):
+            metadata = {"doc_index": i}
+
+            if message_uids is not None:
+                metadata["message_uid"] = str(message_uids[i])
+            if speakers is not None:
+                metadata["speaker"] = str(speakers[i])
+            if conv_ids is not None:
+                metadata["conv_id"] = str(conv_ids[i])
+
+            metadatas.append(metadata)
 
         self.collection.add(
             ids=ids,
