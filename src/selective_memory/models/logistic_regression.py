@@ -12,13 +12,25 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 FEATURE_COLUMNS_NUMERIC = [
     "message_length_chars",
     "message_length_words",
+    "num_sentences",
+    "avg_word_length",
+    "words_per_sentence",
     "has_question",
     "has_exclamation",
+    "num_questions",
+    "question_ratio",
     "num_uppercase_chars",
     "num_digits",
     "num_hedges",
+    "hedge_ratio",
     "num_politeness",
+    "num_assertive",
+    "assertive_ratio",
+    "num_modal_verbs",
+    "modal_ratio",
+    "num_meta_conversation",
     "num_first_person_pronouns",
+    "confidence_score",
 ]
 
 FEATURE_COLUMNS_CATEGORICAL = ["speaker"]

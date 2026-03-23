@@ -4,3 +4,5 @@ scikit-learn
 sentence-transformers
 chromadb
 matplotlib
+langchain-core
+langchain-anthropic

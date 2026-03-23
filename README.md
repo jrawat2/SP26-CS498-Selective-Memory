@@ -23,6 +23,8 @@ This repository implements a **retrieval analysis pipeline** to measure whether 
 • Logistic regression models predicting **retrieval likelihood**  
 • Visualization pipeline for analyzing **retrieval bias**  
 • Comparative analysis across **lexical retrieval, dense semantic retrieval, and vector database retrieval**
+• Proposal-aligned **speaker-citing RAG summary generation** with JSONL trace logs  
+• Human-study preparation artifacts for downstream perception evaluation
 
 ---
 
@@ -107,15 +109,20 @@ SP26-CS498-Selective-Memory
 │   ├── run_analysis.py
 │   ├── run_pipeline.py
 │   ├── run_retrieval.py
+│   ├── run_rag.py
+│   ├── prepare_human_study.py
 │   └── generate_plots.py
 │
 ├── src/selective_memory
 │   ├── features
 │   │   └── linguistic_features.py
 │   ├── metrics
-│   │   └── fairness_metrics.py
+│   │   ├── fairness_metrics.py
+│   │   └── correlation_analysis.py
 │   ├── models
 │   │   └── logistic_regression.py
+│   ├── rag
+│   │   └── pipeline.py
 │   ├── retrieval
 │   │   ├── dense_retriever.py
 │   │   ├── tfidf_retriever.py
@@ -132,7 +139,7 @@ SP26-CS498-Selective-Memory
 
 # Pipeline Overview
 
-The pipeline consists of four major stages:
+The pipeline consists of five major stages:
 
 ### 1. Dataset Preparation
 Raw conversation data is cleaned and normalized into a standardized format.
@@ -149,7 +156,10 @@ The ChromaDB implementation stores Sentence-BERT embeddings in a vector database
 ### 3. Retrieval Analysis
 Speaker fairness metrics and logistic regression models analyze which messages are selected.
 
-### 4. Visualization Pipeline
+### 4. RAG Summary Generation
+Retrieved messages can be turned into **speaker-citing summaries**. If `ANTHROPIC_API_KEY` and LangChain Anthropic dependencies are available, the pipeline uses Claude; otherwise it falls back to a deterministic extractive summarizer while still producing trace logs.
+
+### 5. Visualization Pipeline
 Generates plots to visualize speaker representation and retrieval bias across retrieval methods.
 
 ---
@@ -217,6 +227,24 @@ python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.
 
 ```bash
 python3 scripts/run_analysis.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results_chroma.csv   --output-dir outputs/results
+```
+
+## Step 4 — Generate Proposal-Style Summaries
+
+```bash
+python3 scripts/run_rag.py   --messages data/processed/conversations_clean.csv   --retrieval outputs/results/retrieval_results_chroma.csv   --output outputs/results/rag_summaries_chroma.csv   --trace-output outputs/logs/rag_trace_chroma.jsonl
+```
+
+## Step 5 — Prepare Human Study Template
+
+```bash
+python3 scripts/prepare_human_study.py   --summaries outputs/results/rag_summaries_chroma.csv   --output outputs/results/human_study_template_chroma.csv
+```
+
+## One-Command Pipeline
+
+```bash
+python3 scripts/run_pipeline.py   --input data/raw/conversations.csv   --top-k 5   --retrievers tfidf dense chroma   --run-generation
 ```
 
 ## Step 4 — Visualization

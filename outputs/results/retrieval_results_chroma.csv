@@ -2,7 +2,7 @@ conv_id,query_id,query_text,retrieved_message_uid,rank,score,retriever
 c1,0,What is the main topic of discussion?,c1_56,1,-0.2702305316925049,chroma
 c1,0,What is the main topic of discussion?,c1_6,2,-0.2996816635131836,chroma
 c1,0,What is the main topic of discussion?,c1_10,3,-0.311126708984375,chroma
-c1,0,What is the main topic of discussion?,c1_38,4,-0.34072864055633545,chroma
+c1,0,What is the main topic of discussion?,c1_36,4,-0.34072864055633545,chroma
 c1,0,What is the main topic of discussion?,c1_60,5,-0.34072864055633545,chroma
 c1,1,What are the key points being discussed?,c1_33,1,-0.25750672817230225,chroma
 c1,1,What are the key points being discussed?,c1_27,2,-0.2800639867782593,chroma
@@ -188,7 +188,7 @@ c16,2,What decisions were made?,c16_11,1,-0.5389513969421387,chroma
 c16,2,What decisions were made?,c16_65,2,-0.5394635200500488,chroma
 c16,2,What decisions were made?,c16_14,3,-0.5599608421325684,chroma
 c16,2,What decisions were made?,c16_68,4,-0.5599608421325684,chroma
-c16,2,What decisions were made?,c16_36,5,-0.5837365388870239,chroma
+c16,2,What decisions were made?,c16_63,5,-0.5837365388870239,chroma
 c16,3,What concerns were raised?,c16_61,1,-0.49311745166778564,chroma
 c16,3,What concerns were raised?,c16_4,2,-0.5135650634765625,chroma
 c16,3,What concerns were raised?,c16_18,3,-0.5316644906997681,chroma
@@ -196,14 +196,14 @@ c16,3,What concerns were raised?,c16_40,4,-0.5393414497375488,chroma
 c16,3,What concerns were raised?,c16_48,5,-0.5467696189880371,chroma
 c16,4,What is the recommended approach?,c16_23,1,-0.34677600860595703,chroma
 c16,4,What is the recommended approach?,c16_21,2,-0.4679741859436035,chroma
-c16,4,What is the recommended approach?,c16_36,3,-0.5027023553848267,chroma
+c16,4,What is the recommended approach?,c16_49,3,-0.5027023553848267,chroma
 c16,4,What is the recommended approach?,c16_62,4,-0.5027023553848267,chroma
 c16,4,What is the recommended approach?,c16_63,5,-0.5027023553848267,chroma
 c17,0,What is the main topic of discussion?,c17_43,1,-0.27701568603515625,chroma
 c17,0,What is the main topic of discussion?,c17_5,2,-0.27883052825927734,chroma
 c17,0,What is the main topic of discussion?,c17_11,3,-0.30676543712615967,chroma
 c17,0,What is the main topic of discussion?,c17_33,4,-0.31337785720825195,chroma
-c17,0,What is the main topic of discussion?,c17_61,5,-0.34619808197021484,chroma
+c17,0,What is the main topic of discussion?,c17_53,5,-0.34619808197021484,chroma
 c17,1,What are the key points being discussed?,c17_18,1,-0.13441479206085205,chroma
 c17,1,What are the key points being discussed?,c17_49,2,-0.1835801601409912,chroma
 c17,1,What are the key points being discussed?,c17_42,3,-0.2562062740325928,chroma
@@ -358,7 +358,7 @@ c22,1,What are the key points being discussed?,c22_40,1,-0.2637171745300293,chro
 c22,1,What are the key points being discussed?,c22_5,2,-0.2673288583755493,chroma
 c22,1,What are the key points being discussed?,c22_1,3,-0.29017388820648193,chroma
 c22,1,What are the key points being discussed?,c22_49,4,-0.303275465965271,chroma
-c22,1,What are the key points being discussed?,c22_41,5,-0.33821558952331543,chroma
+c22,1,What are the key points being discussed?,c22_7,5,-0.33821558952331543,chroma
 c22,2,What decisions were made?,c22_5,1,-0.5275740623474121,chroma
 c22,2,What decisions were made?,c22_1,2,-0.6367925405502319,chroma
 c22,2,What decisions were made?,c22_15,3,-0.6739516258239746,chroma

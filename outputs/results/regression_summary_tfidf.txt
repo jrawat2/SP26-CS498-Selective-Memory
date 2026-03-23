@@ -8,21 +8,23 @@ Total retrieval events: 625
 Retrieved label distribution: {0: 1419, 1: 182}
 
 === Model 1: Style + Speaker ===
-Intercept: -0.089055
-Train accuracy: 0.5753
+Intercept: -0.093263
+Train accuracy: 0.6177
 Positive samples: 182
 Negative samples: 1419
 Categorical features used: ['speaker']
-Numeric features used: ['message_length_chars', 'message_length_words', 'has_question', 'has_exclamation', 'num_uppercase_chars', 'num_digits', 'num_hedges', 'num_politeness', 'num_first_person_pronouns']
+Numeric features used: ['message_length_chars', 'message_length_words', 'num_sentences', 'avg_word_length', 'words_per_sentence', 'has_question', 'has_exclamation', 'num_questions', 'question_ratio', 'num_uppercase_chars', 'num_digits', 'num_hedges', 'hedge_ratio', 'num_politeness', 'num_assertive', 'assertive_ratio', 'num_modal_verbs', 'modal_ratio', 'num_meta_conversation', 'num_first_person_pronouns', 'confidence_score']
 
 === Model 2: Style Only ===
-Intercept: -0.046186
-Train accuracy: 0.5403
+Intercept: -0.094764
+Train accuracy: 0.5859
 Positive samples: 182
 Negative samples: 1419
 Categorical features used: []
-Numeric features used: ['message_length_chars', 'message_length_words', 'has_question', 'has_exclamation', 'num_uppercase_chars', 'num_digits', 'num_hedges', 'num_politeness', 'num_first_person_pronouns']
+Numeric features used: ['message_length_chars', 'message_length_words', 'num_sentences', 'avg_word_length', 'words_per_sentence', 'has_question', 'has_exclamation', 'num_questions', 'question_ratio', 'num_uppercase_chars', 'num_digits', 'num_hedges', 'hedge_ratio', 'num_politeness', 'num_assertive', 'assertive_ratio', 'num_modal_verbs', 'modal_ratio', 'num_meta_conversation', 'num_first_person_pronouns', 'confidence_score']
 
 Top coefficients saved in:
 - regression_coefficients_tfidf.csv
 - regression_coefficients_style_only_tfidf.csv
+- speaker_feature_summary_tfidf.csv
+- feature_retrieval_correlations_tfidf.csv

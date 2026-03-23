@@ -39,7 +39,7 @@ def compute_retrieval_share(
 ) -> Dict[str, float]:
     speaker_lookup = df_messages.set_index(msg_id_col)[speaker_col].to_dict()
 
-    retrieval_counts = {}
+    retrieval_counts: Dict[str, int] = {}
     total = 0
 
     for retrieved_msg_id in df_retrieval[retrieved_msg_id_col]:
@@ -58,6 +58,25 @@ def compute_retrieval_share(
         speaker: retrieval_counts.get(speaker, 0) / total
         for speaker in all_speakers
     }
+
+
+def compute_retrieval_counts(
+    df_messages: pd.DataFrame,
+    df_retrieval: pd.DataFrame,
+    speaker_col: str = "speaker",
+    msg_id_col: str = "message_uid",
+    retrieved_msg_id_col: str = "retrieved_message_uid",
+) -> Dict[str, int]:
+    speaker_lookup = df_messages.set_index(msg_id_col)[speaker_col].to_dict()
+    retrieval_counts = {speaker: 0 for speaker in sorted(df_messages[speaker_col].unique())}
+
+    for retrieved_msg_id in df_retrieval[retrieved_msg_id_col]:
+        speaker = speaker_lookup.get(retrieved_msg_id)
+        if speaker is None:
+            continue
+        retrieval_counts[speaker] = retrieval_counts.get(speaker, 0) + 1
+
+    return retrieval_counts
 
 
 def compute_representation_ratio(
@@ -80,8 +99,8 @@ def compute_representation_ratio(
     return ratios
 
 
-def compute_max_gap(representation_ratio: Dict[str, float]) -> float:
-    values = list(representation_ratio.values())
+def compute_max_gap(retrieval_share: Dict[str, float]) -> float:
+    values = list(retrieval_share.values())
     if not values:
         return 0.0
     return float(max(values) - min(values))
@@ -106,6 +125,13 @@ def build_speaker_metrics_table(
         msg_id_col=msg_id_col,
         retrieved_msg_id_col=retrieved_msg_id_col,
     )
+    retrieval_counts = compute_retrieval_counts(
+        df_messages=df_messages,
+        df_retrieval=df_retrieval,
+        speaker_col=speaker_col,
+        msg_id_col=msg_id_col,
+        retrieved_msg_id_col=retrieved_msg_id_col,
+    )
 
     representation_ratio = compute_representation_ratio(
         participation_share,
@@ -119,6 +145,8 @@ def build_speaker_metrics_table(
         rows.append(
             {
                 "speaker": speaker,
+                "message_count": int((df_messages[speaker_col] == speaker).sum()),
+                "retrieval_count": retrieval_counts.get(speaker, 0),
                 "participation_share": participation_share.get(speaker, 0.0),
                 "retrieval_share": retrieval_share.get(speaker, 0.0),
                 "representation_ratio": representation_ratio.get(speaker, 0.0),
@@ -127,6 +155,6 @@ def build_speaker_metrics_table(
 
     result = pd.DataFrame(rows)
     result["gini"] = compute_gini(result["retrieval_share"].tolist())
-    result["max_gap"] = compute_max_gap(representation_ratio)
+    result["max_gap"] = compute_max_gap(retrieval_share)
 
     return result

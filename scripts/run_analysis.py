@@ -10,6 +10,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "src"))
 
 from selective_memory.features.linguistic_features import extract_linguistic_features  # noqa: E402
+from selective_memory.metrics.correlation_analysis import (  # noqa: E402
+    build_speaker_feature_summary,
+    compute_feature_retrieval_correlations,
+)
 from selective_memory.metrics.fairness_metrics import build_speaker_metrics_table  # noqa: E402
 from selective_memory.models.logistic_regression import (  # noqa: E402
     build_message_level_retrieval_labels,
@@ -69,6 +73,8 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
         speaker_col="speaker",
         msg_id_col="message_uid",
     )
+    speaker_feature_summary = build_speaker_feature_summary(df_labeled)
+    correlation_df = compute_feature_retrieval_correlations(df_labeled)
 
     # Regression 1: style + speaker
     model_full, coef_df_full, regression_summary_full = fit_logistic_regression(df_labeled)
@@ -83,12 +89,16 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
 
     speaker_metrics_path = output_path / f"speaker_metrics{suffix}.csv"
     message_features_path = output_path / f"message_level_features{suffix}.csv"
+    speaker_feature_summary_path = output_path / f"speaker_feature_summary{suffix}.csv"
+    feature_correlation_path = output_path / f"feature_retrieval_correlations{suffix}.csv"
     regression_summary_path = output_path / f"regression_summary{suffix}.txt"
     coefficients_full_path = output_path / f"regression_coefficients{suffix}.csv"
     coefficients_style_path = output_path / f"regression_coefficients_style_only{suffix}.csv"
 
     speaker_metrics.to_csv(speaker_metrics_path, index=False)
     df_labeled.to_csv(message_features_path, index=False)
+    speaker_feature_summary.to_csv(speaker_feature_summary_path, index=False)
+    correlation_df.to_csv(feature_correlation_path, index=False)
     coef_df_full.to_csv(coefficients_full_path, index=False)
     coef_df_style.to_csv(coefficients_style_path, index=False)
 
@@ -134,9 +144,13 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
         f.write("Top coefficients saved in:\n")
         f.write(f"- {coefficients_full_path.name}\n")
         f.write(f"- {coefficients_style_path.name}\n")
+        f.write(f"- {speaker_feature_summary_path.name}\n")
+        f.write(f"- {feature_correlation_path.name}\n")
 
     print(f"Saved speaker metrics to: {speaker_metrics_path}")
     print(f"Saved message-level features to: {message_features_path}")
+    print(f"Saved speaker feature summary to: {speaker_feature_summary_path}")
+    print(f"Saved feature correlations to: {feature_correlation_path}")
     print(f"Saved regression summary to: {regression_summary_path}")
     print(f"Saved regression coefficients to: {coefficients_full_path}")
     print(f"Saved style-only regression coefficients to: {coefficients_style_path}")
@@ -150,6 +164,9 @@ def run_analysis(messages_path: str, retrieval_path: str, output_dir: str) -> No
 
     print("\nSpeaker metrics preview:")
     print(speaker_metrics)
+
+    print("\nTop feature correlations:")
+    print(correlation_df.head(15))
 
     print("\nTop regression coefficients (style + speaker):")
     print(coef_df_full.head(15))

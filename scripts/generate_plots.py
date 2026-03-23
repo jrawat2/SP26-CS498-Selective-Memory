@@ -132,14 +132,8 @@ def plot_retrieval_histogram(df_metrics: pd.DataFrame, retriever_name: str):
     """
     Histogram showing number of retrieved messages per speaker
     """
-
-    # total retrieval events for this retriever
-    total_retrievals = df_metrics["retrieval_share"].sum()
-
-    # convert share → counts
-    df_metrics["retrieval_count"] = (
-        df_metrics["retrieval_share"] * total_retrievals
-    )
+    if "retrieval_count" not in df_metrics.columns:
+        raise ValueError("speaker metrics file must include a retrieval_count column")
 
     plt.figure(figsize=(10, 6))
 
@@ -164,6 +158,7 @@ def plot_retrieval_histogram(df_metrics: pd.DataFrame, retriever_name: str):
 
 def main() -> None:
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
     df_tfidf = load_metrics("speaker_metrics_tfidf.csv")
     df_dense = load_metrics("speaker_metrics_dense.csv")
