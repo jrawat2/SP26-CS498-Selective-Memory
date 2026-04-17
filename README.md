@@ -71,8 +71,6 @@ SP26-CS498-Selective-Memory
 │   └── processed
 │       └── conversations_clean.csv
 │
-├── docs
-│
 ├── outputs
 │   ├── figures
 │   │   ├── participation_vs_retrieval_tfidf.png
@@ -84,6 +82,9 @@ SP26-CS498-Selective-Memory
 │   │   ├── retrieval_histogram_chroma.png
 │   │   └── gini_comparison.png
 │   ├── logs
+│   │   ├── rag_trace_tfidf.jsonl
+│   │   ├── rag_trace_dense.jsonl
+│   │   └── rag_trace_chroma.jsonl
 │   └── results
 │       ├── retrieval_results_tfidf.csv
 │       ├── retrieval_results_dense.csv
@@ -100,9 +101,20 @@ SP26-CS498-Selective-Memory
 │       ├── regression_coefficients_style_only_tfidf.csv
 │       ├── regression_coefficients_style_only_dense.csv
 │       ├── regression_coefficients_style_only_chroma.csv
+│       ├── speaker_feature_summary_tfidf.csv
+│       ├── speaker_feature_summary_dense.csv
+│       ├── speaker_feature_summary_chroma.csv
+│       ├── feature_retrieval_correlations_tfidf.csv
+│       ├── feature_retrieval_correlations_dense.csv
+│       ├── feature_retrieval_correlations_chroma.csv
 │       ├── regression_summary_tfidf.txt
 │       ├── regression_summary_dense.txt
-│       └── regression_summary_chroma.txt
+│       ├── regression_summary_chroma.txt
+│       ├── rag_summaries_tfidf.csv
+│       ├── rag_summaries_dense.csv
+│       ├── rag_summaries_chroma.csv
+│       ├── human_study_template_tfidf.csv
+│       └── retriever_comparison_summary.csv
 │
 ├── scripts
 │   ├── prepare_dataset.py
@@ -130,7 +142,6 @@ SP26-CS498-Selective-Memory
 │   └── utils
 │       └── helpers.py
 │
-├── tests
 ├── requirements.txt
 └── README.md
 ```
