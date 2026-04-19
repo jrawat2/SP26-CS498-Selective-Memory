@@ -168,7 +168,7 @@ The ChromaDB implementation stores Sentence-BERT embeddings in a vector database
 Speaker fairness metrics and logistic regression models analyze which messages are selected.
 
 ### 4. RAG Summary Generation
-Retrieved messages can be turned into **speaker-citing summaries**. If `ANTHROPIC_API_KEY` and LangChain Anthropic dependencies are available, the pipeline uses Claude; otherwise it falls back to a deterministic extractive summarizer while still producing trace logs.
+Retrieved messages can be turned into **speaker-citing summaries**. If `ANTHROPIC_API_KEY` is set, the pipeline calls Claude through the official Anthropic Python client; otherwise it falls back to a deterministic extractive summarizer. Tracing is written to **JSONL files** under `outputs/logs/` (no LangSmith / hosted tracing).
 
 ### 5. Visualization Pipeline
 Generates plots to visualize speaker representation and retrieval bias across retrieval methods.

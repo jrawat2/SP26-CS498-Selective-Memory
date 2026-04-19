@@ -4,7 +4,6 @@ import json
 import os
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 
@@ -50,7 +49,7 @@ class RAGPipeline:
     def __init__(
         self,
         prompt_template: str = DEFAULT_PROMPT_TEMPLATE,
-        anthropic_model: str = "claude-3-5-sonnet-latest",
+        anthropic_model: str = "claude-sonnet-4-6",
     ) -> None:
         self.prompt_template = prompt_template
         self.anthropic_model = anthropic_model
@@ -64,25 +63,29 @@ class RAGPipeline:
 
         anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
         if anthropic_api_key:
-            try:
-                return self._generate_with_langchain_anthropic(prompt, context)
-            except Exception:
-                # Fall back to a local extractive summary so the pipeline still runs.
-                pass
+            return self._generate_with_anthropic_api(prompt)
 
         summary = self._generate_extractive_summary(query, df_retrieved_messages)
         return summary, "extractive_fallback", prompt
 
-    def _generate_with_langchain_anthropic(self, prompt: str, context: str) -> tuple[str, str, str]:
-        from langchain_core.messages import HumanMessage
-        from langchain_anthropic import ChatAnthropic
+    def _generate_with_anthropic_api(self, prompt: str) -> tuple[str, str, str]:
+        import anthropic
 
-        llm = ChatAnthropic(
-            model=self.anthropic_model,
+        api_key = os.environ["ANTHROPIC_API_KEY"]
+        model = os.getenv("ANTHROPIC_MODEL", self.anthropic_model)
+        client = anthropic.Anthropic(api_key=api_key)
+        message = client.messages.create(
+            model=model,
+            max_tokens=2048,
             temperature=0,
+            messages=[{"role": "user", "content": prompt}],
         )
-        response = llm.invoke([HumanMessage(content=prompt)])
-        return str(response.content).strip(), "langchain_anthropic", prompt
+        parts: list[str] = []
+        for block in message.content:
+            if block.type == "text":
+                parts.append(block.text)
+        text = "".join(parts).strip()
+        return text, "anthropic_claude", prompt
 
     def _generate_extractive_summary(
         self,
