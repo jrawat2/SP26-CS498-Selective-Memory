@@ -397,6 +397,7 @@ scikit-learn
 sentence-transformers
 chromadb
 matplotlib
+anthropic
 ```
 
 Install using:
