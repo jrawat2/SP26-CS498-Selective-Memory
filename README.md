@@ -24,7 +24,7 @@ This repository implements a **retrieval analysis pipeline** to measure whether 
 • Visualization pipeline for analyzing **retrieval bias**  
 • Comparative analysis across **lexical retrieval, dense semantic retrieval, and vector database retrieval**
 • Proposal-aligned **speaker-citing RAG summary generation** with JSONL trace logs  
-• Human-study preparation artifacts for downstream perception evaluation
+• Human-study preparation artifacts and response analysis for downstream perception evaluation
 
 ---
 
@@ -68,6 +68,7 @@ SP26-CS498-Selective-Memory
 ├── data
 │   ├── raw
 │   │   └── conversations.csv
+│   │   └── Meeting Summary Survey (Responses) - Form Responses 1.csv
 │   └── processed
 │       └── conversations_clean.csv
 │
@@ -114,6 +115,11 @@ SP26-CS498-Selective-Memory
 │       ├── rag_summaries_dense.csv
 │       ├── rag_summaries_chroma.csv
 │       ├── human_study_template_tfidf.csv
+│       ├── human_study_long_chroma.csv
+│       ├── human_study_summary_chroma.csv
+│       ├── human_study_block_summary_chroma.csv
+│       ├── human_study_balance_distribution_chroma.csv
+│       ├── human_study_summary_chroma.txt
 │       └── retriever_comparison_summary.csv
 │
 ├── scripts
@@ -123,6 +129,7 @@ SP26-CS498-Selective-Memory
 │   ├── run_retrieval.py
 │   ├── run_rag.py
 │   ├── prepare_human_study.py
+│   ├── run_human_study_analysis.py
 │   └── generate_plots.py
 │
 ├── src/selective_memory
@@ -170,8 +177,11 @@ Speaker fairness metrics and logistic regression models analyze which messages a
 ### 4. RAG Summary Generation
 Retrieved messages can be turned into **speaker-citing summaries**. If `ANTHROPIC_API_KEY` is set, the pipeline calls Claude through the official Anthropic Python client; otherwise it falls back to a deterministic extractive summarizer. Tracing is written to **JSONL files** under `outputs/logs/` (no LangSmith / hosted tracing).
 
-### 5. Visualization Pipeline
-Generates plots to visualize speaker representation and retrieval bias across retrieval methods.
+### 5. Human Perception Analysis
+Google Form responses can be converted into block-level and aggregated `RQ3` outputs, including speaker-choice distributions and balance ratings.
+
+### 6. Visualization Pipeline
+Generates plots to visualize speaker representation, retrieval bias, and human-study outcomes.
 
 ---
 
@@ -252,13 +262,33 @@ python3 scripts/run_rag.py   --messages data/processed/conversations_clean.csv  
 python3 scripts/prepare_human_study.py   --summaries outputs/results/rag_summaries_chroma.csv   --output outputs/results/human_study_template_chroma.csv
 ```
 
+## Step 6 — Analyze Human Study Responses
+
+Place the Google Form CSV export in `data/raw/Meeting Summary Survey (Responses) - Form Responses 1.csv`, then run:
+
+```bash
+python3 scripts/run_human_study_analysis.py
+```
+
+This produces:
+
+- `outputs/results/human_study_long_chroma.csv`
+- `outputs/results/human_study_summary_chroma.csv`
+- `outputs/results/human_study_block_summary_chroma.csv`
+- `outputs/results/human_study_balance_distribution_chroma.csv`
+- `outputs/results/human_study_summary_chroma.txt`
+- `outputs/figures/human_study_choices_chroma.png`
+- `outputs/figures/human_study_choices_percent_chroma.png`
+- `outputs/figures/human_study_balance_chroma.png`
+- `outputs/figures/human_study_balance_percent_chroma.png`
+
 ## One-Command Pipeline
 
 ```bash
 python3 scripts/run_pipeline.py   --input data/raw/conversations.csv   --top-k 5   --retrievers tfidf dense chroma   --run-generation
 ```
 
-## Step 4 — Visualization
+## Step 7 — Visualization
 
 Generate all plots:
 
@@ -301,6 +331,15 @@ Compares how speakers are over- or under-represented in retrieval results across
 ### Gini Inequality Comparison
 
 Compares inequality in retrieval attention across retrieval models.
+
+### Human Perception Plots
+
+Summarizes how participants rated:
+
+• perceived contribution  
+• perceived knowledge  
+• perceived trust  
+• balance across speakers
 
 ---
 
@@ -379,8 +418,10 @@ ChromaDB retrieval | Complete |
 Fairness metrics | Complete |
 Linguistic feature extraction | Complete |
 Regression analysis | Complete |
+RAG summary generation | Complete |
+Human-study template generation | Complete |
+Human-study response analysis | Complete |
 Visualization pipeline | Complete |
-Human evaluation | Planned |
 
 ---
 

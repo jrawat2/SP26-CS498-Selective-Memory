@@ -1,0 +1,22 @@
+metric,speaker,count,percentage
+contribution,Speaker A,53,13.25
+contribution,Speaker B,70,17.5
+contribution,Speaker C,150,37.5
+contribution,Speaker D,5,1.25
+contribution,Speaker E,31,7.75
+contribution,Speaker F,56,14.0
+contribution,Speaker G,35,8.75
+knowledge,Speaker A,46,11.5
+knowledge,Speaker B,58,14.5
+knowledge,Speaker C,135,33.75
+knowledge,Speaker D,21,5.25
+knowledge,Speaker E,6,1.5
+knowledge,Speaker F,60,15.0
+knowledge,Speaker G,74,18.5
+trust,Speaker A,47,11.75
+trust,Speaker B,75,18.75
+trust,Speaker C,130,32.5
+trust,Speaker D,22,5.5
+trust,Speaker E,30,7.5
+trust,Speaker F,65,16.25
+trust,Speaker G,31,7.75

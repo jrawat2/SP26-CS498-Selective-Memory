@@ -1,0 +1,34 @@
+Human Study Summary (Chroma)
+============================
+
+Participants (consented): 16
+Stimuli blocks: 25
+Total block-level response rows: 400
+Mean balance rating: 3.467
+
+Top contribution choices:
+- Speaker C: 150
+- Speaker B: 70
+- Speaker F: 56
+- Speaker A: 53
+- Speaker G: 35
+- Speaker E: 31
+- Speaker D: 5
+
+Top knowledge choices:
+- Speaker C: 135
+- Speaker G: 74
+- Speaker F: 60
+- Speaker B: 58
+- Speaker A: 46
+- Speaker D: 21
+- Speaker E: 6
+
+Top trust choices:
+- Speaker C: 130
+- Speaker B: 75
+- Speaker F: 65
+- Speaker A: 47
+- Speaker G: 31
+- Speaker E: 30
+- Speaker D: 22
